@@ -5,16 +5,16 @@
 
 
 
-<!-- HERO PROYEK -->
+<!-- HERO -->
 
-<section class="relative py-24 bg-[#F8F7F2]">
+<section class="py-24 bg-[#F8F7F2]">
 
 
-<div class="max-w-6xl mx-auto px-6 text-center"
+<div class="max-w-7xl mx-auto px-6 text-center"
 data-aos="fade-up">
 
 
-<p class="uppercase tracking-widest text-sm text-[#C79A3B] font-semibold">
+<p class="uppercase tracking-[0.3em] text-sm text-[#C79A3B] font-semibold">
 
 Portfolio
 
@@ -22,7 +22,7 @@ Portfolio
 
 
 
-<h1 class="mt-3 text-4xl md:text-5xl font-bold text-[#3B2508]">
+<h1 class="mt-4 text-4xl md:text-5xl font-bold text-[#3B2508]">
 
 Proyek Kami
 
@@ -30,12 +30,12 @@ Proyek Kami
 
 
 
-<p class="mt-5 max-w-3xl mx-auto text-gray-600 leading-relaxed">
+<p class="mt-6 max-w-3xl mx-auto text-gray-600 leading-relaxed">
 
 Dokumentasi pengalaman pekerjaan
 CV Sahabat Eksplorasi Banua dalam bidang
 pertambangan, eksplorasi, dan lingkungan
-dengan pendekatan profesional berbasis data.
+melalui pendekatan teknis dan profesional.
 
 </p>
 
@@ -51,13 +51,15 @@ dengan pendekatan profesional berbasis data.
 
 
 
+
+
 <!-- PROJECT LIST -->
 
 
-<section class="py-16 bg-white">
+<section class="py-20 bg-white">
 
 
-<div class="max-w-6xl mx-auto px-6">
+<div class="max-w-7xl mx-auto px-6">
 
 
 
@@ -73,15 +75,23 @@ dengan pendekatan profesional berbasis data.
 
 
 <div
+
 data-aos="fade-up"
-class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition duration-500">
+
+class="group bg-white
+rounded-3xl
+overflow-hidden
+border border-gray-100
+hover:shadow-2xl
+transition duration-500">
+
+
 
 
 
 
 
 <!-- IMAGE -->
-
 
 <div class="relative overflow-hidden">
 
@@ -94,20 +104,23 @@ class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl tra
 
 src="{{ asset('storage/'.$project->gambar) }}"
 
-class="w-full h-60 object-cover
-group-hover:scale-110 transition duration-700">
+class="w-full h-72 object-cover
+group-hover:scale-110
+transition duration-700">
 
 
 @else
 
 
-<div class="w-full h-60 bg-gray-200 flex items-center justify-center">
+<div class="h-72 bg-[#F8F7F2]
+flex items-center justify-center">
 
-<span class="text-gray-500">
+
+<p class="text-gray-400">
 
 Tidak Ada Dokumentasi
 
-</span>
+</p>
 
 
 </div>
@@ -118,13 +131,22 @@ Tidak Ada Dokumentasi
 
 
 
-<div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-500">
+
+<div class="absolute inset-0
+bg-gradient-to-t
+from-black/40
+to-transparent
+opacity-0
+group-hover:opacity-100
+transition">
 
 </div>
 
 
 
 </div>
+
+
 
 
 
@@ -135,18 +157,21 @@ Tidak Ada Dokumentasi
 <!-- CONTENT -->
 
 
-<div class="p-6">
+<div class="p-7">
 
 
 
 
 
-<span class="inline-block
+<span
+
+class="inline-flex
 bg-[#C79A3B]/20
 text-[#8b6b20]
 text-xs
 font-semibold
-px-3 py-1
+px-4
+py-1.5
 rounded-full">
 
 
@@ -160,11 +185,10 @@ Pertambangan & Lingkungan
 
 
 
-<h2 class="mt-4 text-xl font-bold text-[#3B2508]">
 
+<h2 class="mt-5 text-xl font-bold text-[#3B2508]">
 
 {{ $project->nama_proyek }}
-
 
 </h2>
 
@@ -174,22 +198,35 @@ Pertambangan & Lingkungan
 
 
 
-<div class="mt-4 space-y-2 text-sm text-gray-500">
+
+<div class="mt-5 space-y-2 text-sm text-gray-500">
 
 
 <p>
 
-📍 {{ $project->lokasi }}
+Lokasi:
+<span class="text-gray-700 font-medium">
+
+{{ $project->lokasi }}
+
+</span>
 
 </p>
 
 
 
+
 <p>
 
-📅 {{ $project->tahun }}
+Tahun:
+<span class="text-gray-700 font-medium">
+
+{{ $project->tahun }}
+
+</span>
 
 </p>
+
 
 
 </div>
@@ -199,10 +236,12 @@ Pertambangan & Lingkungan
 
 
 
-<p class="mt-4 text-gray-600 text-sm leading-relaxed">
 
 
-{{ Str::limit($project->deskripsi,130) }}
+<p class="mt-5 text-gray-600 text-sm leading-relaxed">
+
+
+{{ Str::limit($project->deskripsi,150) }}
 
 
 </p>
@@ -212,16 +251,21 @@ Pertambangan & Lingkungan
 
 
 
-<a href="/proyek/{{ $project->id }}"
 
-class="inline-flex items-center gap-2 mt-6
-text-[#3B2508]
+<a href="{{ route('proyek.detail',$project->id) }}"
+
+class="inline-flex items-center gap-2 mt-7
+
 font-semibold
+text-[#3B2508]
+
 hover:text-[#C79A3B]
+
 transition">
 
 
-Lihat Detail
+Lihat Detail Proyek
+
 
 <span>
 
@@ -234,12 +278,16 @@ Lihat Detail
 
 
 
-</div>
-
-
 
 
 </div>
+
+
+
+
+</div>
+
+
 
 
 
@@ -252,11 +300,12 @@ Lihat Detail
 
 
 
+
 @else
 
 
 
-<div class="text-center py-20">
+<div class="bg-white rounded-3xl border p-12 text-center">
 
 
 <div class="text-5xl">
@@ -273,9 +322,10 @@ Belum Ada Proyek
 </h3>
 
 
-<p class="mt-2 text-gray-500">
 
-Dokumentasi proyek akan ditampilkan pada halaman ini.
+<p class="mt-3 text-gray-500">
+
+Data proyek akan muncul setelah ditambahkan melalui administrator.
 
 </p>
 
@@ -288,7 +338,6 @@ Dokumentasi proyek akan ditampilkan pada halaman ini.
 
 
 
-
 </div>
 
 
@@ -298,18 +347,35 @@ Dokumentasi proyek akan ditampilkan pada halaman ini.
 
 
 
+
+
+
+
 <!-- CTA -->
 
 
-<section class="py-16 bg-[#3B2508] text-white">
+<section class="py-20 bg-[#3B2508] text-white">
 
 
 <div class="max-w-5xl mx-auto px-6 text-center"
 data-aos="fade-up">
 
 
+<p class="text-[#C79A3B]
+uppercase
+tracking-widest
+text-sm
+font-semibold">
 
-<h2 class="text-3xl font-bold">
+Let's Work Together
+
+</p>
+
+
+
+
+
+<h2 class="mt-4 text-3xl md:text-4xl font-bold">
 
 Memiliki Kebutuhan Serupa?
 
@@ -317,31 +383,47 @@ Memiliki Kebutuhan Serupa?
 
 
 
-<p class="mt-4 text-gray-300">
+
+
+<p class="mt-5 text-gray-300 max-w-2xl mx-auto">
 
 Diskusikan kebutuhan konsultasi pertambangan
-dan lingkungan bersama tim SEB.
+dan lingkungan bersama tim profesional
+CV Sahabat Eksplorasi Banua.
 
 </p>
 
 
 
 
-<a href="/kontak"
 
-class="inline-block mt-7
+
+
+<a href="{{ route('kontak') }}"
+
+class="inline-flex mt-8
+
 bg-[#C79A3B]
-px-8 py-3
-rounded-lg
+
+hover:bg-[#b38732]
+
+px-8
+
+py-3.5
+
+rounded-xl
+
 font-semibold
-hover:bg-[#b58a32]
+
 transition">
 
 
-Hubungi Kami
+Hubungi Kami →
 
 
 </a>
+
+
 
 
 </div>

@@ -1,8 +1,7 @@
-//
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 
-AOS.init({
-    duration:1000,
-});
+import Alpine from 'alpinejs';
+
+window.Alpine = Alpine;
+
+Alpine.start();

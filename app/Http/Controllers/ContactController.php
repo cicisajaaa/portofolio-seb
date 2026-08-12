@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Services\TelegramService;
+use App\Models\Contact;
 use Carbon\Carbon;
+
 
 
 class ContactController extends Controller
@@ -25,10 +27,38 @@ $request->validate([
 
 'email'=>'required|email',
 
+'telepon'=>'nullable',
+
 'pesan'=>'required'
 
 ]);
 
+
+
+
+
+// SIMPAN DATABASE
+
+Contact::create([
+
+'nama'=>$request->nama,
+
+'email'=>$request->email,
+
+'telepon'=>$request->telepon,
+
+'layanan'=>$request->layanan,
+
+'pesan'=>$request->pesan
+
+]);
+
+
+
+
+
+
+// KIRIM TELEGRAM
 
 
 $message = "
@@ -59,7 +89,10 @@ $message = "
 ";
 
 
+
 $telegram->sendMessage($message);
+
+
 
 
 

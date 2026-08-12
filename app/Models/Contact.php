@@ -13,6 +13,7 @@ class Contact extends Model
         'nama',
         'email',
         'telepon',
+        'layanan',
         'pesan'
 
     ];

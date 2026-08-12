@@ -2,9 +2,8 @@
 
 namespace App\Services;
 
-
 use Illuminate\Support\Facades\Http;
-
+use Illuminate\Support\Facades\Log;
 
 
 class TelegramService
@@ -21,7 +20,7 @@ class TelegramService
 
 
 
-        Http::post(
+        $response = Http::post(
 
             "https://api.telegram.org/bot{$token}/sendMessage",
 
@@ -36,6 +35,17 @@ class TelegramService
             ]
 
         );
+
+
+
+        Log::info('Telegram Response:', [
+            'status' => $response->status(),
+            'body' => $response->body()
+        ]);
+
+
+
+        return $response->successful();
 
 
     }

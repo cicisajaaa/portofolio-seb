@@ -5,23 +5,25 @@
 
 
 
-<!-- HEADER -->
+<!-- HERO -->
 
 <section class="py-24 bg-[#F8F7F2]">
 
 
-<div class="max-w-6xl mx-auto px-6 text-center"
+<div class="max-w-7xl mx-auto px-6 text-center"
 data-aos="fade-up">
 
 
-<p class="uppercase tracking-widest text-sm text-[#C79A3B] font-semibold">
+<p class="uppercase tracking-[0.3em]
+text-sm text-[#C79A3B] font-semibold">
 
 Contact
 
 </p>
 
 
-<h1 class="mt-3 text-4xl md:text-5xl font-bold text-[#3B2508]">
+
+<h1 class="mt-4 text-4xl md:text-5xl font-bold text-[#3B2508]">
 
 Hubungi Kami
 
@@ -29,13 +31,14 @@ Hubungi Kami
 
 
 
-<p class="mt-5 text-gray-600 max-w-3xl mx-auto">
+<p class="mt-6 max-w-3xl mx-auto text-gray-600 leading-relaxed">
 
 Diskusikan kebutuhan konsultasi pertambangan
 dan lingkungan bersama tim profesional
 CV Sahabat Eksplorasi Banua.
 
 </p>
+
 
 
 </div>
@@ -49,30 +52,43 @@ CV Sahabat Eksplorasi Banua.
 
 
 
-<!-- CONTACT -->
 
-<section class="py-16 bg-white">
+
+<!-- CONTACT SECTION -->
+
+
+<section class="py-20 bg-white">
 
 
 <div class="max-w-7xl mx-auto px-6">
 
 
-<div class="grid md:grid-cols-2 gap-10">
+<div class="grid lg:grid-cols-2 gap-12">
 
 
 
 
 
-<!-- COMPANY INFO -->
 
 
-<div
-data-aos="fade-right"
-class="bg-[#F8F7F2] rounded-2xl p-8">
+<!-- INFO -->
+
+<div 
+data-aos="fade-right">
 
 
 
-<h2 class="text-2xl font-bold text-[#3B2508]">
+<p class="text-sm uppercase tracking-widest
+text-[#C79A3B] font-semibold">
+
+Contact Information
+
+</p>
+
+
+
+
+<h2 class="mt-3 text-3xl font-bold text-[#3B2508]">
 
 Informasi Perusahaan
 
@@ -83,12 +99,16 @@ Informasi Perusahaan
 
 <p class="mt-5 text-gray-600 leading-relaxed">
 
-CV Sahabat Eksplorasi Banua merupakan perusahaan
-konsultan yang bergerak dalam bidang pertambangan
-dan lingkungan dengan pendekatan profesional,
-teknis, dan berkelanjutan.
+CV Sahabat Eksplorasi Banua menyediakan layanan
+konsultasi pertambangan dan lingkungan dengan
+pendekatan profesional, teknis, dan berbasis data.
 
 </p>
+
+
+
+
+
 
 
 
@@ -98,21 +118,27 @@ teknis, dan berkelanjutan.
 
 
 
-<div class="bg-white p-5 rounded-xl">
+<div class="bg-[#F8F7F2]
+rounded-2xl
+p-6
+border border-gray-100">
 
 
-<h3 class="font-bold text-[#3B2508]">
+<p class="text-sm text-gray-500">
 
-📍 Alamat
+Alamat
 
-</h3>
+</p>
 
 
-<p class="mt-2 text-gray-600">
+<p class="mt-2 font-medium text-[#3B2508]">
 
 Jl. Janaka, Guntungmanggis,
+<br>
 Kec. Banjarbaru Utara,
+<br>
 Kota Banjarbaru,
+<br>
 Kalimantan Selatan 70714
 
 </p>
@@ -125,17 +151,21 @@ Kalimantan Selatan 70714
 
 
 
-<div class="bg-white p-5 rounded-xl">
+
+<div class="bg-[#F8F7F2]
+rounded-2xl
+p-6
+border border-gray-100">
 
 
-<h3 class="font-bold text-[#3B2508]">
+<p class="text-sm text-gray-500">
 
-📞 Telepon
+WhatsApp / Telepon
 
-</h3>
+</p>
 
 
-<p class="mt-2 text-gray-600">
+<p class="mt-2 font-medium text-[#3B2508]">
 
 085252452303
 
@@ -149,17 +179,22 @@ Kalimantan Selatan 70714
 
 
 
-<div class="bg-white p-5 rounded-xl">
 
 
-<h3 class="font-bold text-[#3B2508]">
+<div class="bg-[#F8F7F2]
+rounded-2xl
+p-6
+border border-gray-100">
 
-✉️ Email
 
-</h3>
+<p class="text-sm text-gray-500">
+
+Email
+
+</p>
 
 
-<p class="mt-2 text-gray-600">
+<p class="mt-2 font-medium text-[#3B2508]">
 
 email@seb.co.id
 
@@ -173,21 +208,25 @@ email@seb.co.id
 
 
 
-<div class="bg-white p-5 rounded-xl">
+
+<div class="bg-[#F8F7F2]
+rounded-2xl
+p-6
+border border-gray-100">
 
 
-<h3 class="font-bold text-[#3B2508]">
+<p class="text-sm text-gray-500">
 
-🕒 Jam Operasional
+Jam Operasional
 
-</h3>
+</p>
 
 
-<p class="mt-2 text-gray-600">
+<p class="mt-2 font-medium text-[#3B2508]">
 
 Senin - Jumat
 <br>
-08.00 - 17.00 WITA
+09.00 - 17.00 WITA
 
 </p>
 
@@ -201,7 +240,9 @@ Senin - Jumat
 
 
 
+
 </div>
+
 
 
 
@@ -214,12 +255,20 @@ Senin - Jumat
 
 
 <div
+
 data-aos="fade-left"
-class="bg-white rounded-2xl shadow-lg border p-8">
+
+class="bg-white
+rounded-3xl
+p-8
+shadow-xl
+border border-gray-100">
 
 
 
-<h2 class="text-2xl font-bold text-[#3B2508]">
+
+
+<h2 class="text-3xl font-bold text-[#3B2508]">
 
 Kirim Pesan Konsultasi
 
@@ -229,8 +278,8 @@ Kirim Pesan Konsultasi
 
 <p class="mt-3 text-gray-600">
 
-Isi formulir berikut dan tim kami akan
-menghubungi Anda.
+Sampaikan kebutuhan Anda.
+Tim SEB akan menghubungi kembali.
 
 </p>
 
@@ -239,15 +288,27 @@ menghubungi Anda.
 
 
 
+
+
 @if(session('success'))
 
-<div class="mt-5 bg-green-100 text-green-700 p-4 rounded-lg">
+
+<div class="mt-6
+bg-green-100
+text-green-700
+p-4
+rounded-xl">
+
 
 {{ session('success') }}
 
+
 </div>
 
+
 @endif
+
+
 
 
 
@@ -259,7 +320,7 @@ action="{{ route('kontak.store') }}"
 
 method="POST"
 
-class="mt-8 space-y-5">
+class="mt-8 space-y-6">
 
 
 @csrf
@@ -268,11 +329,14 @@ class="mt-8 space-y-5">
 
 
 
+
+
 <div>
 
-<label class="font-medium text-gray-700">
 
-Nama
+<label class="text-sm font-semibold text-gray-700">
+
+Nama Lengkap
 
 </label>
 
@@ -283,14 +347,19 @@ name="nama"
 
 value="{{ old('nama') }}"
 
-class="w-full mt-2 border rounded-lg p-3 focus:ring-2 focus:ring-[#C79A3B]"
+class="w-full mt-2
+rounded-xl
+border-gray-200
+p-3
+focus:ring-[#C79A3B]
+focus:border-[#C79A3B]"
 
 placeholder="Masukkan nama">
 
 
 @error('nama')
 
-<p class="text-red-500 text-sm">
+<p class="text-red-500 text-sm mt-1">
 
 {{ $message }}
 
@@ -307,10 +376,11 @@ placeholder="Masukkan nama">
 
 
 
+
 <div>
 
 
-<label class="font-medium text-gray-700">
+<label class="text-sm font-semibold text-gray-700">
 
 Email
 
@@ -325,14 +395,17 @@ name="email"
 
 value="{{ old('email') }}"
 
-class="w-full mt-2 border rounded-lg p-3 focus:ring-2 focus:ring-[#C79A3B]"
+class="w-full mt-2
+rounded-xl
+border-gray-200
+p-3"
 
 placeholder="email@example.com">
 
 
 @error('email')
 
-<p class="text-red-500 text-sm">
+<p class="text-red-500 text-sm mt-1">
 
 {{ $message }}
 
@@ -346,14 +419,76 @@ placeholder="email@example.com">
 
 
 
+<div>
 
 
+<label class="text-sm font-semibold text-gray-700">
+
+Jenis Layanan
+
+</label>
+
+
+<select
+
+name="layanan"
+
+class="
+w-full
+mt-2
+
+rounded-xl
+
+border-gray-200
+
+p-3">
+
+
+<option value="">
+
+Pilih kebutuhan konsultasi
+
+</option>
+
+
+<option>
+
+Konsultasi Pertambangan
+
+</option>
+
+
+<option>
+
+Kajian Lingkungan
+
+</option>
+
+
+<option>
+
+Survey Lapangan
+
+</option>
+
+
+<option>
+
+Kajian Teknis
+
+</option>
+
+
+</select>
+
+
+</div>
 
 
 <div>
 
 
-<label class="font-medium text-gray-700">
+<label class="text-sm font-semibold text-gray-700">
 
 Nomor WhatsApp
 
@@ -366,7 +501,10 @@ name="telepon"
 
 value="{{ old('telepon') }}"
 
-class="w-full mt-2 border rounded-lg p-3 focus:ring-2 focus:ring-[#C79A3B]"
+class="w-full mt-2
+rounded-xl
+border-gray-200
+p-3"
 
 placeholder="08xxxxxxxxxx">
 
@@ -382,9 +520,9 @@ placeholder="08xxxxxxxxxx">
 <div>
 
 
-<label class="font-medium text-gray-700">
+<label class="text-sm font-semibold text-gray-700">
 
-Pesan
+Pesan Konsultasi
 
 </label>
 
@@ -396,15 +534,17 @@ name="pesan"
 
 rows="5"
 
-class="w-full mt-2 border rounded-lg p-3 focus:ring-2 focus:ring-[#C79A3B]"
+class="w-full mt-2
+rounded-xl
+border-gray-200
+p-3"
 
-placeholder="Tuliskan kebutuhan konsultasi">{{ old('pesan') }}</textarea>
-
+placeholder="Tuliskan kebutuhan Anda...">{{ old('pesan') }}</textarea>
 
 
 @error('pesan')
 
-<p class="text-red-500 text-sm">
+<p class="text-red-500 text-sm mt-1">
 
 {{ $message }}
 
@@ -421,14 +561,23 @@ placeholder="Tuliskan kebutuhan konsultasi">{{ old('pesan') }}</textarea>
 
 
 
+
 <button
 
-class="w-full bg-[#C79A3B]
-hover:bg-[#b58a32]
+class="w-full
+
+bg-[#3B2508]
+
+hover:bg-[#C79A3B]
+
 text-white
-py-3
-rounded-lg
+
+py-3.5
+
+rounded-xl
+
 font-semibold
+
 transition">
 
 
@@ -439,11 +588,15 @@ Kirim Pesan
 
 
 
+
+
+
 </form>
 
 
 
 </div>
+
 
 
 
@@ -462,7 +615,10 @@ Kirim Pesan
 
 
 
+
+
 <!-- MAP -->
+
 
 <section class="py-20 bg-[#F8F7F2]">
 
@@ -470,16 +626,25 @@ Kirim Pesan
 <div class="max-w-7xl mx-auto px-6">
 
 
-<div
-data-aos="fade-up"
-class="text-center mb-10">
+
+<div class="text-center mb-10">
 
 
-<h2 class="text-3xl font-bold text-[#3B2508]">
+<p class="text-sm uppercase tracking-widest
+text-[#C79A3B] font-semibold">
+
+Location
+
+</p>
+
+
+
+<h2 class="mt-3 text-3xl font-bold text-[#3B2508]">
 
 Lokasi Kami
 
 </h2>
+
 
 
 <p class="mt-3 text-gray-600">
@@ -489,13 +654,16 @@ Temukan lokasi kantor CV Sahabat Eksplorasi Banua.
 </p>
 
 
+
 </div>
 
 
 
 
 
-<div class="rounded-2xl overflow-hidden shadow-xl">
+
+
+<div class="rounded-3xl overflow-hidden shadow-xl">
 
 
 <iframe
@@ -511,13 +679,17 @@ loading="lazy">
 </iframe>
 
 
+
 </div>
+
 
 
 </div>
 
 
 </section>
+
+
 
 
 

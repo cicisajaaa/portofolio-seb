@@ -5,9 +5,10 @@
 
 
 <!-- HERO -->
+<!-- HERO -->
 
 <section id="beranda"
-class="relative min-h-[90vh] flex items-center overflow-hidden pt-20">
+class="relative min-h-[92vh] flex items-center overflow-hidden">
 
 
 <div class="absolute inset-0">
@@ -15,64 +16,208 @@ class="relative min-h-[90vh] flex items-center overflow-hidden pt-20">
 
 <img
 src="{{ asset('assets/images/tambang.jpg') }}"
-class="w-full h-full object-cover scale-105 transition duration-[5000ms] hover:scale-110">
+class="w-full h-full object-cover scale-105">
 
 
-<div class="absolute inset-0 bg-black/60"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
 
 
 </div>
 
 
 
-<div class="relative max-w-6xl mx-auto px-6 text-white">
+
+
+<div class="relative max-w-7xl mx-auto px-6 w-full">
+
 
 <div 
-class="max-w-3xl"
+class="max-w-4xl text-white"
 data-aos="fade-up"
 data-aos-duration="1000">
 
 
-<h1 class="text-4xl md:text-5xl font-bold leading-snug">
 
-Solusi Profesional Dalam Pengelolaan
-Pertambangan dan Lingkungan
+<div class="inline-flex items-center gap-3 
+bg-white/10 backdrop-blur-sm
+border border-white/20
+px-5 py-2
+rounded-full">
+
+
+<span class="w-2 h-2 rounded-full bg-[#C79A3B]"></span>
+
+
+<p class="text-sm tracking-[0.25em] uppercase">
+
+Mining & Environmental Consultant
+
+</p>
+
+
+</div>
+
+
+
+
+
+<h1 class="mt-7 text-4xl md:text-6xl font-bold leading-tight">
+
+
+Mitra Profesional Dalam
+<br>
+
+Pengelolaan Pertambangan
+<br>
+
+dan Lingkungan
+
 
 </h1>
 
 
 
-<p class="mt-5 text-lg text-gray-200 leading-relaxed">
+
+
+<p class="mt-6 max-w-3xl text-lg text-gray-200 leading-relaxed">
+
 
 CV Sahabat Eksplorasi Banua menyediakan layanan
-konsultasi berbasis data, kajian teknis,
-serta pengelolaan lingkungan berkelanjutan.
+konsultasi berbasis data melalui kajian teknis,
+eksplorasi, survey lapangan, serta pengelolaan
+lingkungan berkelanjutan.
+
 
 </p>
 
 
 
-<div class="mt-7 flex flex-wrap gap-4">
 
 
-<a href="/kontak"
-class="bg-[#C79A3B] px-7 py-3 rounded-lg font-semibold hover:bg-[#b38732] transition">
+
+
+<div class="mt-8 flex flex-wrap gap-4">
+
+
+
+<a href="#proyek"
+
+class="bg-[#C79A3B]
+hover:bg-[#b38732]
+px-8
+py-3.5
+rounded-xl
+font-semibold
+shadow-lg
+transition">
+
+
+Lihat Portofolio
+
+
+</a>
+
+
+
+
+<a href="{{ route('kontak') }}"
+
+class="border border-white/70
+hover:bg-white
+hover:text-[#3B2508]
+px-8
+py-3.5
+rounded-xl
+font-semibold
+transition">
+
 
 Konsultasi Sekarang
 
-</a>
-
-
-
-<a href="/tentang"
-class="border border-white px-7 py-3 rounded-lg hover:bg-white hover:text-black transition">
-
-Tentang Kami
 
 </a>
+
 
 
 </div>
+
+
+
+
+
+
+
+
+<!-- STATISTIK -->
+
+
+<div class="mt-14 grid grid-cols-3 gap-6 max-w-xl">
+
+
+
+<div>
+
+<h3 class="text-3xl font-bold text-[#C79A3B]">
+
+10+
+
+</h3>
+
+<p class="text-sm text-gray-300">
+
+Proyek Terlaksana
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div>
+
+<h3 class="text-3xl font-bold text-[#C79A3B]">
+
+4
+
+</h3>
+
+<p class="text-sm text-gray-300">
+
+Bidang Layanan
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div>
+
+<h3 class="text-3xl font-bold text-[#C79A3B]">
+
+100%
+
+</h3>
+
+<p class="text-sm text-gray-300">
+
+Komitmen Profesional
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
 
 
 </div>
@@ -82,34 +227,63 @@ Tentang Kami
 
 
 </section>
-
-
-
-
-
 <!-- TENTANG SINGKAT -->
 
-
-<section class="py-14 bg-white">
-
-
-<div class="max-w-6xl mx-auto px-6">
+<section class="py-24 bg-white">
 
 
-<div class="grid md:grid-cols-2 gap-8 items-center">
+<div class="max-w-7xl mx-auto px-6">
 
+
+<div class="grid lg:grid-cols-2 gap-14 items-center">
+
+
+
+
+
+<!-- IMAGE -->
 
 
 <div 
 data-aos="fade-right"
-data-aos-duration="1000">
+class="relative">
 
 
 <img
 
 src="{{ asset('storage/tentang/tentang-kami.jpg') }}"
 
-class="rounded-2xl shadow-lg w-full h-[380px] object-cover">
+class="rounded-3xl shadow-xl w-full h-[450px] object-cover">
+
+
+
+
+
+<div class="absolute -bottom-6 -right-6 
+bg-[#3B2508]
+text-white
+rounded-2xl
+p-6
+shadow-xl
+hidden md:block">
+
+
+<p class="text-3xl font-bold text-[#C79A3B]">
+
+SEB
+
+</p>
+
+
+<p class="text-sm text-gray-300">
+
+Professional Mining Consultant
+
+</p>
+
+
+</div>
+
 
 
 </div>
@@ -118,58 +292,268 @@ class="rounded-2xl shadow-lg w-full h-[380px] object-cover">
 
 
 
-<div 
-data-aos="fade-left"
-data-aos-delay="200"
-data-aos-duration="1000">
 
-<h2 class="text-3xl font-bold text-[#3B2508]">
+
+<!-- CONTENT -->
+
+
+<div data-aos="fade-left">
+
+
+
+<p class="text-sm uppercase tracking-[0.3em] 
+text-[#C79A3B] font-semibold">
 
 Tentang Kami
+
+</p>
+
+
+
+
+<h2 class="mt-4 text-4xl font-bold text-[#3B2508] leading-tight">
+
+
+Membangun Solusi
+Pertambangan dan Lingkungan
+Yang Berkelanjutan
+
 
 </h2>
 
 
 
-<h3 class="mt-4 text-xl font-semibold">
 
-CV Sahabat Eksplorasi Banua
 
-</h3>
+<p class="mt-6 text-gray-600 leading-relaxed">
+
+
+CV Sahabat Eksplorasi Banua merupakan perusahaan
+konsultan yang bergerak dalam bidang pertambangan
+dan lingkungan dengan pendekatan profesional,
+teknis, dan berbasis data.
+
+
+</p>
+
+
 
 
 
 <p class="mt-4 text-gray-600 leading-relaxed">
 
-Perusahaan konsultan yang bergerak dalam bidang
-pertambangan dan lingkungan dengan pendekatan
-profesional, teknis, dan berkelanjutan.
-
-</p>
-
-
-
-<p class="mt-3 text-gray-600 leading-relaxed">
 
 Kami mendukung kegiatan eksplorasi, kajian teknis,
-serta pengelolaan lingkungan melalui analisis data
-dan pemahaman regulasi.
+survey lapangan, serta pengelolaan lingkungan
+melalui pemahaman regulasi dan standar industri.
+
 
 </p>
 
 
 
-<a href="/tentang"
 
-class="inline-block mt-5 bg-[#3B2508]
-text-white px-6 py-2.5 rounded-lg">
 
-Selengkapnya →
+
+<!-- POINT -->
+
+<div class="mt-8 grid sm:grid-cols-2 gap-5">
+
+
+
+<div class="flex gap-3 items-start">
+
+
+<div class="w-10 h-10 rounded-xl 
+bg-[#C79A3B]/20
+flex items-center justify-center">
+
+
+✓
+
+
+</div>
+
+
+<div>
+
+
+<h4 class="font-bold text-[#3B2508]">
+
+Profesional
+
+</h4>
+
+
+<p class="text-sm text-gray-500">
+
+Pelayanan berbasis kompetensi teknis.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="flex gap-3 items-start">
+
+
+<div class="w-10 h-10 rounded-xl 
+bg-[#C79A3B]/20
+flex items-center justify-center">
+
+
+✓
+
+
+</div>
+
+
+<div>
+
+
+<h4 class="font-bold text-[#3B2508]">
+
+Berbasis Data
+
+</h4>
+
+
+<p class="text-sm text-gray-500">
+
+Analisis akurat dan terukur.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="flex gap-3 items-start">
+
+
+<div class="w-10 h-10 rounded-xl 
+bg-[#C79A3B]/20
+flex items-center justify-center">
+
+
+✓
+
+
+</div>
+
+
+<div>
+
+
+<h4 class="font-bold text-[#3B2508]">
+
+Berorientasi Lingkungan
+
+</h4>
+
+
+<p class="text-sm text-gray-500">
+
+Mendukung keberlanjutan.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="flex gap-3 items-start">
+
+
+<div class="w-10 h-10 rounded-xl 
+bg-[#C79A3B]/20
+flex items-center justify-center">
+
+
+✓
+
+
+</div>
+
+
+<div>
+
+
+<h4 class="font-bold text-[#3B2508]">
+
+Solusi Terpercaya
+
+</h4>
+
+
+<p class="text-sm text-gray-500">
+
+Pendekatan profesional.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<a href="{{ route('tentang') }}"
+
+class="inline-flex mt-9
+bg-[#3B2508]
+text-white
+px-8
+py-3
+rounded-xl
+font-semibold
+hover:bg-[#241505]
+transition">
+
+
+Kenali Kami Lebih Lanjut →
+
 
 </a>
 
 
+
 </div>
+
 
 
 
@@ -180,38 +564,47 @@ Selengkapnya →
 
 
 </section>
-
-
-
-
-
-
-
 <!-- LAYANAN -->
 
+<section 
+id="layanan"
+class="py-24 bg-[#F8F7F2]">
 
-<section class="py-16 bg-[#F8F7F2]">
+
+<div class="max-w-7xl mx-auto px-6">
 
 
-<div class="max-w-6xl mx-auto px-6">
 
+
+
+<!-- HEADER -->
 
 <div 
-class="text-center mb-10"
+class="text-center max-w-3xl mx-auto mb-14"
 data-aos="fade-up">
 
 
-<h2 class="text-3xl font-bold text-[#3B2508]">
+<p class="uppercase tracking-[0.3em]
+text-sm text-[#C79A3B]
+font-semibold">
 
-Layanan Kami
+Services
+
+</p>
+
+
+<h2 class="mt-4 text-4xl font-bold text-[#3B2508]">
+
+Layanan Profesional Kami
 
 </h2>
 
 
-<p class="mt-3 text-gray-600">
+<p class="mt-5 text-gray-600 leading-relaxed">
 
-Solusi profesional untuk kebutuhan pertambangan
-dan lingkungan.
+Menyediakan solusi konsultasi pertambangan
+dan lingkungan melalui pendekatan teknis,
+analisis data, dan standar profesional.
 
 </p>
 
@@ -221,152 +614,357 @@ dan lingkungan.
 
 
 
-<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
 
 
-<div 
-data-aos="fade-up"
-data-aos-delay="0"
-class="bg-white p-7 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+<!-- SERVICE GRID -->
 
 
-<div class="w-12 h-12 rounded-xl bg-[#C79A3B]/20 flex items-center justify-center text-2xl">
-
-⛏️
-
-</div>
+<div class="grid md:grid-cols-2 gap-8">
 
 
-<h3 class="mt-5 font-bold text-lg text-[#3B2508]">
+
+
+
+
+
+<!-- ITEM 1 -->
+
+<div
+
+class="group bg-white rounded-3xl p-8
+border border-gray-100
+hover:shadow-xl
+transition duration-300"
+
+data-aos="fade-up">
+
+
+<div class="flex justify-between items-start">
+
+
+<div>
+
+
+<p class="text-[#C79A3B] font-bold text-lg">
+
+01
+
+</p>
+
+
+<h3 class="mt-3 text-2xl font-bold text-[#3B2508]">
 
 Pertambangan
 
 </h3>
 
 
-<p class="mt-2 text-gray-600 text-sm">
+</div>
 
-Kajian teknis, eksplorasi mineral,
-dan perencanaan tambang.
+
+
+
+<div class="w-14 h-14 rounded-2xl
+bg-[#C79A3B]/20
+flex items-center justify-center
+text-3xl">
+
+
+⛏️
+
+
+</div>
+
+
+
+</div>
+
+
+
+<p class="mt-6 text-gray-600 leading-relaxed">
+
+
+Kajian teknis pertambangan,
+eksplorasi mineral, perencanaan
+tambang, dan analisis kegiatan
+pertambangan.
+
 
 </p>
 
 
+
 </div>
 
 
 
 
-<div 
+
+
+
+
+
+<!-- ITEM 2 -->
+
+<div
+
+class="group bg-white rounded-3xl p-8
+border border-gray-100
+hover:shadow-xl
+transition duration-300"
+
 data-aos="fade-up"
-data-aos-delay="100"
-class="bg-white p-7 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition duration-300">
+data-aos-delay="100">
 
 
-<div class="w-12 h-12 rounded-xl bg-[#C79A3B]/20 flex items-center justify-center text-2xl">
-
-🌱
-
-</div>
+<div class="flex justify-between items-start">
 
 
-<h3 class="mt-5 font-bold text-lg text-[#3B2508]">
+<div>
+
+
+<p class="text-[#C79A3B] font-bold text-lg">
+
+02
+
+</p>
+
+
+<h3 class="mt-3 text-2xl font-bold text-[#3B2508]">
 
 Lingkungan
 
 </h3>
 
 
-<p class="mt-2 text-gray-600 text-sm">
+</div>
 
-Dokumen lingkungan dan pemantauan
-dampak kegiatan.
+
+
+
+<div class="w-14 h-14 rounded-2xl
+bg-[#C79A3B]/20
+flex items-center justify-center
+text-3xl">
+
+
+🌱
+
+
+</div>
+
+
+
+</div>
+
+
+
+<p class="mt-6 text-gray-600 leading-relaxed">
+
+
+Penyusunan kajian lingkungan,
+pemantauan dampak kegiatan,
+serta dukungan pengelolaan
+lingkungan berkelanjutan.
+
 
 </p>
 
 
+
 </div>
 
 
 
-<div 
+
+
+
+
+
+
+<!-- ITEM 3 -->
+
+
+<div
+
+class="group bg-white rounded-3xl p-8
+border border-gray-100
+hover:shadow-xl
+transition duration-300"
+
 data-aos="fade-up"
-data-aos-delay="200"
-class="bg-white p-7 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition duration-300">
+data-aos-delay="200">
 
 
-<div class="w-12 h-12 rounded-xl bg-[#C79A3B]/20 flex items-center justify-center text-2xl">
-
-🗺️
-
-</div>
+<div class="flex justify-between items-start">
 
 
-<h3 class="mt-5 font-bold text-lg text-[#3B2508]">
+<div>
 
-Survey
+
+<p class="text-[#C79A3B] font-bold text-lg">
+
+03
+
+</p>
+
+
+<h3 class="mt-3 text-2xl font-bold text-[#3B2508]">
+
+Survey & Pemetaan
 
 </h3>
 
 
-<p class="mt-2 text-gray-600 text-sm">
+</div>
 
-Survey lapangan dan pemetaan wilayah.
+
+
+
+<div class="w-14 h-14 rounded-2xl
+bg-[#C79A3B]/20
+flex items-center justify-center
+text-3xl">
+
+
+🗺️
+
+
+</div>
+
+
+
+</div>
+
+
+
+<p class="mt-6 text-gray-600 leading-relaxed">
+
+
+Kegiatan survey lapangan,
+pengumpulan data teknis,
+dan pemetaan wilayah
+untuk kebutuhan analisis.
+
 
 </p>
 
 
+
 </div>
 
 
 
 
-<div 
+
+
+
+
+
+<!-- ITEM 4 -->
+
+
+<div
+
+class="group bg-white rounded-3xl p-8
+border border-gray-100
+hover:shadow-xl
+transition duration-300"
+
 data-aos="fade-up"
-data-aos-delay="300"
-class="bg-white p-7 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition duration-300">
-
-<div class="w-12 h-12 rounded-xl bg-[#C79A3B]/20 flex items-center justify-center text-2xl">
-
-📊
-
-</div>
+data-aos-delay="300">
 
 
-<h3 class="mt-5 font-bold text-lg text-[#3B2508]">
+<div class="flex justify-between items-start">
+
+
+<div>
+
+
+<p class="text-[#C79A3B] font-bold text-lg">
+
+04
+
+</p>
+
+
+<h3 class="mt-3 text-2xl font-bold text-[#3B2508]">
 
 Kajian Teknis
 
 </h3>
 
 
-<p class="mt-2 text-gray-600 text-sm">
+</div>
 
-Analisis data dan laporan teknis.
+
+
+
+<div class="w-14 h-14 rounded-2xl
+bg-[#C79A3B]/20
+flex items-center justify-center
+text-3xl">
+
+📑
+
+</div>
+
+
+</div>
+
+
+
+<p class="mt-6 text-gray-600 leading-relaxed">
+
+
+Analisis data, penyusunan laporan,
+serta kajian teknis berdasarkan
+kebutuhan pekerjaan.
+
 
 </p>
 
 
-</div>
-
 
 </div>
 
 
 
-<div class="text-center mt-8">
 
 
-<a href="/layanan"
-class="text-[#C79A3B] font-semibold">
+</div>
 
-Lihat Semua Layanan →
+
+
+
+
+
+
+<div class="text-center mt-12">
+
+
+<a href="{{ route('layanan') }}"
+
+class="inline-flex items-center gap-2
+text-[#C79A3B]
+font-semibold
+hover:text-[#3B2508]
+transition">
+
+
+Lihat Semua Layanan
+
+→
+
 
 </a>
 
 
 </div>
+
+
 
 
 </div>
@@ -376,34 +974,48 @@ Lihat Semua Layanan →
 
 
 
+<!-- KEUNGGULAN KAMI -->
+
+<section class="py-24 bg-[#3B2508] text-white">
+
+
+<div class="max-w-7xl mx-auto px-6">
 
 
 
 
-<!-- PROYEK -->
 
-
-<section class="py-16 bg-white">
-
-
-<div class="max-w-6xl mx-auto px-6">
-
+<!-- HEADER -->
 
 <div 
-class="text-center mb-10"
+class="text-center max-w-3xl mx-auto mb-14"
 data-aos="fade-up">
 
 
-<h2 class="text-3xl font-bold text-[#3B2508]">
+<p class="text-sm uppercase tracking-[0.3em]
+text-[#C79A3B]
+font-semibold">
 
-Proyek Kami
+Why Choose Us
+
+</p>
+
+
+
+
+<h2 class="mt-4 text-4xl font-bold">
+
+Keunggulan CV Sahabat Eksplorasi Banua
 
 </h2>
 
 
-<p class="mt-3 text-gray-600">
 
-Dokumentasi pengalaman pekerjaan SEB.
+
+<p class="mt-5 text-gray-300">
+
+Mengutamakan profesionalisme, ketepatan teknis,
+dan komitmen terhadap keberlanjutan lingkungan.
 
 </p>
 
@@ -413,67 +1025,500 @@ Dokumentasi pengalaman pekerjaan SEB.
 
 
 
-<div class="grid md:grid-cols-3 gap-6">
+
+
+
+
+<!-- CARD -->
+
+<div class="grid md:grid-cols-4 gap-8">
+
+
+
+
+
+
+
+<!-- ITEM 1 -->
+
+
+<div
+class="bg-white/10
+backdrop-blur-sm
+rounded-2xl
+p-7
+border border-white/10
+hover:bg-white/20
+transition"
+data-aos="fade-up">
+
+
+<div class="w-14 h-14
+rounded-xl
+bg-[#C79A3B]
+flex items-center justify-center
+text-2xl">
+
+
+⚒️
+
+
+</div>
+
+
+
+
+<h3 class="mt-6 text-xl font-bold">
+
+Tenaga Profesional
+
+</h3>
+
+
+
+
+<p class="mt-3 text-gray-300 text-sm leading-relaxed">
+
+Didukung oleh pendekatan teknis
+dan kompetensi di bidang pertambangan
+serta lingkungan.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ITEM 2 -->
+
+
+<div
+class="bg-white/10
+backdrop-blur-sm
+rounded-2xl
+p-7
+border border-white/10
+hover:bg-white/20
+transition"
+data-aos="fade-up"
+data-aos-delay="100">
+
+
+<div class="w-14 h-14
+rounded-xl
+bg-[#C79A3B]
+flex items-center justify-center
+text-2xl">
+
+
+📊
+
+
+</div>
+
+
+
+
+<h3 class="mt-6 text-xl font-bold">
+
+Berbasis Data
+
+</h3>
+
+
+
+
+<p class="mt-3 text-gray-300 text-sm leading-relaxed">
+
+Menggunakan analisis data dan
+kajian teknis untuk menghasilkan
+solusi yang tepat.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ITEM 3 -->
+
+
+<div
+class="bg-white/10
+backdrop-blur-sm
+rounded-2xl
+p-7
+border border-white/10
+hover:bg-white/20
+transition"
+data-aos="fade-up"
+data-aos-delay="200">
+
+
+<div class="w-14 h-14
+rounded-xl
+bg-[#C79A3B]
+flex items-center justify-center
+text-2xl">
+
+
+🌱
+
+
+</div>
+
+
+
+
+<h3 class="mt-6 text-xl font-bold">
+
+Berorientasi Lingkungan
+
+</h3>
+
+
+
+
+<p class="mt-3 text-gray-300 text-sm leading-relaxed">
+
+Mendukung pengelolaan lingkungan
+yang berkelanjutan dan bertanggung jawab.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ITEM 4 -->
+
+
+<div
+class="bg-white/10
+backdrop-blur-sm
+rounded-2xl
+p-7
+border border-white/10
+hover:bg-white/20
+transition"
+data-aos="fade-up"
+data-aos-delay="300">
+
+
+<div class="w-14 h-14
+rounded-xl
+bg-[#C79A3B]
+flex items-center justify-center
+text-2xl">
+
+
+🤝
+
+
+</div>
+
+
+
+
+<h3 class="mt-6 text-xl font-bold">
+
+Pelayanan Terpercaya
+
+</h3>
+
+
+
+
+<p class="mt-3 text-gray-300 text-sm leading-relaxed">
+
+Memberikan pelayanan profesional
+dengan komunikasi dan koordinasi yang baik.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+<!-- PORTFOLIO -->
+
+<section 
+id="proyek"
+class="py-24 bg-white">
+
+
+<div class="max-w-7xl mx-auto px-6">
+
+
+
+
+
+<!-- HEADER -->
+
+<div 
+class="text-center max-w-3xl mx-auto mb-14"
+data-aos="fade-up">
+
+
+<p class="text-sm uppercase tracking-[0.3em]
+text-[#C79A3B]
+font-semibold">
+
+Portofolio
+
+</p>
+
+
+
+<h2 class="mt-4 text-4xl font-bold text-[#3B2508]">
+
+Dokumentasi Proyek Kami
+
+</h2>
+
+
+
+<p class="mt-5 text-gray-600">
+
+Berbagai pengalaman pekerjaan
+CV Sahabat Eksplorasi Banua
+dalam bidang pertambangan dan lingkungan.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- PROJECT GRID -->
+
+
+<div class="grid md:grid-cols-3 gap-8">
 
 
 
 @foreach($projects->take(3) as $project)
 
 
-<div 
-data-aos="zoom-in"
-class="rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+<div
+
+class="group relative
+rounded-3xl
+overflow-hidden
+shadow-lg
+hover:shadow-2xl
+transition duration-500"
+
+data-aos="fade-up">
+
+
+
+
+
+<!-- IMAGE -->
 
 
 @if($project->gambar)
+
 
 <img
 
 src="{{ asset('storage/'.$project->gambar) }}"
 
-class="w-full h-48 object-cover">
+class="w-full h-[380px]
+object-cover
+group-hover:scale-110
+transition duration-700">
+
+
+@else
+
+
+<div class="h-[380px]
+bg-gray-200
+flex items-center justify-center">
+
+Tidak Ada Dokumentasi
+
+</div>
+
 
 @endif
 
 
 
-<div class="p-5">
 
 
-<h3 class="font-bold text-[#3B2508]">
+
+
+<!-- OVERLAY -->
+
+
+<div class="absolute inset-0
+bg-gradient-to-t
+from-black/80
+via-black/30
+to-transparent">
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- CONTENT -->
+
+
+<div class="absolute bottom-0 left-0 right-0 p-7 text-white">
+
+
+
+<span class="inline-block
+bg-[#C79A3B]
+text-white
+text-xs
+font-semibold
+px-4 py-1
+rounded-full">
+
+
+Pertambangan & Lingkungan
+
+
+</span>
+
+
+
+
+
+<h3 class="mt-4 text-2xl font-bold">
+
 
 {{ $project->nama_proyek }}
+
 
 </h3>
 
 
-<p class="mt-2 text-sm text-gray-500">
+
+
+
+<div class="mt-3 space-y-1 text-sm text-gray-200">
+
+
+
+<p>
 
 📍 {{ $project->lokasi }}
 
 </p>
 
 
+
+<p>
+
+📅 {{ $project->tahun }}
+
+</p>
+
+
+
 </div>
 
 
+
 </div>
+
+
+
+
+
+</div>
+
+
+
 
 
 @endforeach
 
 
+
 </div>
 
 
 
-<div class="text-center mt-8">
 
 
-<a href="/proyek"
-class="text-[#C79A3B] font-semibold">
 
-Lihat Semua Proyek →
+
+<!-- BUTTON -->
+
+
+<div class="text-center mt-12">
+
+
+<a href="{{ route('proyek') }}"
+
+class="inline-flex items-center gap-2
+text-[#C79A3B]
+font-semibold
+hover:text-[#3B2508]
+transition">
+
+
+Lihat Semua Portofolio
+
+
+→
+
 
 </a>
 
@@ -481,56 +1526,118 @@ Lihat Semua Proyek →
 </div>
 
 
+
+
+
+
 </div>
 
 
 </section>
 
-
-
-
-
-
 <!-- CTA -->
 
-
-<section class="py-12 bg-[#3B2508] text-white">
+<section class="relative py-20 bg-[#3B2508]">
 
 
 <div 
-data-aos="fade-up"
-class="max-w-5xl mx-auto px-6 text-center">
-
-<h2 class="text-3xl font-bold">
-
-Siap Berkonsultasi Dengan Kami?
-
-</h2>
+class="max-w-5xl mx-auto px-6 text-center text-white"
+data-aos="fade-up">
 
 
-<p class="mt-3 text-gray-200">
 
-Diskusikan kebutuhan pertambangan dan lingkungan
-bersama tim profesional SEB.
+<p class="text-[#C79A3B]
+uppercase
+tracking-[0.3em]
+text-sm
+font-semibold">
+
+Ayo Kolaborasi 
 
 </p>
 
 
-<a href="/kontak"
 
-class="inline-block mt-6 bg-[#C79A3B]
-px-8 py-3 rounded-lg font-semibold">
+
+
+<h2 class="mt-5 text-3xl md:text-4xl font-bold">
+
+Siap Mengembangkan Proyek
+Bersama Kami?
+
+</h2>
+
+
+
+
+
+<p class="mt-5 text-gray-300 max-w-2xl mx-auto leading-relaxed">
+
+Diskusikan kebutuhan pertambangan dan lingkungan
+bersama tim profesional CV Sahabat Eksplorasi Banua.
+
+</p>
+
+
+
+
+
+
+
+<div class="mt-8 flex flex-wrap justify-center gap-4">
+
+
+
+<a href="{{ route('kontak') }}"
+
+class="bg-[#C79A3B]
+hover:bg-[#b38732]
+text-white
+px-8
+py-3.5
+rounded-xl
+font-semibold
+transition
+shadow-lg">
+
 
 Hubungi Kami
 
+
 </a>
+
+
+
+
+
+<a href="{{ route('proyek') }}"
+
+class="border border-white/40
+hover:bg-white
+hover:text-[#3B2508]
+text-white
+px-8
+py-3.5
+rounded-xl
+font-semibold
+transition">
+
+
+Lihat Proyek
+
+
+</a>
+
+
+
+</div>
+
+
 
 
 </div>
 
 
 </section>
-
-
 
 @endsection
