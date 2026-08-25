@@ -99,10 +99,10 @@ Informasi Perusahaan
 
 <p class="mt-5 text-gray-600 leading-relaxed">
 
-CV Sahabat Eksplorasi Banua menyediakan layanan
-konsultasi pertambangan dan lingkungan dengan
-pendekatan profesional, teknis, dan berbasis data.
-
+CV Sahabat Eksplorasi Banua merupakan perusahaan jasa
+penunjang pertambangan yang menyediakan layanan eksplorasi,
+kajian teknis, studi kelayakan, survey lapangan, dan
+pengelolaan lingkungan.
 </p>
 
 
@@ -121,7 +121,9 @@ pendekatan profesional, teknis, dan berbasis data.
 <div class="bg-[#F8F7F2]
 rounded-2xl
 p-6
-border border-gray-100">
+border border-gray-100
+hover:shadow-lg
+transition">
 
 
 <p class="text-sm text-gray-500">
@@ -155,7 +157,9 @@ Kalimantan Selatan 70714
 <div class="bg-[#F8F7F2]
 rounded-2xl
 p-6
-border border-gray-100">
+border border-gray-100
+hover:shadow-lg
+transition">
 
 
 <p class="text-sm text-gray-500">
@@ -184,7 +188,9 @@ WhatsApp / Telepon
 <div class="bg-[#F8F7F2]
 rounded-2xl
 p-6
-border border-gray-100">
+border border-gray-100
+hover:shadow-lg
+transition">
 
 
 <p class="text-sm text-gray-500">
@@ -208,11 +214,12 @@ email@seb.co.id
 
 
 
-
 <div class="bg-[#F8F7F2]
 rounded-2xl
 p-6
-border border-gray-100">
+border border-gray-100
+hover:shadow-lg
+transition">
 
 
 <p class="text-sm text-gray-500">
@@ -270,7 +277,7 @@ border border-gray-100">
 
 <h2 class="text-3xl font-bold text-[#3B2508]">
 
-Kirim Pesan Konsultasi
+Diskusikan Kebutuhan Proyek Anda
 
 </h2>
 
@@ -278,8 +285,9 @@ Kirim Pesan Konsultasi
 
 <p class="mt-3 text-gray-600">
 
-Sampaikan kebutuhan Anda.
-Tim SEB akan menghubungi kembali.
+Sampaikan kebutuhan pekerjaan Anda.
+Tim SEB akan membantu memberikan solusi
+sesuai kebutuhan proyek.
 
 </p>
 
@@ -395,10 +403,16 @@ name="email"
 
 value="{{ old('email') }}"
 
-class="w-full mt-2
+class="
+w-full
+mt-2
 rounded-xl
 border-gray-200
-p-3"
+p-3
+focus:ring-2
+focus:ring-[#C79A3B]
+focus:border-[#C79A3B]
+outline-none"
 
 placeholder="email@example.com">
 
@@ -570,6 +584,8 @@ bg-[#3B2508]
 
 hover:bg-[#C79A3B]
 
+hover:text-[#3B2508]
+
 text-white
 
 py-3.5
@@ -633,7 +649,7 @@ Kirim Pesan
 <p class="text-sm uppercase tracking-widest
 text-[#C79A3B] font-semibold">
 
-Location
+Office Location
 
 </p>
 

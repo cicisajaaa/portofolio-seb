@@ -32,10 +32,9 @@ Proyek Kami
 
 <p class="mt-6 max-w-3xl mx-auto text-gray-600 leading-relaxed">
 
-Dokumentasi pengalaman pekerjaan
-CV Sahabat Eksplorasi Banua dalam bidang
-pertambangan, eksplorasi, dan lingkungan
-melalui pendekatan teknis dan profesional.
+Dokumentasi pengalaman pekerjaan CV Sahabat Eksplorasi Banua
+dalam bidang pertambangan dan lingkungan yang mencakup
+kegiatan eksplorasi, kajian teknis, serta pengelolaan lingkungan.
 
 </p>
 
@@ -83,6 +82,7 @@ rounded-3xl
 overflow-hidden
 border border-gray-100
 hover:shadow-2xl
+hover:-translate-y-2
 transition duration-500">
 
 
@@ -104,9 +104,13 @@ transition duration-500">
 
 src="{{ asset('storage/'.$project->gambar) }}"
 
-class="w-full h-72 object-cover
+class="
+w-full
+h-[320px]
+object-cover
 group-hover:scale-110
-transition duration-700">
+transition
+duration-700">
 
 
 @else
@@ -166,8 +170,8 @@ transition">
 <span
 
 class="inline-flex
-bg-[#C79A3B]/20
-text-[#8b6b20]
+bg-[#C79A3B]
+text-white
 text-xs
 font-semibold
 px-4
@@ -201,10 +205,9 @@ Pertambangan & Lingkungan
 
 <div class="mt-5 space-y-2 text-sm text-gray-500">
 
-
 <p>
 
-Lokasi:
+📍
 <span class="text-gray-700 font-medium">
 
 {{ $project->lokasi }}
@@ -214,11 +217,9 @@ Lokasi:
 </p>
 
 
-
-
 <p>
 
-Tahun:
+📅
 <span class="text-gray-700 font-medium">
 
 {{ $project->tahun }}
@@ -260,6 +261,7 @@ font-semibold
 text-[#3B2508]
 
 hover:text-[#C79A3B]
+hover:translate-x-1
 
 transition">
 
@@ -377,7 +379,7 @@ Let's Work Together
 
 <h2 class="mt-4 text-3xl md:text-4xl font-bold">
 
-Memiliki Kebutuhan Serupa?
+Siap Mengembangkan Proyek Bersama Kami?
 
 </h2>
 
@@ -387,9 +389,9 @@ Memiliki Kebutuhan Serupa?
 
 <p class="mt-5 text-gray-300 max-w-2xl mx-auto">
 
-Diskusikan kebutuhan konsultasi pertambangan
-dan lingkungan bersama tim profesional
-CV Sahabat Eksplorasi Banua.
+Hubungi CV Sahabat Eksplorasi Banua untuk mendapatkan
+solusi konsultasi pertambangan dan lingkungan sesuai
+kebutuhan proyek Anda.
 
 </p>
 

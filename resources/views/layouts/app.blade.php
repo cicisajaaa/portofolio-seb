@@ -19,7 +19,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
 
 <title>
-CV Sahabat Eksplorasi Banua
+CV Sahabat Eksplorasi Banua | Konsultan Pertambangan & Lingkungan
 </title>
 
 
@@ -65,7 +65,7 @@ shadow-sm
 <!-- LOGO -->
 <div class="flex items-center gap-4">
 
-    <div class="w-12 h-12 rounded-full overflow-hidden">
+    <div class="w-14 h-14 rounded-full overflow-hidden border border-[#C79A3B]/30 bg-white p-1">
 
     <img
     src="{{ asset('assets/images/logo-seb.png') }}"
@@ -75,7 +75,7 @@ shadow-sm
 
     <div>
 
-        <h1 class="font-bold text-[#3B2508] text-base md:text-lg leading-tight">
+        <h1 class="font-bold text-[#3B2508] text-sm md:text-base leading-tight">
             CV Sahabat Eksplorasi Banua
         </h1>
 
@@ -220,7 +220,7 @@ class="relative py-2 transition
 : 'hover:text-[#C79A3B]' }}">
 
 
-Kontak
+Konsultasi
 
 
 @if(request()->routeIs('kontak'))

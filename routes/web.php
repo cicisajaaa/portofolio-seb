@@ -14,40 +14,6 @@ use App\Http\Controllers\ProjectPublicController;
 use App\Models\Project;
 
 
-/*
-|--------------------------------------------------------------------------
-| PUBLIC WEBSITE
-|--------------------------------------------------------------------------
-*/
-
-
-Route::get('/', function () {
-
-
-    $projects = Project::latest()->get();
-
-
-    return view('pages.home', compact('projects'));
-
-
-})->name('home');
-
-
-
-Route::get('/kontak', function () {
-
-    return view('pages.kontak');
-
-})->name('kontak');
-
-
-
-Route::post('/kontak', [ContactController::class, 'store'])
-
-->name('kontak.store');
-
-
-
 
 
 
@@ -155,16 +121,15 @@ Route::middleware('auth')->group(function () {
 |--------------------------------------------------------------------------
 */
 
-Route::get('/', function () {
 
+Route::get('/', function () {
 
     $projects = Project::latest()->get();
 
-
     return view('pages.home', compact('projects'));
 
-
 })->name('home');
+
 
 
 Route::get('/tentang', function () {
@@ -183,11 +148,10 @@ Route::get('/layanan', function () {
 
 
 
-Route::get('/proyek', function () {
+Route::get('/proyek', [ProjectPublicController::class,'index'])
 
-    return view('pages.proyek');
+->name('proyek');
 
-})->name('proyek');
 
 
 Route::get('/proyek/{id}', function($id){
@@ -199,11 +163,6 @@ Route::get('/proyek/{id}', function($id){
 })->name('proyek.detail');
 
 
-Route::get('/proyek', 
-[ProjectPublicController::class,'index'])
-
-->name('proyek');
-
 
 Route::get('/kontak', function () {
 
@@ -211,4 +170,9 @@ Route::get('/kontak', function () {
 
 })->name('kontak');
 
+
+
+Route::post('/kontak', [ContactController::class, 'store'])
+
+->name('kontak.store');
 require __DIR__.'/auth.php';

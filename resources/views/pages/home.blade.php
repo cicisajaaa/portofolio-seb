@@ -64,13 +64,13 @@ Mining & Environmental Consultant
 <h1 class="mt-7 text-4xl md:text-6xl font-bold leading-tight">
 
 
-Mitra Profesional Dalam
+Environmental & Mining Consultant
 <br>
 
-Pengelolaan Pertambangan
+Dalam Pengelolaan
 <br>
 
-dan Lingkungan
+Pertambangan & Lingkungan
 
 
 </h1>
@@ -81,12 +81,13 @@ dan Lingkungan
 
 <p class="mt-6 max-w-3xl text-lg text-gray-200 leading-relaxed">
 
+CV Sahabat Eksplorasi Banua Consultant merupakan perusahaan
+yang bergerak dalam Jasa Aktivitas Penunjang Pertambangan
+dan Penggalian Lainnya dengan Kode KBLI 09900.
 
-CV Sahabat Eksplorasi Banua menyediakan layanan
-konsultasi berbasis data melalui kajian teknis,
-eksplorasi, survey lapangan, serta pengelolaan
-lingkungan berkelanjutan.
-
+Melayani penyelidikan umum, eksplorasi, studi kelayakan,
+pemantauan lingkungan, UKL-UPL/AMDAL, reklamasi,
+dan pascatambang.
 
 </p>
 
@@ -156,16 +157,15 @@ Konsultasi Sekarang
 
 
 <div>
-
 <h3 class="text-3xl font-bold text-[#C79A3B]">
 
-10+
+09900
 
 </h3>
 
 <p class="text-sm text-gray-300">
 
-Proyek Terlaksana
+Kode KBLI
 
 </p>
 
@@ -177,16 +177,15 @@ Proyek Terlaksana
 
 
 <div>
-
 <h3 class="text-3xl font-bold text-[#C79A3B]">
 
-4
+2019
 
 </h3>
 
 <p class="text-sm text-gray-300">
 
-Bidang Layanan
+Tahun Berdiri
 
 </p>
 
@@ -198,16 +197,15 @@ Bidang Layanan
 
 
 <div>
-
 <h3 class="text-3xl font-bold text-[#C79A3B]">
 
-100%
+50+
 
 </h3>
 
 <p class="text-sm text-gray-300">
 
-Komitmen Profesional
+Pengalaman Proyek
 
 </p>
 
@@ -327,11 +325,13 @@ Yang Berkelanjutan
 
 <p class="mt-6 text-gray-600 leading-relaxed">
 
+CV. Sahabat Eksplorasi Banua merupakan perusahaan 
+yang bergerak dalam Jasa Aktivitas Penunjang Pertambangan 
+dan Penggalian Lainnya dengan Kode KBLI 09900.
 
-CV Sahabat Eksplorasi Banua merupakan perusahaan
-konsultan yang bergerak dalam bidang pertambangan
-dan lingkungan dengan pendekatan profesional,
-teknis, dan berbasis data.
+Perusahaan berfokus pada kegiatan konsultasi pertambangan,
+pengelolaan lingkungan, serta pengembangan sumber daya alam
+secara optimal dan berwawasan lingkungan.
 
 
 </p>
@@ -343,10 +343,10 @@ teknis, dan berbasis data.
 <p class="mt-4 text-gray-600 leading-relaxed">
 
 
-Kami mendukung kegiatan eksplorasi, kajian teknis,
-survey lapangan, serta pengelolaan lingkungan
-melalui pemahaman regulasi dan standar industri.
-
+Ruang lingkup pekerjaan meliputi penyelidikan umum,
+eksplorasi, studi kelayakan (FS), pemantauan lingkungan,
+UKL-UPL/AMDAL, reklamasi, dan pascatambang dengan
+mengikuti regulasi yang berlaku.
 
 </p>
 
@@ -380,14 +380,16 @@ flex items-center justify-center">
 
 <h4 class="font-bold text-[#3B2508]">
 
-Profesional
+Tenaga Ahli Profesional
 
 </h4>
 
 
 <p class="text-sm text-gray-500">
 
-Pelayanan berbasis kompetensi teknis.
+Didukung tenaga ahli pertambangan
+
+dan lingkungan.
 
 </p>
 
@@ -422,14 +424,16 @@ flex items-center justify-center">
 
 <h4 class="font-bold text-[#3B2508]">
 
-Berbasis Data
+Berbasis Regulasi
 
 </h4>
 
 
 <p class="text-sm text-gray-500">
 
-Analisis akurat dan terukur.
+Pekerjaan mengikuti standar
+
+dan peraturan yang berlaku.
 
 </p>
 
@@ -464,14 +468,17 @@ flex items-center justify-center">
 
 <h4 class="font-bold text-[#3B2508]">
 
-Berorientasi Lingkungan
+Berwawasan Lingkungan
 
 </h4>
 
 
 <p class="text-sm text-gray-500">
 
-Mendukung keberlanjutan.
+Berwawasan Lingkungan
+
+Mendukung pengelolaan sumber daya alam
+yang berkelanjutan.
 
 </p>
 
@@ -506,15 +513,16 @@ flex items-center justify-center">
 
 <h4 class="font-bold text-[#3B2508]">
 
-Solusi Terpercaya
+Pengalaman Teruji 
 
 </h4>
 
 
 <p class="text-sm text-gray-500">
 
-Pendekatan profesional.
+Memiliki pengalaman pekerjaan
 
+pertambangan dan lingkungan.
 </p>
 
 
@@ -656,7 +664,7 @@ data-aos="fade-up">
 
 <h3 class="mt-3 text-2xl font-bold text-[#3B2508]">
 
-Pertambangan
+Penyelidikan Umum & Eksplorasi
 
 </h3>
 
@@ -685,12 +693,10 @@ text-3xl">
 
 <p class="mt-6 text-gray-600 leading-relaxed">
 
-
-Kajian teknis pertambangan,
-eksplorasi mineral, perencanaan
-tambang, dan analisis kegiatan
-pertambangan.
-
+Pelaksanaan penyelidikan umum dan eksplorasi
+untuk memperoleh data teknis mengenai kondisi
+geologi, potensi sumber daya mineral, serta
+informasi pendukung kegiatan pertambangan.
 
 </p>
 
@@ -734,7 +740,7 @@ data-aos-delay="100">
 
 <h3 class="mt-3 text-2xl font-bold text-[#3B2508]">
 
-Lingkungan
+Studi Kelayakan (FS)
 
 </h3>
 
@@ -763,12 +769,9 @@ text-3xl">
 
 <p class="mt-6 text-gray-600 leading-relaxed">
 
-
-Penyusunan kajian lingkungan,
-pemantauan dampak kegiatan,
-serta dukungan pengelolaan
-lingkungan berkelanjutan.
-
+Penyusunan studi kelayakan (Feasibility Study)
+sebagai dasar analisis teknis, ekonomi, dan
+perencanaan pengembangan kegiatan pertambangan.
 
 </p>
 
@@ -813,7 +816,7 @@ data-aos-delay="200">
 
 <h3 class="mt-3 text-2xl font-bold text-[#3B2508]">
 
-Survey & Pemetaan
+Pemantauan Lingkungan
 
 </h3>
 
@@ -843,10 +846,15 @@ text-3xl">
 <p class="mt-6 text-gray-600 leading-relaxed">
 
 
-Kegiatan survey lapangan,
-pengumpulan data teknis,
-dan pemetaan wilayah
-untuk kebutuhan analisis.
+
+
+Pelaksanaan pemantauan lingkungan,
+
+penyusunan dokumen UKL-UPL/AMDAL,
+
+kajian teknis lingkungan, serta evaluasi
+
+dampak kegiatan terhadap lingkungan.
 
 
 </p>
@@ -892,7 +900,7 @@ data-aos-delay="300">
 
 <h3 class="mt-3 text-2xl font-bold text-[#3B2508]">
 
-Kajian Teknis
+    Reklamasi & Pascatambang
 
 </h3>
 
@@ -918,14 +926,12 @@ text-3xl">
 
 <p class="mt-6 text-gray-600 leading-relaxed">
 
-
-Analisis data, penyusunan laporan,
-serta kajian teknis berdasarkan
-kebutuhan pekerjaan.
-
+Perencanaan reklamasi dan pascatambang
+untuk mendukung pemulihan lahan bekas kegiatan
+pertambangan serta pengelolaan lingkungan
+yang berkelanjutan.
 
 </p>
-
 
 
 </div>
@@ -1065,27 +1071,20 @@ text-2xl">
 
 </div>
 
-
-
-
 <h3 class="mt-6 text-xl font-bold">
 
-Tenaga Profesional
+Tenaga Ahli Profesional
 
 </h3>
 
 
-
-
 <p class="mt-3 text-gray-300 text-sm leading-relaxed">
 
-Didukung oleh pendekatan teknis
-dan kompetensi di bidang pertambangan
-serta lingkungan.
+Didukung tenaga ahli pertambangan,
+geologi, lingkungan, reklamasi, sipil,
+dan bidang teknis lainnya.
 
 </p>
-
-
 
 </div>
 
@@ -1125,26 +1124,20 @@ text-2xl">
 </div>
 
 
-
-
 <h3 class="mt-6 text-xl font-bold">
 
-Berbasis Data
+Sistem Kerja Profesional
 
 </h3>
 
 
-
-
 <p class="mt-3 text-gray-300 text-sm leading-relaxed">
 
-Menggunakan analisis data dan
-kajian teknis untuk menghasilkan
-solusi yang tepat.
+Mengandalkan sistem dan prosedur kerja
+yang terstruktur untuk menjaga kualitas
+hasil pekerjaan.
 
 </p>
-
-
 
 </div>
 
@@ -1184,24 +1177,19 @@ text-2xl">
 </div>
 
 
-
-
 <h3 class="mt-6 text-xl font-bold">
 
-Berorientasi Lingkungan
+Berwawasan Lingkungan
 
 </h3>
 
 
-
-
 <p class="mt-3 text-gray-300 text-sm leading-relaxed">
 
-Mendukung pengelolaan lingkungan
-yang berkelanjutan dan bertanggung jawab.
+Mendukung pengelolaan sumber daya alam
+yang optimal dengan prinsip keberlanjutan.
 
 </p>
-
 
 
 </div>
@@ -1243,23 +1231,20 @@ text-2xl">
 
 
 
-
 <h3 class="mt-6 text-xl font-bold">
 
-Pelayanan Terpercaya
+Pengalaman Teruji
 
 </h3>
 
 
-
-
 <p class="mt-3 text-gray-300 text-sm leading-relaxed">
 
-Memberikan pelayanan profesional
-dengan komunikasi dan koordinasi yang baik.
+Memiliki pengalaman kerja sama dengan
+pemerintah dan perusahaan swasta dalam
+bidang pertambangan dan lingkungan.
 
 </p>
-
 
 
 </div>
@@ -1309,7 +1294,7 @@ Portofolio
 
 <h2 class="mt-4 text-4xl font-bold text-[#3B2508]">
 
-Dokumentasi Proyek Kami
+Pengalaman Pekerjaan Kami
 
 </h2>
 
@@ -1317,9 +1302,10 @@ Dokumentasi Proyek Kami
 
 <p class="mt-5 text-gray-600">
 
-Berbagai pengalaman pekerjaan
-CV Sahabat Eksplorasi Banua
-dalam bidang pertambangan dan lingkungan.
+Pengalaman pekerjaan CV Sahabat Eksplorasi Banua
+dalam mendukung kegiatan pertambangan, lingkungan,
+dan pengelolaan sumber daya alam bersama instansi
+pemerintah maupun perusahaan swasta.
 
 </p>
 
@@ -1420,7 +1406,6 @@ to-transparent">
 <div class="absolute bottom-0 left-0 right-0 p-7 text-white">
 
 
-
 <span class="inline-block
 bg-[#C79A3B]
 text-white
@@ -1430,11 +1415,10 @@ px-4 py-1
 rounded-full">
 
 
-Pertambangan & Lingkungan
+Environmental & Mining Consultant
 
 
 </span>
-
 
 
 
@@ -1470,8 +1454,15 @@ Pertambangan & Lingkungan
 </p>
 
 
+<p>
+
+📌 {{ $project->kategori ?? 'Pertambangan & Lingkungan' }}
+
+</p>
+
 
 </div>
+
 
 
 
@@ -1562,8 +1553,9 @@ Ayo Kolaborasi
 
 <h2 class="mt-5 text-3xl md:text-4xl font-bold">
 
-Siap Mengembangkan Proyek
-Bersama Kami?
+Bangun Pengelolaan Sumber Daya Alam
+Bersama Konsultan Profesional Kami
+
 
 </h2>
 

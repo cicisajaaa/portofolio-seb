@@ -7,8 +7,7 @@
 
 <!-- HERO -->
 
-<section class="relative py-24 bg-[#F8F7F2]">
-
+<section class="relative py-28 bg-[#F8F7F2]">
 
 <div class="max-w-7xl mx-auto px-6 text-center"
 data-aos="fade-up">
@@ -23,28 +22,25 @@ Company Profile
 
 <h1 class="mt-4 text-4xl md:text-5xl font-bold text-[#3B2508]">
 
-Tentang Kami
+Tentang CV Sahabat Eksplorasi Banua
 
 </h1>
 
 
 
-<p class="mt-5 max-w-3xl mx-auto text-gray-600 leading-relaxed">
+<p class="mt-5 max-w-4xl mx-auto text-gray-600 leading-relaxed">
 
-Mengenal CV Sahabat Eksplorasi Banua sebagai perusahaan konsultan yang bergerak dalam bidang pertambangan, eksplorasi, dan pengelolaan lingkungan.
+CV. Sahabat Eksplorasi Banua Consultant merupakan
+Environmental and Mining Consultant yang bergerak dalam
+Jasa Aktivitas Penunjang Pertambangan dan Penggalian
+Lainnya dengan Kode KBLI 09900.
 
 </p>
 
 
 </div>
 
-
 </section>
-
-
-
-
-
 
 
 <!-- PROFIL -->
@@ -63,10 +59,16 @@ Mengenal CV Sahabat Eksplorasi Banua sebagai perusahaan konsultan yang bergerak 
 
 
 <img
-
 src="{{ asset('storage/tentang/tentang-kami.jpg') }}"
-
-class="rounded-3xl shadow-xl w-full h-[450px] object-cover">
+class="
+rounded-3xl
+shadow-xl
+w-full
+h-[450px]
+object-cover
+hover:scale-105
+transition
+duration-500">
 
 
 </div>
@@ -97,18 +99,27 @@ CV Sahabat Eksplorasi Banua
 
 
 
-
 <p class="mt-6 text-gray-600 leading-relaxed">
 
-CV Sahabat Eksplorasi Banua merupakan perusahaan konsultan yang menyediakan layanan profesional dalam bidang pertambangan dan lingkungan.
+CV. Sahabat Eksplorasi Banua Consultant merupakan perusahaan
+yang bergerak dalam Jasa Aktivitas Penunjang Pertambangan
+dan Penggalian Lainnya dengan Kode KBLI 09900.
+
+Ruang lingkup kegiatan perusahaan meliputi pelaksanaan
+penyelidikan umum, eksplorasi, studi kelayakan (FS),
+pemantauan lingkungan, penyusunan UKL-UPL/AMDAL,
+reklamasi, serta kegiatan pascatambang.
 
 </p>
 
 
-
 <p class="mt-4 text-gray-600 leading-relaxed">
 
-Dengan pendekatan berbasis data, kajian teknis, dan pemahaman regulasi, SEB mendukung kegiatan eksplorasi serta pengelolaan lingkungan yang bertanggung jawab.
+CV. Sahabat Eksplorasi Banua hadir untuk memberikan solusi
+dalam pembangunan, pengembangan, dan pengelolaan sumber
+daya alam secara optimal dengan tetap memperhatikan prinsip
+pembangunan berwawasan lingkungan serta memenuhi
+ketentuan peraturan perundang-undangan yang berlaku.
 
 </p>
 
@@ -118,14 +129,94 @@ Dengan pendekatan berbasis data, kajian teknis, dan pemahaman regulasi, SEB mend
 
 <div class="mt-8">
 
+<div class="mt-8 grid sm:grid-cols-2 gap-4">
 
+
+<div class="bg-[#F8F7F2] rounded-xl p-4">
+
+<p class="text-sm text-gray-500">
+Akta Pendirian
+</p>
+
+<p class="font-semibold text-[#3B2508]">
+No. 45 tanggal 05 Januari 2019
+</p>
+
+</div>
+<div class="bg-[#F8F7F2] rounded-xl p-4">
+
+<p class="text-sm text-gray-500">
+Akta Perubahan
+</p>
+
+<p class="font-semibold text-[#3B2508]">
+No.16 tanggal 30 Desember 2021
+</p>
+
+</div>
+
+
+<div class="bg-[#F8F7F2] rounded-xl p-4">
+
+<p class="text-sm text-gray-500">
+NIB
+</p>
+
+<p class="font-semibold text-[#3B2508]">
+9120108492557
+</p>
+
+</div>
+
+
+
+<div class="bg-[#F8F7F2] rounded-xl p-4">
+
+<p class="text-sm text-gray-500">
+Kode KBLI
+</p>
+
+<p class="font-semibold text-[#3B2508]">
+09900
+</p>
+
+</div>
+
+
+<div class="bg-[#F8F7F2] rounded-xl p-4">
+
+<p class="text-sm text-gray-500">
+Perizinan
+</p>
+
+<p class="font-semibold text-[#3B2508]">
+IUJP
+</p>
+
+</div>
+<div class="bg-[#F8F7F2] rounded-xl p-4">
+
+<p class="text-sm text-gray-500">
+Bidang Usaha
+</p>
+
+<p class="font-semibold text-[#3B2508]">
+Mining & Environmental Consultant
+</p>
+
+</div>
+
+
+
+</div>
+<br>
 <a href="{{ route('kontak') }}"
 
 class="inline-flex items-center gap-2
 
 bg-[#3B2508]
 hover:bg-[#C79A3B]
-
+hover:text-[#3B2508]
 text-white
 
 px-7 py-3
@@ -184,8 +275,7 @@ Hubungi Tim Kami
 
 <p class="text-sm uppercase tracking-widest text-[#C79A3B] font-semibold">
 
-Komitmen Kami
-
+Visi, Misi & Komitmen Perusahaan
 </p>
 
 
@@ -232,22 +322,31 @@ Landasan SEB dalam memberikan layanan profesional.
 
 </div>
 
-
-
 <h3 class="mt-6 text-2xl font-bold text-[#3B2508]">
 
 Visi
 
 </h3>
 
+<div class="mt-5 space-y-5 text-gray-600 leading-relaxed">
 
 
-<p class="mt-4 text-gray-600 leading-relaxed">
-
-Menjadi perusahaan konsultan pertambangan dan lingkungan yang terpercaya melalui profesionalisme, inovasi, serta penerapan prinsip keberlanjutan.
-
+<p>
+Menjadi perusahaan konsultan jasa penunjang aktivitas
+pertambangan dan lingkungan yang terpercaya serta dapat
+diandalkan oleh pengguna jasa melalui pelaksanaan pekerjaan
+yang profesional dan bertanggung jawab.
 </p>
 
+
+<p>
+Menjadi lembaga atau badan hukum yang proaktif dengan
+menerapkan sistem dan prosedur kerja yang terarah serta
+memiliki komitmen terhadap kualitas hasil pekerjaan.
+</p>
+
+
+</div>
 
 </div>
 
@@ -285,9 +384,7 @@ Misi
 </h3>
 
 
-
-
-<ul class="mt-5 space-y-3 text-gray-600">
+<ul class="mt-5 space-y-4 text-gray-600">
 
 
 <li class="flex gap-3">
@@ -296,31 +393,27 @@ Misi
 ✓
 </span>
 
-Memberikan layanan konsultasi profesional.
+Menyelenggarakan perencanaan, pengelolaan, pemantauan,
+dan pengembangan lingkungan serta sumber daya alam
+secara optimal dan berkelanjutan.
 
 </li>
 
 
+
 <li class="flex gap-3">
 
 <span class="text-[#C79A3B]">
 ✓
 </span>
 
-Menghasilkan kajian berdasarkan data teknis.
+Menerapkan sistem kerja yang inovatif dan profesional
+dalam mendukung kegiatan pertambangan serta pengelolaan
+lingkungan.
 
 </li>
 
 
-<li class="flex gap-3">
-
-<span class="text-[#C79A3B]">
-✓
-</span>
-
-Mendukung kegiatan pertambangan yang bertanggung jawab.
-
-</li>
 
 
 <li class="flex gap-3">
@@ -329,15 +422,14 @@ Mendukung kegiatan pertambangan yang bertanggung jawab.
 ✓
 </span>
 
-Menjaga keseimbangan aspek lingkungan.
+Memberikan kontribusi positif bagi pemerintah, masyarakat,
+dan mitra kerja melalui pengelolaan sumber daya alam yang
+berwawasan lingkungan.
 
 </li>
 
 
 </ul>
-
-
-
 </div>
 
 
@@ -350,8 +442,6 @@ Menjaga keseimbangan aspek lingkungan.
 
 
 </section>
-
-
 
 
 
@@ -361,12 +451,10 @@ Menjaga keseimbangan aspek lingkungan.
 
 <!-- NILAI PERUSAHAAN -->
 
-
 <section class="py-20 bg-[#3B2508] text-white">
 
 
 <div class="max-w-7xl mx-auto px-6">
-
 
 
 <div class="text-center mb-14">
@@ -374,43 +462,59 @@ Menjaga keseimbangan aspek lingkungan.
 
 <p class="text-[#C79A3B] uppercase tracking-widest text-sm font-semibold">
 
-Core Value
-
+Komitmen Perusahaan
 </p>
 
 
 <h2 class="mt-3 text-3xl font-bold">
 
-Nilai Perusahaan
+Komitmen Perusahaan
 
 </h2>
 
 
+<p class="mt-4 text-gray-300">
+
+Prinsip SEB dalam membangun kerja sama dan pengelolaan
+sumber daya alam yang berkelanjutan.
+
+</p>
+
+
 </div>
 
 
 
 
 
+<div class="grid md:grid-cols-3 gap-8">
 
 
-<div class="grid md:grid-cols-4 gap-10">
 
-
+<!-- ITEM 1 -->
 
 <div class="text-center">
 
 
-<h3 class="text-xl font-bold text-[#C79A3B]">
+<div class="w-14 h-14 mx-auto rounded-xl bg-[#C79A3B] flex items-center justify-center">
 
-Profesional
+🤝
+
+</div>
+
+
+<h3 class="mt-6 text-xl font-bold text-[#C79A3B]">
+
+Kemitraan Strategis
 
 </h3>
 
 
 <p class="mt-3 text-gray-300 text-sm leading-relaxed">
 
-Mengutamakan kompetensi dan standar kerja teknis.
+Menawarkan kerja sama kepada pemerintah daerah dan pihak
+swasta dalam pelaksanaan pembangunan dan kegiatan usaha
+yang berwawasan lingkungan sesuai peraturan yang berlaku.
 
 </p>
 
@@ -423,19 +527,30 @@ Mengutamakan kompetensi dan standar kerja teknis.
 
 
 
+<!-- ITEM 2 -->
+
 <div class="text-center">
 
 
-<h3 class="text-xl font-bold text-[#C79A3B]">
+<div class="w-14 h-14 mx-auto rounded-xl bg-[#C79A3B] flex items-center justify-center">
 
-Integritas
+🌱
+
+</div>
+
+
+<h3 class="mt-6 text-xl font-bold text-[#C79A3B]">
+
+Pengelolaan Sumber Daya Alam
 
 </h3>
 
 
 <p class="mt-3 text-gray-300 text-sm leading-relaxed">
 
-Menjalankan pekerjaan dengan tanggung jawab dan kejujuran.
+Menjadi mitra pemerintah dan swasta dalam pengelolaan,
+pengembangan, serta pemanfaatan sumber daya alam dan
+lingkungan secara optimal.
 
 </p>
 
@@ -448,21 +563,333 @@ Menjalankan pekerjaan dengan tanggung jawab dan kejujuran.
 
 
 
+
+<!-- ITEM 3 -->
+
 <div class="text-center">
 
 
-<h3 class="text-xl font-bold text-[#C79A3B]">
+<div class="w-14 h-14 mx-auto rounded-xl bg-[#C79A3B] flex items-center justify-center">
 
-Inovasi
+💡
 
+</div>
+
+
+<h3 class="mt-6 text-xl font-bold text-[#C79A3B]">
+
+Konsultasi dan Rekomendasi Teknis
 </h3>
 
 
 <p class="mt-3 text-gray-300 text-sm leading-relaxed">
 
-Mengembangkan pendekatan kerja yang efektif dan adaptif.
+Memberikan masukan, pemikiran, dan saran teknis dalam
+perencanaan pengelolaan lingkungan serta pemanfaatan
+sumber daya alam.
 
 </p>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+ <!-- STRUKTUR ORGANISASI -->
+
+<section class="py-24 bg-[#F8F7F2]">
+
+<div class="max-w-7xl mx-auto px-6">
+
+
+<!-- HEADER -->
+
+<div class="text-center mb-16">
+
+
+<p class="
+text-sm
+uppercase
+tracking-[0.3em]
+font-semibold
+text-[#C79A3B]">
+
+Organization Structure
+
+</p>
+
+
+<h2 class="
+mt-4
+text-4xl
+font-bold
+text-[#3B2508]">
+
+Struktur Organisasi
+
+</h2>
+
+
+<p class="
+mt-5
+max-w-3xl
+mx-auto
+text-gray-600">
+
+Struktur organisasi CV Sahabat Eksplorasi Banua
+disusun untuk mendukung kegiatan konsultasi
+pertambangan, lingkungan, dan pengelolaan proyek
+secara profesional dan terintegrasi.
+
+</p>
+
+
+</div>
+
+<br>
+
+
+<br>
+<!-- DIREKTUR -->
+
+<div class="flex justify-center">
+
+
+<div class="
+relative
+bg-[#3B2508]
+text-white
+rounded-xl
+w-72
+p-7
+text-center
+shadow-xl">
+
+
+<div class="
+absolute
+top-0
+left-1/2
+-translate-x-1/2
+-translate-y-1/2
+w-10
+h-10
+rounded-full
+bg-[#C79A3B]
+flex
+items-center
+justify-center
+font-bold">
+
+01
+
+</div>
+
+
+<p class="
+text-xs
+uppercase
+tracking-widest
+text-[#C79A3B]">
+
+Pimpinan
+
+</p>
+
+
+<h3 class="
+mt-3
+text-2xl
+font-bold">
+
+Direktur
+
+</h3>
+
+
+<p class="
+mt-2
+text-sm
+text-gray-300">
+
+Penanggung jawab perusahaan
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- GARIS UTAMA -->
+
+<div class="
+h-16
+border-l-2
+border-[#C79A3B]
+mx-auto
+w-fit">
+
+</div>
+
+
+
+
+
+
+<!-- LEVEL 2 -->
+
+<div class="
+relative
+flex
+justify-center">
+
+
+<div class="
+absolute
+top-0
+left-1/4
+right-1/4
+border-t-2
+border-[#C79A3B]">
+
+</div>
+
+
+
+<div class="
+grid
+md:grid-cols-2
+gap-12
+w-full
+max-w-4xl
+pt-8">
+
+
+<!-- KOMANDITER -->
+
+
+<div class="
+relative">
+
+
+<div class="
+absolute
+top-0
+left-1/2
+h-8
+border-l-2
+border-[#C79A3B]">
+</div>
+
+
+<div class="
+mt-8
+bg-white
+rounded-xl
+border
+p-7
+text-center
+shadow-sm">
+
+
+<h3 class="
+font-bold
+text-xl
+text-[#3B2508]">
+
+Persero Komanditer
+
+</h3>
+
+
+<p class="
+mt-2
+text-sm
+text-gray-500">
+
+Pengawasan dan pengendalian perusahaan
+
+</p>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- PROJECT -->
+
+
+<div class="
+relative">
+
+
+<div class="
+absolute
+top-0
+left-1/2
+h-8
+border-l-2
+border-[#C79A3B]">
+</div>
+
+
+<div class="
+mt-8
+bg-white
+rounded-xl
+border-2
+border-[#C79A3B]
+p-7
+text-center
+shadow-md">
+
+
+<h3 class="
+font-bold
+text-xl
+text-[#3B2508]">
+
+Project Manager
+
+</h3>
+
+
+<p class="
+mt-2
+text-sm
+text-gray-500">
+
+Pengelolaan dan koordinasi proyek
+
+</p>
+
+
+</div>
+
+</div>
+
+
+</div>
 
 
 </div>
@@ -473,21 +900,624 @@ Mengembangkan pendekatan kerja yang efektif dan adaptif.
 
 
 
-<div class="text-center">
+<!-- GARIS KE BAWAH -->
+
+<div class="
+h-16
+border-l-2
+border-[#C79A3B]
+mx-auto
+w-fit">
+
+</div>
 
 
-<h3 class="text-xl font-bold text-[#C79A3B]">
 
-Keberlanjutan
+
+
+
+<!-- SUPPORT -->
+
+<div class="
+grid
+md:grid-cols-2
+gap-8
+max-w-4xl
+mx-auto">
+
+
+<div class="
+bg-white
+rounded-xl
+border
+p-7
+text-center">
+
+
+<span class="
+text-xs
+uppercase
+tracking-widest
+text-[#C79A3B]">
+
+Finance
+
+</span>
+
+
+<h3 class="
+mt-3
+font-bold
+text-xl
+text-[#3B2508]">
+
+Bendahara
 
 </h3>
 
 
-<p class="mt-3 text-gray-300 text-sm leading-relaxed">
+<p class="
+mt-2
+text-sm
+text-gray-500">
 
-Memperhatikan aspek lingkungan dalam setiap kegiatan.
+Pengelolaan administrasi keuangan
 
 </p>
+
+
+</div>
+
+
+
+
+
+<div class="
+bg-white
+rounded-xl
+border
+p-7
+text-center">
+
+
+<span class="
+text-xs
+uppercase
+tracking-widest
+text-[#C79A3B]">
+
+Administration
+
+</span>
+
+
+<h3 class="
+mt-3
+font-bold
+text-xl
+text-[#3B2508]">
+
+Sekretaris
+
+</h3>
+
+
+<p class="
+mt-2
+text-sm
+text-gray-500">
+
+Administrasi dan dokumentasi perusahaan
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<br>
+
+<!-- DIVISI TEKNIS -->
+
+
+<div class="mt-20">
+
+
+<div class="text-center mb-10">
+
+
+<p class="
+uppercase
+tracking-widest
+text-sm
+text-[#C79A3B]">
+
+Technical Division
+
+</p>
+
+
+<h3 class="
+mt-3
+text-3xl
+font-bold
+text-[#3B2508]">
+
+Divisi Teknis
+
+</h3>
+
+
+</div>
+
+
+
+
+
+<div class="
+grid
+md:grid-cols-4
+gap-6">
+
+
+@foreach([
+'AMDAL & UKL-UPL',
+'Manajemen Lingkungan',
+'Perencanaan, Pemetaan & Supervisi',
+'Energi dan Pertambangan'
+] as $division)
+
+
+<div class="
+bg-white
+rounded-xl
+border
+p-7
+text-center
+hover:shadow-lg
+hover:border-[#C79A3B]
+transition">
+
+
+<div class="
+mx-auto
+w-12
+h-12
+rounded-full
+bg-[#3B2508]
+text-white
+flex
+items-center
+justify-center
+font-bold">
+
+{{ $loop->iteration }}
+
+</div>
+
+
+<h4 class="
+mt-5
+font-bold
+text-[#3B2508]">
+
+{{ $division }}
+
+</h4>
+
+
+</div>
+
+
+@endforeach
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+<!-- DIREKSI & MANAJEMEN -->
+
+<section class="py-24 bg-white">
+
+
+<div class="max-w-7xl mx-auto px-6">
+
+
+
+<!-- HEADER -->
+
+<div class="text-center mb-16">
+
+
+<p class="
+text-sm
+uppercase
+tracking-[0.3em]
+text-[#C79A3B]
+font-semibold">
+
+Company Management
+
+</p>
+
+
+<h2 class="
+mt-4
+text-4xl
+font-bold
+text-[#3B2508]">
+
+Direksi & Manajemen
+
+</h2>
+
+
+<p class="
+mt-5
+max-w-3xl
+mx-auto
+text-gray-600">
+
+CV Sahabat Eksplorasi Banua dikelola oleh tenaga
+profesional yang memiliki tanggung jawab dalam
+pengembangan perusahaan serta pelaksanaan kegiatan
+konsultasi pertambangan dan lingkungan.
+
+</p>
+
+
+</div>
+
+
+
+
+<br>
+<div class="grid lg:grid-cols-2 gap-10">
+
+
+
+
+
+<!-- DIREKTUR -->
+
+
+<div class="
+group
+bg-[#F8F7F2]
+rounded-3xl
+overflow-hidden
+border
+hover:shadow-xl
+transition
+duration-500">
+
+
+<div class="p-8">
+
+
+
+<div class="flex items-center gap-6">
+
+
+
+<div class="
+w-36
+h-36
+rounded-2xl
+overflow-hidden
+shadow-lg
+flex-shrink-0">
+
+
+<img
+
+src="{{ asset('assets/images/team/direktur.jpg') }}"
+
+class="
+w-full
+h-full
+object-cover
+group-hover:scale-105
+transition
+duration-500">
+
+
+</div>
+
+
+
+
+
+<div>
+
+
+<span class="
+text-xs
+uppercase
+tracking-widest
+text-[#C79A3B]
+font-semibold">
+
+Direktur
+
+</span>
+
+
+
+<h3 class="
+mt-2
+text-2xl
+font-bold
+text-[#3B2508]">
+
+Fathur Rachman, ST
+
+</h3>
+
+
+<p class="
+mt-3
+text-sm
+text-gray-600">
+
+Pimpinan perusahaan yang bertanggung jawab
+terhadap arah strategis, pengembangan usaha,
+serta kualitas pelayanan konsultasi.
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="
+mt-8
+border-t
+pt-6
+space-y-3
+text-sm
+text-gray-600">
+
+
+
+<p>
+
+<span class="font-semibold text-[#3B2508]">
+Alamat:
+</span>
+
+<br>
+
+Karang Anyar 2, Jl. Samping Mesjid Quba No.13
+RT.049 RW.008, Banjarbaru Utara,
+Kota Banjarbaru, Kalimantan Selatan
+
+</p>
+
+
+
+<p>
+
+<span class="font-semibold text-[#3B2508]">
+Telepon:
+</span>
+
++62 85248512861
+
+</p>
+
+
+
+<p>
+
+<span class="font-semibold text-[#3B2508]">
+Email:
+</span>
+
+fath.gojan12@gmail.com
+
+</p>
+
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- PROJECT MANAGER -->
+
+
+<div class="
+group
+bg-[#F8F7F2]
+rounded-3xl
+overflow-hidden
+border
+hover:shadow-xl
+transition
+duration-500">
+
+
+<div class="p-8">
+
+
+
+<div class="flex
+items-center
+gap-6">
+
+
+
+<div class="
+w-36
+h-36
+rounded-2xl
+overflow-hidden
+shadow-lg
+flex-shrink-0">
+
+
+<img
+
+src="{{ asset('assets/images/team/project-manager.jpg') }}"
+
+class="
+w-full
+h-full
+object-cover
+group-hover:scale-105
+transition
+duration-500">
+
+
+</div>
+
+
+
+
+
+<div>
+
+
+<span class="
+text-xs
+uppercase
+tracking-widest
+text-[#C79A3B]
+font-semibold">
+
+Project Manager
+
+</span>
+
+
+
+<h3 class="
+mt-2
+text-2xl
+font-bold
+text-[#3B2508]">
+
+M. Asrin Wibowo, M.Ling
+
+</h3>
+
+
+
+<p class="
+mt-3
+text-sm
+text-gray-600">
+
+Bertanggung jawab dalam koordinasi teknis,
+pengendalian pekerjaan, serta memastikan
+pelaksanaan proyek berjalan sesuai standar.
+
+</p>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="
+mt-8
+border-t
+pt-6
+space-y-3
+text-sm
+text-gray-600">
+
+
+<p>
+
+<span class="font-semibold text-[#3B2508]">
+Alamat:
+</span>
+
+<br>
+
+Komp. Mustika Griya Angkasa III
+Blok C No.26, Landasan Ulin Timur,
+Kota Banjarbaru, Kalimantan Selatan
+
+</p>
+
+
+
+<p>
+
+<span class="font-semibold text-[#3B2508]">
+Telepon:
+</span>
+
++62 856 4107 0415
+
+</p>
+
+
+
+<p>
+
+<span class="font-semibold text-[#3B2508]">
+Email:
+</span>
+
+asrinmuhammad24@gmail.com
+
+</p>
+
+
+
+</div>
+
+
+
+</div>
 
 
 </div>
@@ -505,7 +1535,503 @@ Memperhatikan aspek lingkungan dalam setiap kegiatan.
 </section>
 
 
+<section class="py-24 bg-white">
 
 
+<div class="max-w-7xl mx-auto px-6">
+
+
+<div class="text-center mb-14">
+
+
+<p class="
+uppercase
+tracking-[0.3em]
+text-sm
+text-[#C79A3B]
+font-semibold">
+
+Technical Expertise
+
+</p>
+
+
+<h2 class="
+mt-4
+text-4xl
+font-bold
+text-[#3B2508]">
+
+Tenaga Ahli Profesional
+
+</h2>
+
+
+<p class="
+mt-4
+max-w-3xl
+mx-auto
+text-gray-600
+leading-relaxed">
+
+CV Sahabat Eksplorasi Banua didukung oleh tenaga ahli
+multidisiplin dengan kompetensi pada bidang pertambangan,
+lingkungan, rekayasa, serta pengelolaan sumber daya alam.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="overflow-x-auto">
+
+
+<table class="
+w-full
+border-collapse
+rounded-2xl
+overflow-hidden
+shadow-lg">
+
+
+<thead>
+
+
+<tr class="bg-[#3B2508] text-white">
+
+
+<th class="p-4 text-center w-20">
+No
+</th>
+
+
+<th class="p-4 text-left">
+Bidang Keahlian
+</th>
+
+
+<th class="p-4 text-center w-40">
+Jumlah (Orang)
+</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+
+
+<tbody>
+
+
+@foreach([
+
+[
+'no'=>1,
+'name'=>'Ahli Pertambangan (CPI dan KCMI)',
+'total'=>'4'
+],
+
+[
+'no'=>2,
+'name'=>'Ahli Geologi dan Hidrogeologi (CPI dan KCMI)',
+'total'=>'4'
+],
+
+[
+'no'=>3,
+'name'=>'Ahli Lingkungan (UKL-UPL/AMDAL/Kajian Lingkungan/Pemantauan Lingkungan) - Sertifikasi KTPA & ATPA',
+'total'=>'10'
+],
+
+[
+'no'=>4,
+'name'=>'Ahli Reklamasi dan Pasca Tambang',
+'total'=>'3'
+],
+
+[
+'no'=>5,
+'name'=>'Ahli Perencanaan Sipil dan Konstruksi',
+'total'=>'4'
+],
+
+[
+'no'=>6,
+'name'=>'Ahli Sosial, Ekonomi dan Budaya',
+'total'=>'3'
+],
+
+[
+'no'=>7,
+'name'=>'Ahli Hidrologi',
+'total'=>'2'
+],
+
+[
+'no'=>8,
+'name'=>'Ahli Biologi Darat dan/atau Kehutanan',
+'total'=>'2'
+],
+
+[
+'no'=>9,
+'name'=>'Ahli Tata Ruang dan Tanah',
+'total'=>'2'
+],
+
+[
+'no'=>10,
+'name'=>'Ahli Pertanian',
+'total'=>'2'
+],
+
+[
+'no'=>11,
+'name'=>'Ahli Sipil, Bangunan dan Pelabuhan',
+'total'=>'2'
+],
+
+[
+'no'=>12,
+'name'=>'Ahli Persampahan',
+'total'=>'2'
+],
+
+[
+'no'=>13,
+'name'=>'Ahli Pabrik dan Perkebunan',
+'total'=>'2'
+],
+
+[
+'no'=>14,
+'name'=>'Ahli Kesehatan Masyarakat',
+'total'=>'2'
+],
+
+
+[
+'no'=>15,
+'name'=>'Ahli Perpetaan',
+'total'=>'2'
+],
+
+[
+'no'=>16,
+'name'=>'Deskriptor',
+'total'=>'4'
+]
+
+] as $expert)
+
+
+
+<tr class="
+border-b
+hover:bg-[#F8F7F2]
+transition">
+
+
+<td class="
+p-4
+text-center
+font-semibold
+text-[#3B2508]">
+
+{{ $expert['no'] }}
+
+</td>
+
+
+<td class="
+p-4
+text-gray-700">
+
+{{ $expert['name'] }}
+
+</td>
+
+
+<td class="
+p-4
+text-center
+font-semibold
+text-[#C79A3B]">
+
+{{ $expert['total'] }}
+
+</td>
+
+
+</tr>
+
+
+
+@endforeach
+
+
+</tbody>
+
+
+</table>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- PENGALAMAN PERUSAHAAN -->
+
+<section class="py-24 bg-white">
+
+
+<div class="max-w-7xl mx-auto px-6">
+
+
+
+<div class="text-center mb-14">
+
+
+<p class="
+uppercase
+tracking-[0.3em]
+text-sm
+text-[#C79A3B]
+font-semibold">
+
+Experience
+
+</p>
+
+
+
+<h2 class="
+mt-4
+text-4xl
+font-bold
+text-[#3B2508]">
+
+Pengalaman Kerja
+
+</h2>
+
+
+
+<p class="
+mt-5
+max-w-3xl
+mx-auto
+text-gray-600">
+
+CV Sahabat Eksplorasi Banua memiliki pengalaman
+dalam pelaksanaan pekerjaan konsultasi pertambangan
+dan lingkungan bersama berbagai instansi pemerintah
+maupun perusahaan swasta.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="
+grid
+md:grid-cols-4
+gap-6">
+
+
+
+
+
+<div class="
+bg-[#3B2508]
+rounded-2xl
+p-7
+text-center
+text-white">
+
+
+<h3 class="
+text-4xl
+font-bold
+text-[#C79A3B]">
+
+2019
+
+</h3>
+
+
+<p class="mt-2 text-gray-300">
+
+Tahun Berdiri
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="
+bg-[#F8F7F2]
+rounded-2xl
+p-7
+text-center">
+
+
+<h3 class="
+text-4xl
+font-bold
+text-[#3B2508]">
+
+7+
+
+</h3>
+
+
+<p class="mt-2 text-gray-600">
+
+Tahun Pengalaman
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="
+bg-[#F8F7F2]
+rounded-2xl
+p-7
+text-center">
+
+
+<h3 class="
+text-4xl
+font-bold
+text-[#3B2508]">
+
+50+
+
+</h3>
+
+
+<p class="mt-2 text-gray-600">
+
+Proyek Konsultasi
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="
+bg-[#F8F7F2]
+rounded-2xl
+p-7
+text-center">
+
+
+<h3 class="
+text-4xl
+font-bold
+text-[#3B2508]">
+
+Kalsel
+
+</h3>
+
+
+<p class="mt-2 text-gray-600">
+
+Wilayah Operasional
+
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+<div class="text-center mt-12">
+
+
+<a href="{{ route('proyek') }}"
+
+class="
+inline-flex
+items-center
+gap-2
+bg-[#3B2508]
+text-white
+px-8
+py-3
+rounded-xl
+font-semibold
+hover:bg-[#C79A3B]
+transition">
+
+
+Lihat Pengalaman Proyek
+
+→
+
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
 
 @endsection

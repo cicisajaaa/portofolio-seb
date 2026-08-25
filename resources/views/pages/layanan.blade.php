@@ -30,9 +30,9 @@ Layanan Kami
 
 <p class="mt-5 max-w-3xl mx-auto text-gray-600 leading-relaxed">
 
-CV Sahabat Eksplorasi Banua menyediakan layanan konsultasi
-pertambangan dan lingkungan melalui pendekatan teknis,
-analisis data, dan standar profesional.
+CV Sahabat Eksplorasi Banua menyediakan layanan jasa penunjang
+pertambangan dan lingkungan melalui kajian teknis, eksplorasi,
+survey lapangan, serta pengelolaan lingkungan berbasis standar industri.
 
 </p>
 
@@ -112,9 +112,9 @@ Pertambangan
 
 <p class="mt-5 text-gray-600 leading-relaxed">
 
-Menyediakan layanan konsultasi teknis pertambangan,
-perencanaan kegiatan, serta pendampingan pekerjaan
-lapangan berdasarkan kebutuhan proyek.
+Menyediakan layanan perencanaan tambang, kajian teknis,
+studi kelayakan, serta pendampingan kegiatan pertambangan
+sesuai kebutuhan proyek.
 
 </p>
 
@@ -175,8 +175,9 @@ Eksplorasi
 
 <p class="mt-5 text-gray-600 leading-relaxed">
 
-Melakukan kegiatan survei lapangan, pemetaan wilayah,
-serta pengumpulan data teknis sebagai dasar analisis.
+Melaksanakan kegiatan eksplorasi, survei lapangan,
+pemetaan wilayah, serta pengumpulan data teknis
+untuk mendukung pengambilan keputusan.
 
 </p>
 
@@ -238,8 +239,8 @@ Lingkungan
 <p class="mt-5 text-gray-600 leading-relaxed">
 
 Mendukung penyusunan kajian lingkungan,
-pemantauan dampak kegiatan, dan pengelolaan
-lingkungan secara berkelanjutan.
+pemantauan dampak kegiatan, reklamasi,
+dan pengelolaan lingkungan berkelanjutan.
 
 </p>
 
@@ -302,8 +303,9 @@ Kajian Teknis
 
 <p class="mt-5 text-gray-600 leading-relaxed">
 
-Melakukan analisis data, penyusunan laporan,
-dan kajian teknis berdasarkan kebutuhan pekerjaan.
+Melakukan analisis teknis, pengolahan data,
+penyusunan laporan, serta rekomendasi
+berdasarkan kebutuhan pekerjaan.
 
 </p>
 
@@ -353,7 +355,7 @@ Workflow
 
 <h2 class="mt-3 text-3xl font-bold text-[#3B2508]">
 
-Alur Pelayanan
+Tahapan Pelaksanaan Pekerjaan
 
 </h2>
 
@@ -380,14 +382,14 @@ Alur Pelayanan
 
 <h4 class="mt-3 font-bold text-[#3B2508]">
 
-Konsultasi
+Konsultasi Awal
 
 </h4>
 
 
 <p class="mt-2 text-sm text-gray-600">
 
-Memahami kebutuhan dan tujuan pekerjaan.
+Memahami kebutuhan proyek dan ruang lingkup pekerjaan.
 
 </p>
 
@@ -411,14 +413,14 @@ Memahami kebutuhan dan tujuan pekerjaan.
 
 <h4 class="mt-3 font-bold text-[#3B2508]">
 
-Analisis Data
+Pengumpulan Data
 
 </h4>
 
 
 <p class="mt-2 text-sm text-gray-600">
 
-Melakukan pengumpulan dan pengolahan data.
+Melakukan survey lapangan dan pengumpulan data teknis.
 
 </p>
 
@@ -443,14 +445,14 @@ Melakukan pengumpulan dan pengolahan data.
 
 <h4 class="mt-3 font-bold text-[#3B2508]">
 
-Kajian Teknis
+Analisis & Kajian
 
 </h4>
 
 
 <p class="mt-2 text-sm text-gray-600">
 
-Menyusun analisis sesuai standar pekerjaan.
+Mengolah data dan menyusun kajian sesuai standar teknis.
 
 </p>
 
@@ -475,14 +477,14 @@ Menyusun analisis sesuai standar pekerjaan.
 
 <h4 class="mt-3 font-bold text-[#3B2508]">
 
-Hasil Akhir
+Laporan & Rekomendasi
 
 </h4>
 
 
 <p class="mt-2 text-sm text-gray-600">
 
-Memberikan laporan dan rekomendasi.
+Memberikan hasil analisis dan rekomendasi pekerjaan.
 
 </p>
 
@@ -525,15 +527,16 @@ Consultation
 
 <h2 class="mt-4 text-3xl md:text-4xl font-bold">
 
-Butuh Konsultasi Profesional?
+Siap Mengembangkan Proyek Bersama Kami?
 
 </h2>
 
 
 <p class="mt-4 text-gray-300">
 
-Diskusikan kebutuhan pertambangan dan lingkungan
-bersama tim CV Sahabat Eksplorasi Banua.
+Hubungi CV Sahabat Eksplorasi Banua untuk mendapatkan
+solusi konsultasi pertambangan dan lingkungan sesuai
+kebutuhan proyek Anda.
 
 </p>
 
