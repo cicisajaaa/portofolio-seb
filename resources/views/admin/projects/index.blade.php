@@ -16,33 +16,22 @@
 <div class="flex flex-col md:flex-row justify-between md:items-center gap-5">
 
 
-
 <div>
 
-
 <p class="text-xs font-semibold text-[#C79A3B] uppercase tracking-widest">
-
 Management
-
 </p>
-
 
 
 <h1 class="mt-2 text-3xl font-bold text-[#3B2508]">
-
-Kelola Proyek
-
+Pengalaman Kerjasama
 </h1>
 
 
-
 <p class="mt-2 text-gray-500">
-
-Mengatur dokumentasi pekerjaan
+Mengatur riwayat pekerjaan dan pengalaman
 CV Sahabat Eksplorasi Banua.
-
 </p>
-
 
 
 </div>
@@ -51,26 +40,69 @@ CV Sahabat Eksplorasi Banua.
 
 
 
+<div class="flex gap-3">
 
-<a href="{{ route('projects.create') }}"
+<div class="flex gap-3">
 
-class="inline-flex items-center justify-center
-bg-[#C79A3B]
-hover:bg-[#b38732]
-text-white
+
+<a href="{{ route('projects.import') }}"
+
+style="
+background:#16a34a;
+color:white;
+display:inline-flex;
+align-items:center;
+justify-content:center;
+"
+
+class="
 px-6
 py-3
 rounded-xl
 font-semibold
+shadow-sm
 transition
-shadow-sm">
+hover:opacity-90">
 
 
-+ Tambah Proyek
+Import Excel
 
 
 </a>
 
+
+
+
+<a href="{{ route('projects.create') }}"
+
+class="
+inline-flex
+items-center
+justify-center
+
+bg-[#C79A3B]
+
+hover:bg-[#b38732]
+
+text-white
+
+px-6
+py-3
+
+rounded-xl
+
+font-semibold
+
+transition">
+
+
++ Tambah Pengalaman
+
+
+</a>
+
+
+</div>
 
 
 
@@ -86,13 +118,193 @@ shadow-sm">
 
 
 
-<!-- PROJECT LIST -->
+
+<!-- FILTER -->
+
+
+<section class="bg-white rounded-2xl border border-gray-100 p-6">
+
+
+<form method="GET">
+
+
+<div class="grid md:grid-cols-4 gap-4">
+
+
+
+<input
+
+type="text"
+
+name="search"
+
+value="{{ request('search') }}"
+
+placeholder="Cari perusahaan atau proyek..."
+
+class="
+h-12
+w-full
+
+rounded-xl
+
+border-gray-200
+
+focus:border-[#C79A3B]
+
+focus:ring-[#C79A3B]">
+
+
+
+
+
+<select
+
+name="tahun"
+
+class="
+h-12
+w-full
+
+rounded-xl
+
+border-gray-200
+
+focus:border-[#C79A3B]
+
+focus:ring-[#C79A3B]">
+
+
+<option value="">
+Semua Tahun
+</option>
+
+
+@foreach($tahun as $item)
+
+
+<option
+
+value="{{ $item }}"
+
+{{ request('tahun') == $item ? 'selected' : '' }}>
+
+{{ $item }}
+
+</option>
+
+
+@endforeach
+
+
+</select>
+
+
+
+
+
+
+<select
+
+name="kegiatan"
+
+class="
+h-12
+w-full
+
+rounded-xl
+
+border-gray-200
+
+focus:border-[#C79A3B]
+
+focus:ring-[#C79A3B]">
+
+
+<option value="">
+Semua Kegiatan
+</option>
+
+
+
+@foreach($kegiatan as $item)
+
+
+<option
+
+value="{{ $item }}"
+
+{{ request('kegiatan') == $item ? 'selected' : '' }}>
+
+{{ $item }}
+
+</option>
+
+
+@endforeach
+
+
+</select>
+
+
+
+
+
+
+<button
+
+type="submit"
+
+class="
+h-12
+w-full
+
+rounded-xl
+
+bg-[#3B2508]
+
+hover:bg-[#C79A3B]
+
+text-white
+
+font-semibold
+
+transition">
+
+
+Cari Data
+
+
+</button>
+
+
+
+
+</div>
+
+
+</form>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- LIST -->
 
 
 <section>
 
 
-<div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
+<div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
 
 
 
@@ -100,17 +312,17 @@ shadow-sm">
 
 
 
+<div class="
+bg-white
+rounded-2xl
+border
+border-gray-100
+overflow-hidden
+hover:shadow-xl
+transition">
 
 
-<div class="bg-white rounded-2xl border border-gray-100 overflow-hidden hover:shadow-xl transition duration-300">
 
-
-
-
-
-<!-- IMAGE -->
-
-<div class="relative">
 
 
 @if($project->gambar)
@@ -126,9 +338,17 @@ class="w-full h-52 object-cover">
 @else
 
 
-<div class="h-52 bg-[#F8F7F2] flex items-center justify-center text-gray-400">
+<div class="
+h-52
+bg-[#F8F7F2]
+flex
+items-center
+justify-center
+text-gray-400">
+
 
 Tidak Ada Dokumentasi
+
 
 </div>
 
@@ -139,71 +359,106 @@ Tidak Ada Dokumentasi
 
 
 
-<div class="absolute top-4 left-4">
 
-
-<span class="bg-[#C79A3B] text-white text-xs px-3 py-1 rounded-full font-semibold">
-
-Project
-
-</span>
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-<!-- CONTENT -->
 
 
 <div class="p-6">
 
 
 
+<span class="
+inline-block
+bg-[#C79A3B]
+text-white
+text-xs
+px-3
+py-1
+rounded-full
+font-semibold">
 
 
-<h2 class="text-xl font-bold text-[#3B2508]">
+{{ $project->tahun }}
 
-{{ $project->nama_proyek }}
+
+</span>
+
+
+
+
+
+<h2 class="
+mt-4
+text-xl
+font-bold
+text-[#3B2508]">
+
+
+{{ $project->perusahaan }}
+
 
 </h2>
 
 
 
 
+<p class="mt-1 text-sm text-gray-500">
 
-<div class="mt-4 space-y-2 text-sm text-gray-500">
+{{ $project->instansi }}
+
+</p>
 
 
-<p class="flex items-center gap-2">
 
-📍
+
+
+
+
+<div class="mt-5 space-y-3 text-sm text-gray-600">
+
+
+<div>
+
+<span class="font-semibold text-[#3B2508]">
+Kegiatan:
+</span>
+
+<br>
+
+{{ $project->kegiatan }}
+
+</div>
+
+
+
+
+
+<div>
+
+<span class="font-semibold text-[#3B2508]">
+Lokasi:
+</span>
+
+<br>
 
 {{ $project->lokasi }}
 
-</p>
+</div>
 
 
 
-<p class="flex items-center gap-2">
 
-📅
 
-{{ $project->tahun }}
+<div>
 
-</p>
+<span class="font-semibold text-[#3B2508]">
+Pekerjaan:
+</span>
 
+<br>
+
+{{ Str::limit($project->jenis_pekerjaan,120) }}
+
+</div>
 
 
 </div>
@@ -213,12 +468,17 @@ Project
 
 
 
+<div class="mt-5 pt-5 border-t">
 
-<p class="mt-4 text-sm text-gray-600 leading-relaxed">
 
-{{ Str::limit($project->deskripsi,100) }}
+<p class="text-sm font-semibold text-[#3B2508]">
+
+{{ $project->nama_proyek }}
 
 </p>
+
+
+</div>
 
 
 
@@ -230,17 +490,29 @@ Project
 
 
 
+<div class="flex gap-4">
+
+
+<a href="{{ route('projects.show',$project->id) }}"
+
+class="text-blue-600 font-semibold text-sm">
+
+Lihat
+
+</a>
+
 
 
 <a href="{{ route('projects.edit',$project->id) }}"
 
-class="text-[#C79A3B] font-semibold text-sm hover:text-[#3B2508] transition">
-
+class="text-[#C79A3B] font-semibold text-sm">
 
 Edit
 
-
 </a>
+
+
+</div>
 
 
 
@@ -258,27 +530,21 @@ method="POST">
 @method('DELETE')
 
 
-
 <button
 
-onclick="return confirm('Hapus proyek ini?')"
+onclick="return confirm('Hapus pengalaman ini?')"
 
-class="text-red-500 font-semibold text-sm hover:text-red-700 transition">
-
+class="text-red-500 font-semibold text-sm">
 
 Hapus
 
-
 </button>
-
 
 
 </form>
 
 
 
-
-
 </div>
 
 
@@ -288,12 +554,7 @@ Hapus
 </div>
 
 
-
-
-
 </div>
-
-
 
 
 
@@ -301,31 +562,19 @@ Hapus
 @empty
 
 
-
-
-
 <div class="col-span-full bg-white rounded-2xl border p-10 text-center">
 
 
-<div class="text-4xl">
+<h3 class="font-bold text-[#3B2508]">
 
-📂
-
-</div>
-
-
-
-<h3 class="mt-4 font-bold text-[#3B2508]">
-
-Belum Ada Proyek
+Belum Ada Pengalaman Kerjasama
 
 </h3>
 
 
-
 <p class="mt-2 text-gray-500">
 
-Tambahkan dokumentasi proyek perusahaan.
+Tambahkan riwayat pekerjaan perusahaan.
 
 </p>
 
@@ -334,20 +583,14 @@ Tambahkan dokumentasi proyek perusahaan.
 
 
 
-
-
 @endforelse
-
 
 
 
 </div>
 
 
-
 </section>
-
-
 
 
 

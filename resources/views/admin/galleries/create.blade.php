@@ -8,8 +8,6 @@
 
 
 
-
-
 <!-- HEADER -->
 
 <section class="bg-white rounded-2xl border border-gray-100 p-7">
@@ -39,7 +37,6 @@ CV Sahabat Eksplorasi Banua.
 </p>
 
 
-
 </section>
 
 
@@ -48,9 +45,7 @@ CV Sahabat Eksplorasi Banua.
 
 
 
-
 <!-- FORM -->
-
 
 <section class="bg-white rounded-2xl border border-gray-100 p-8">
 
@@ -65,6 +60,85 @@ enctype="multipart/form-data">
 
 
 @csrf
+
+
+
+
+
+
+
+<!-- PROJECT -->
+
+<div class="mb-6">
+
+
+<label class="block text-sm font-semibold text-[#3B2508]">
+
+Pilih Project
+
+</label>
+
+
+
+
+<select
+
+name="project_id"
+
+class="w-full mt-2 rounded-xl border-gray-200 focus:border-[#C79A3B] focus:ring-[#C79A3B]">
+
+
+<option value="">
+
+-- Pilih Project --
+
+</option>
+
+
+
+@foreach($projects as $project)
+
+
+<option
+
+value="{{ $project->id }}"
+
+{{ old('project_id') == $project->id ? 'selected' : '' }}>
+
+
+{{ $project->nama_proyek }}
+
+-
+
+{{ $project->perusahaan }}
+
+
+</option>
+
+
+@endforeach
+
+
+
+</select>
+
+
+
+
+@error('project_id')
+
+<p class="text-red-500 text-sm mt-2">
+
+{{ $message }}
+
+</p>
+
+@enderror
+
+
+
+</div>
+
 
 
 
@@ -123,57 +197,6 @@ placeholder="Contoh: Kegiatan Survey Lapangan">
 
 
 
-
-<!-- DESKRIPSI -->
-
-<div class="mb-6">
-
-
-<label class="block text-sm font-semibold text-[#3B2508]">
-
-Deskripsi Dokumentasi
-
-</label>
-
-
-
-
-<textarea
-
-name="deskripsi"
-
-rows="5"
-
-class="w-full mt-2 rounded-xl border-gray-200 focus:border-[#C79A3B] focus:ring-[#C79A3B]"
-
-placeholder="Jelaskan kegiatan dokumentasi...">{{ old('deskripsi') }}</textarea>
-
-
-
-
-
-@error('deskripsi')
-
-<p class="text-red-500 text-sm mt-2">
-
-{{ $message }}
-
-</p>
-
-@enderror
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
 <!-- GAMBAR -->
 
 <div class="mb-8">
@@ -196,6 +219,8 @@ name="gambar"
 
 accept="image/*"
 
+id="gambar"
+
 class="w-full mt-2 rounded-xl border-gray-200">
 
 
@@ -207,6 +232,32 @@ class="w-full mt-2 rounded-xl border-gray-200">
 Format JPG, JPEG, PNG maksimal 2MB.
 
 </p>
+
+
+
+
+
+<!-- PREVIEW -->
+
+<div class="mt-5 hidden" id="preview-container">
+
+
+<p class="text-sm font-semibold text-[#3B2508] mb-3">
+
+Preview Gambar
+
+</p>
+
+
+<img
+
+id="preview"
+
+class="w-64 h-48 object-cover rounded-xl border">
+
+
+</div>
+
 
 
 
@@ -224,7 +275,6 @@ Format JPG, JPEG, PNG maksimal 2MB.
 
 
 </div>
-
 
 
 
@@ -251,6 +301,7 @@ class="px-6 py-3 rounded-xl border border-gray-200 text-gray-600 hover:bg-gray-1
 
 
 </a>
+
 
 
 
@@ -295,6 +346,44 @@ Simpan Galeri
 
 
 </div>
+
+
+
+
+
+
+
+<script>
+
+const input = document.getElementById('gambar');
+
+const preview = document.getElementById('preview');
+
+const container = document.getElementById('preview-container');
+
+
+input.addEventListener('change', function(e){
+
+
+const file = e.target.files[0];
+
+
+if(file){
+
+
+preview.src = URL.createObjectURL(file);
+
+container.classList.remove('hidden');
+
+
+}
+
+
+});
+
+
+</script>
+
 
 
 @endsection

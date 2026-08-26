@@ -135,16 +135,15 @@ Alamat
 
 <p class="mt-2 font-medium text-[#3B2508]">
 
-Jl. Janaka, Guntungmanggis,
+Jl. Pandawa No.107 RT.03 RW.05
 <br>
-Kec. Banjarbaru Utara,
+Kel. Guntung Paikat Kec. Banjarbaru Selatan
 <br>
-Kota Banjarbaru,
+Kota Banjarbaru – Kalimantan Selatan
 <br>
-Kalimantan Selatan 70714
+70713
 
 </p>
-
 
 </div>
 
@@ -169,9 +168,17 @@ WhatsApp / Telepon
 </p>
 
 
-<p class="mt-2 font-medium text-[#3B2508]">
+<p class="
+mt-2
+font-medium
+text-[#3B2508]
+leading-relaxed">
 
-085252452303
++62 511 5926485
+<br>
++62 852 4851 2861
+<br>
++62 813 2121 7662
 
 </p>
 
@@ -201,8 +208,8 @@ Email
 
 
 <p class="mt-2 font-medium text-[#3B2508]">
-
-email@seb.co.id
+    
+sahabateksplorasibanua@gmail.com
 
 </p>
 

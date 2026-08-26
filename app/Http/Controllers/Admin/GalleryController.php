@@ -4,24 +4,25 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Gallery;
+use App\Models\Project;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 
 class GalleryController extends Controller
 {
-
 
     /**
      * Menampilkan daftar galeri
      */
     public function index()
     {
-
-        $galleries = Gallery::latest()->get();
+        $galleries = Gallery::with('project')
+            ->latest()
+            ->get();
 
 
         return view('admin.galleries.index', compact('galleries'));
-
     }
 
 
@@ -32,11 +33,11 @@ class GalleryController extends Controller
      */
     public function create()
     {
+        $projects = Project::latest()->get();
 
-        return view('admin.galleries.create');
 
+        return view('admin.galleries.create', compact('projects'));
     }
-
 
 
 
@@ -47,12 +48,11 @@ class GalleryController extends Controller
     public function store(Request $request)
     {
 
-
         $request->validate([
 
-            'judul' => 'required',
+            'project_id' => 'required|exists:projects,id',
 
-            'deskripsi' => 'nullable',
+            'judul' => 'required|string|max:255',
 
             'gambar' => 'required|image|max:2048'
 
@@ -60,16 +60,21 @@ class GalleryController extends Controller
 
 
 
-        $data = $request->all();
+        $data = $request->only([
+
+            'project_id',
+
+            'judul'
+
+        ]);
 
 
 
         if($request->hasFile('gambar')){
 
-
-            $data['gambar'] =
-            $request->file('gambar')->store('gallery','public');
-
+            $data['gambar'] = $request
+                ->file('gambar')
+                ->store('gallery','public');
 
         }
 
@@ -81,14 +86,11 @@ class GalleryController extends Controller
 
         return redirect()
 
-        ->route('galleries.index')
+            ->route('galleries.index')
 
-        ->with('success','Galeri berhasil ditambahkan');
-
+            ->with('success','Galeri berhasil ditambahkan');
 
     }
-
-
 
 
 
@@ -100,13 +102,15 @@ class GalleryController extends Controller
     public function edit(Gallery $gallery)
     {
 
+        $projects = Project::latest()->get();
 
-        return view('admin.galleries.edit', compact('gallery'));
 
+        return view('admin.galleries.edit', compact(
+            'gallery',
+            'projects'
+        ));
 
     }
-
-
 
 
 
@@ -118,31 +122,49 @@ class GalleryController extends Controller
     public function update(Request $request, Gallery $gallery)
     {
 
-
         $request->validate([
 
-            'judul'=>'required',
+            'project_id' => 'required|exists:projects,id',
 
-            'deskripsi'=>'nullable',
+            'judul' => 'required|string|max:255',
 
-            'gambar'=>'nullable|image|max:2048'
+            'gambar' => 'nullable|image|max:2048'
 
         ]);
 
 
 
-        $data = $request->except('gambar');
+        $data = $request->only([
+
+            'project_id',
+
+            'judul'
+
+        ]);
+
 
 
 
         if($request->hasFile('gambar')){
 
 
-            $data['gambar'] =
-            $request->file('gambar')->store('gallery','public');
+            // hapus gambar lama
 
+            if($gallery->gambar){
+
+                Storage::disk('public')
+                    ->delete($gallery->gambar);
+
+            }
+
+
+
+            $data['gambar'] = $request
+                ->file('gambar')
+                ->store('gallery','public');
 
         }
+
 
 
 
@@ -152,14 +174,11 @@ class GalleryController extends Controller
 
         return redirect()
 
-        ->route('galleries.index')
+            ->route('galleries.index')
 
-        ->with('success','Galeri berhasil diperbarui');
-
+            ->with('success','Galeri berhasil diperbarui');
 
     }
-
-
 
 
 
@@ -172,17 +191,23 @@ class GalleryController extends Controller
     {
 
 
+        if($gallery->gambar){
+
+            Storage::disk('public')
+                ->delete($gallery->gambar);
+
+        }
+
+
+
         $gallery->delete();
 
 
 
         return back()
 
-        ->with('success','Galeri berhasil dihapus');
-
+            ->with('success','Galeri berhasil dihapus');
 
     }
-
-
 
 }

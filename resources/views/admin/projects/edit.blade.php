@@ -8,8 +8,6 @@
 
 
 
-
-
 <!-- HEADER -->
 
 <section class="bg-white rounded-2xl border border-gray-100 p-7">
@@ -22,26 +20,22 @@ Management
 </p>
 
 
-
 <h1 class="mt-2 text-3xl font-bold text-[#3B2508]">
 
-Edit Proyek
+Edit Pengalaman Kerjasama
 
 </h1>
 
 
-
 <p class="mt-2 text-gray-500">
 
-Perbarui informasi dokumentasi proyek
+Perbarui data pengalaman pekerjaan
 CV Sahabat Eksplorasi Banua.
 
 </p>
 
 
-
 </section>
-
 
 
 
@@ -75,14 +69,104 @@ enctype="multipart/form-data">
 
 
 
-<!-- NAMA PROYEK -->
+<!-- INSTANSI -->
 
 <div class="mb-6">
 
 
 <label class="block text-sm font-semibold text-[#3B2508]">
 
-Nama Proyek
+Instansi Pelaksana
+
+</label>
+
+
+
+<input
+
+type="text"
+
+name="instansi"
+
+value="{{ old('instansi',$project->instansi) }}"
+
+class="w-full mt-2 rounded-xl border-gray-200 focus:border-[#C79A3B] focus:ring-[#C79A3B]">
+
+
+@error('instansi')
+
+<p class="text-red-500 text-sm mt-2">
+
+{{ $message }}
+
+</p>
+
+@enderror
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- PERUSAHAAN -->
+
+
+<div class="mb-6">
+
+
+<label class="block text-sm font-semibold text-[#3B2508]">
+
+Perusahaan / Pemrakarsa
+
+</label>
+
+
+
+<input
+
+type="text"
+
+name="perusahaan"
+
+value="{{ old('perusahaan',$project->perusahaan) }}"
+
+class="w-full mt-2 rounded-xl border-gray-200 focus:border-[#C79A3B] focus:ring-[#C79A3B]">
+
+
+@error('perusahaan')
+
+<p class="text-red-500 text-sm mt-2">
+
+{{ $message }}
+
+</p>
+
+@enderror
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- NAMA KEGIATAN -->
+
+
+<div class="mb-6">
+
+
+<label class="block text-sm font-semibold text-[#3B2508]">
+
+Nama Kegiatan / Proyek
 
 </label>
 
@@ -99,7 +183,6 @@ value="{{ old('nama_proyek',$project->nama_proyek) }}"
 class="w-full mt-2 rounded-xl border-gray-200 focus:border-[#C79A3B] focus:ring-[#C79A3B]">
 
 
-
 @error('nama_proyek')
 
 <p class="text-red-500 text-sm mt-2">
@@ -109,7 +192,6 @@ class="w-full mt-2 rounded-xl border-gray-200 focus:border-[#C79A3B] focus:ring-
 </p>
 
 @enderror
-
 
 
 </div>
@@ -123,12 +205,13 @@ class="w-full mt-2 rounded-xl border-gray-200 focus:border-[#C79A3B] focus:ring-
 
 <!-- LOKASI -->
 
+
 <div class="mb-6">
 
 
 <label class="block text-sm font-semibold text-[#3B2508]">
 
-Lokasi Proyek
+Lokasi Kegiatan
 
 </label>
 
@@ -145,7 +228,6 @@ value="{{ old('lokasi',$project->lokasi) }}"
 class="w-full mt-2 rounded-xl border-gray-200 focus:border-[#C79A3B] focus:ring-[#C79A3B]">
 
 
-
 @error('lokasi')
 
 <p class="text-red-500 text-sm mt-2">
@@ -156,6 +238,50 @@ class="w-full mt-2 rounded-xl border-gray-200 focus:border-[#C79A3B] focus:ring-
 
 @enderror
 
+
+</div>
+
+
+
+
+
+
+
+
+<!-- KEGIATAN -->
+
+
+<div class="mb-6">
+
+
+<label class="block text-sm font-semibold text-[#3B2508]">
+
+Kegiatan
+
+</label>
+
+
+
+<input
+
+type="text"
+
+name="kegiatan"
+
+value="{{ old('kegiatan',$project->kegiatan) }}"
+
+class="w-full mt-2 rounded-xl border-gray-200 focus:border-[#C79A3B] focus:ring-[#C79A3B]">
+
+
+@error('kegiatan')
+
+<p class="text-red-500 text-sm mt-2">
+
+{{ $message }}
+
+</p>
+
+@enderror
 
 
 </div>
@@ -168,6 +294,7 @@ class="w-full mt-2 rounded-xl border-gray-200 focus:border-[#C79A3B] focus:ring-
 
 
 <!-- TAHUN -->
+
 
 <div class="mb-6">
 
@@ -182,14 +309,13 @@ Tahun Pelaksanaan
 
 <input
 
-type="number"
+type="text"
 
 name="tahun"
 
 value="{{ old('tahun',$project->tahun) }}"
 
 class="w-full mt-2 rounded-xl border-gray-200 focus:border-[#C79A3B] focus:ring-[#C79A3B]">
-
 
 
 @error('tahun')
@@ -203,6 +329,48 @@ class="w-full mt-2 rounded-xl border-gray-200 focus:border-[#C79A3B] focus:ring-
 @enderror
 
 
+</div>
+
+
+
+
+
+
+
+
+<!-- JENIS PEKERJAAN -->
+
+
+<div class="mb-6">
+
+
+<label class="block text-sm font-semibold text-[#3B2508]">
+
+Jenis Pekerjaan
+
+</label>
+
+
+
+<textarea
+
+name="jenis_pekerjaan"
+
+rows="5"
+
+class="w-full mt-2 rounded-xl border-gray-200 focus:border-[#C79A3B] focus:ring-[#C79A3B]">{{ old('jenis_pekerjaan',$project->jenis_pekerjaan) }}</textarea>
+
+
+@error('jenis_pekerjaan')
+
+<p class="text-red-500 text-sm mt-2">
+
+{{ $message }}
+
+</p>
+
+@enderror
+
 
 </div>
 
@@ -215,12 +383,13 @@ class="w-full mt-2 rounded-xl border-gray-200 focus:border-[#C79A3B] focus:ring-
 
 <!-- DESKRIPSI -->
 
+
 <div class="mb-6">
 
 
 <label class="block text-sm font-semibold text-[#3B2508]">
 
-Deskripsi Proyek
+Deskripsi Tambahan
 
 </label>
 
@@ -230,10 +399,9 @@ Deskripsi Proyek
 
 name="deskripsi"
 
-rows="5"
+rows="4"
 
 class="w-full mt-2 rounded-xl border-gray-200 focus:border-[#C79A3B] focus:ring-[#C79A3B]">{{ old('deskripsi',$project->deskripsi) }}</textarea>
-
 
 
 @error('deskripsi')
@@ -245,7 +413,6 @@ class="w-full mt-2 rounded-xl border-gray-200 focus:border-[#C79A3B] focus:ring-
 </p>
 
 @enderror
-
 
 
 </div>
@@ -260,6 +427,7 @@ class="w-full mt-2 rounded-xl border-gray-200 focus:border-[#C79A3B] focus:ring-
 
 <!-- GAMBAR LAMA -->
 
+
 @if($project->gambar)
 
 
@@ -271,7 +439,6 @@ class="w-full mt-2 rounded-xl border-gray-200 focus:border-[#C79A3B] focus:ring-
 Dokumentasi Saat Ini
 
 </label>
-
 
 
 
@@ -288,7 +455,6 @@ class="w-full h-44 object-cover">
 </div>
 
 
-
 </div>
 
 
@@ -300,11 +466,8 @@ class="w-full h-44 object-cover">
 
 
 
-
-
-
-
 <!-- GAMBAR BARU -->
+
 
 <div class="mb-8">
 
@@ -331,7 +494,7 @@ class="w-full mt-2 rounded-xl border-gray-200">
 
 <p class="text-xs text-gray-400 mt-2">
 
-Kosongkan jika tidak ingin mengganti gambar lama.
+Kosongkan jika tidak ingin mengganti dokumentasi lama.
 
 </p>
 
@@ -348,9 +511,7 @@ Kosongkan jika tidak ingin mengganti gambar lama.
 @enderror
 
 
-
 </div>
-
 
 
 
@@ -399,14 +560,10 @@ Simpan Perubahan
 
 
 
-
 </form>
 
 
 </section>
-
-
-
 
 
 

@@ -6,28 +6,31 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
+
     public function up(): void
     {
-        Schema::create('galleries', function (Blueprint $table) {
-
-            $table->id();
+        Schema::table('galleries', function (Blueprint $table) {
 
             $table->foreignId('project_id')
+                ->nullable()
+                ->after('id')
                 ->constrained()
                 ->cascadeOnDelete();
-
-            $table->string('judul');
-
-            $table->string('gambar');
-
-            $table->timestamps();
 
         });
     }
 
 
+
     public function down(): void
     {
-        Schema::dropIfExists('galleries');
+        Schema::table('galleries', function (Blueprint $table) {
+
+            $table->dropForeign(['project_id']);
+
+            $table->dropColumn('project_id');
+
+        });
     }
+
 };

@@ -8,8 +8,6 @@
 
 
 
-
-
 <!-- HEADER -->
 
 <section class="bg-white rounded-2xl border border-gray-100 p-7">
@@ -25,7 +23,7 @@ Management
 
 <h1 class="mt-2 text-3xl font-bold text-[#3B2508]">
 
-Tambah Proyek
+Tambah Pengalaman Kerjasama
 
 </h1>
 
@@ -33,7 +31,7 @@ Tambah Proyek
 
 <p class="mt-2 text-gray-500">
 
-Tambahkan dokumentasi pekerjaan baru
+Tambahkan data pengalaman pekerjaan
 CV Sahabat Eksplorasi Banua.
 
 </p>
@@ -48,7 +46,6 @@ CV Sahabat Eksplorasi Banua.
 
 
 
-
 <!-- FORM -->
 
 
@@ -56,7 +53,7 @@ CV Sahabat Eksplorasi Banua.
 
 
 
-<form 
+<form
 
 action="{{ route('projects.store') }}"
 
@@ -73,15 +70,110 @@ enctype="multipart/form-data">
 
 
 
-
-<!-- NAMA -->
+<!-- INSTANSI -->
 
 <div class="mb-6">
 
 
 <label class="block text-sm font-semibold text-[#3B2508]">
 
-Nama Proyek
+Instansi Pelaksana
+
+</label>
+
+
+
+<input
+
+type="text"
+
+name="instansi"
+
+value="{{ old('instansi') }}"
+
+class="w-full mt-2 rounded-xl border-gray-200 focus:border-[#C79A3B] focus:ring-[#C79A3B]"
+
+placeholder="Contoh: Kementerian ESDM RI">
+
+
+
+@error('instansi')
+
+<p class="text-red-500 text-sm mt-2">
+
+{{ $message }}
+
+</p>
+
+@enderror
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- PERUSAHAAN -->
+
+
+<div class="mb-6">
+
+
+<label class="block text-sm font-semibold text-[#3B2508]">
+
+Perusahaan / Pemrakarsa
+
+</label>
+
+
+
+<input
+
+type="text"
+
+name="perusahaan"
+
+value="{{ old('perusahaan') }}"
+
+class="w-full mt-2 rounded-xl border-gray-200 focus:border-[#C79A3B] focus:ring-[#C79A3B]"
+
+placeholder="Contoh: PT. Kapuas Tunggal Persada">
+
+
+
+@error('perusahaan')
+
+<p class="text-red-500 text-sm mt-2">
+
+{{ $message }}
+
+</p>
+
+@enderror
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- NAMA PEKERJAAN -->
+
+
+<div class="mb-6">
+
+
+<label class="block text-sm font-semibold text-[#3B2508]">
+
+Nama Kegiatan / Proyek
 
 </label>
 
@@ -97,7 +189,7 @@ value="{{ old('nama_proyek') }}"
 
 class="w-full mt-2 rounded-xl border-gray-200 focus:border-[#C79A3B] focus:ring-[#C79A3B]"
 
-placeholder="Contoh: Kajian Tambang Batubara">
+placeholder="Contoh: Dokumen Rencana Reklamasi dan Rencana Pascatambang">
 
 
 
@@ -112,7 +204,6 @@ placeholder="Contoh: Kajian Tambang Batubara">
 @enderror
 
 
-
 </div>
 
 
@@ -124,12 +215,13 @@ placeholder="Contoh: Kajian Tambang Batubara">
 
 <!-- LOKASI -->
 
+
 <div class="mb-6">
 
 
 <label class="block text-sm font-semibold text-[#3B2508]">
 
-Lokasi Proyek
+Lokasi Kegiatan
 
 </label>
 
@@ -145,7 +237,7 @@ value="{{ old('lokasi') }}"
 
 class="w-full mt-2 rounded-xl border-gray-200 focus:border-[#C79A3B] focus:ring-[#C79A3B]"
 
-placeholder="Contoh: Banjarbaru, Kalimantan Selatan">
+placeholder="Contoh: Kab. Kapuas">
 
 
 
@@ -160,6 +252,53 @@ placeholder="Contoh: Banjarbaru, Kalimantan Selatan">
 @enderror
 
 
+</div>
+
+
+
+
+
+
+
+
+<!-- KEGIATAN -->
+
+
+<div class="mb-6">
+
+
+<label class="block text-sm font-semibold text-[#3B2508]">
+
+Kegiatan
+
+</label>
+
+
+
+<input
+
+type="text"
+
+name="kegiatan"
+
+value="{{ old('kegiatan') }}"
+
+class="w-full mt-2 rounded-xl border-gray-200 focus:border-[#C79A3B] focus:ring-[#C79A3B]"
+
+placeholder="Contoh: Pertambangan Batubara">
+
+
+
+@error('kegiatan')
+
+<p class="text-red-500 text-sm mt-2">
+
+{{ $message }}
+
+</p>
+
+@enderror
+
 
 </div>
 
@@ -171,6 +310,7 @@ placeholder="Contoh: Banjarbaru, Kalimantan Selatan">
 
 
 <!-- TAHUN -->
+
 
 <div class="mb-6">
 
@@ -185,7 +325,7 @@ Tahun Pelaksanaan
 
 <input
 
-type="number"
+type="text"
 
 name="tahun"
 
@@ -193,7 +333,7 @@ value="{{ old('tahun') }}"
 
 class="w-full mt-2 rounded-xl border-gray-200 focus:border-[#C79A3B] focus:ring-[#C79A3B]"
 
-placeholder="2026">
+placeholder="Contoh: 2025 atau 2024-2025">
 
 
 
@@ -208,6 +348,51 @@ placeholder="2026">
 @enderror
 
 
+</div>
+
+
+
+
+
+
+
+
+<!-- JENIS PEKERJAAN -->
+
+
+<div class="mb-6">
+
+
+<label class="block text-sm font-semibold text-[#3B2508]">
+
+Jenis Pekerjaan
+
+</label>
+
+
+
+<textarea
+
+name="jenis_pekerjaan"
+
+rows="5"
+
+class="w-full mt-2 rounded-xl border-gray-200 focus:border-[#C79A3B] focus:ring-[#C79A3B]"
+
+placeholder="Contoh: Eksplorasi, FS, AMDAL, Kajian Teknis, RR, RPT dan Perpanjangan IUP">{{ old('jenis_pekerjaan') }}</textarea>
+
+
+
+@error('jenis_pekerjaan')
+
+<p class="text-red-500 text-sm mt-2">
+
+{{ $message }}
+
+</p>
+
+@enderror
+
 
 </div>
 
@@ -220,12 +405,13 @@ placeholder="2026">
 
 <!-- DESKRIPSI -->
 
+
 <div class="mb-6">
 
 
 <label class="block text-sm font-semibold text-[#3B2508]">
 
-Deskripsi Proyek
+Deskripsi Tambahan
 
 </label>
 
@@ -235,12 +421,11 @@ Deskripsi Proyek
 
 name="deskripsi"
 
-rows="5"
+rows="4"
 
 class="w-full mt-2 rounded-xl border-gray-200 focus:border-[#C79A3B] focus:ring-[#C79A3B]"
 
-placeholder="Jelaskan kegiatan proyek...">{{ old('deskripsi') }}</textarea>
-
+placeholder="Tambahkan informasi pendukung pekerjaan...">{{ old('deskripsi') }}</textarea>
 
 
 
@@ -255,7 +440,6 @@ placeholder="Jelaskan kegiatan proyek...">{{ old('deskripsi') }}</textarea>
 @enderror
 
 
-
 </div>
 
 
@@ -267,15 +451,15 @@ placeholder="Jelaskan kegiatan proyek...">{{ old('deskripsi') }}</textarea>
 
 <!-- GAMBAR -->
 
+
 <div class="mb-8">
 
 
 <label class="block text-sm font-semibold text-[#3B2508]">
 
-Dokumentasi Proyek
+Dokumentasi Pekerjaan
 
 </label>
-
 
 
 
@@ -299,7 +483,6 @@ Format JPG, JPEG, PNG maksimal 2MB.
 
 
 
-
 @error('gambar')
 
 <p class="text-red-500 text-sm mt-2">
@@ -309,7 +492,6 @@ Format JPG, JPEG, PNG maksimal 2MB.
 </p>
 
 @enderror
-
 
 
 </div>
@@ -322,6 +504,7 @@ Format JPG, JPEG, PNG maksimal 2MB.
 
 
 <!-- BUTTON -->
+
 
 <div class="flex justify-between items-center pt-5 border-t">
 
@@ -346,7 +529,7 @@ type="submit"
 class="px-7 py-3 rounded-xl bg-[#C79A3B] hover:bg-[#b38732] text-white font-semibold transition shadow-sm">
 
 
-Simpan Proyek
+Simpan Pengalaman
 
 
 </button>
@@ -359,11 +542,11 @@ Simpan Proyek
 
 
 
+
 </form>
 
 
 </section>
-
 
 
 

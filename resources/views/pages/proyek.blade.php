@@ -24,7 +24,7 @@ Portfolio
 
 <h1 class="mt-4 text-4xl md:text-5xl font-bold text-[#3B2508]">
 
-Proyek Kami
+Pengalaman Kerjasama
 
 </h1>
 
@@ -32,9 +32,10 @@ Proyek Kami
 
 <p class="mt-6 max-w-3xl mx-auto text-gray-600 leading-relaxed">
 
-Dokumentasi pengalaman pekerjaan CV Sahabat Eksplorasi Banua
-dalam bidang pertambangan dan lingkungan yang mencakup
-kegiatan eksplorasi, kajian teknis, serta pengelolaan lingkungan.
+CV Sahabat Eksplorasi Banua memiliki pengalaman
+dalam berbagai pekerjaan konsultasi pertambangan,
+lingkungan, dan pengelolaan sumber daya alam
+bersama berbagai instansi pemerintah maupun pihak swasta.
 
 </p>
 
@@ -50,12 +51,10 @@ kegiatan eksplorasi, kajian teknis, serta pengelolaan lingkungan.
 
 
 
+<!-- EXPERIENCE LIST -->
 
 
-<!-- PROJECT LIST -->
-
-
-<section class="py-20 bg-white">
+<section class="py-16 bg-white">
 
 
 <div class="max-w-7xl mx-auto px-6">
@@ -65,7 +64,11 @@ kegiatan eksplorasi, kajian teknis, serta pengelolaan lingkungan.
 @if($projects->count())
 
 
-<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="
+grid
+sm:grid-cols-2
+lg:grid-cols-3
+gap-6">
 
 
 
@@ -77,13 +80,17 @@ kegiatan eksplorasi, kajian teknis, serta pengelolaan lingkungan.
 
 data-aos="fade-up"
 
-class="group bg-white
-rounded-3xl
+class="
+group
+bg-white
+rounded-2xl
 overflow-hidden
-border border-gray-100
-hover:shadow-2xl
-hover:-translate-y-2
-transition duration-500">
+border
+border-gray-100
+hover:shadow-xl
+hover:-translate-y-1
+transition
+duration-500">
 
 
 
@@ -93,8 +100,9 @@ transition duration-500">
 
 <!-- IMAGE -->
 
-<div class="relative overflow-hidden">
-
+<div class="
+relative
+overflow-hidden">
 
 
 @if($project->gambar)
@@ -106,21 +114,26 @@ src="{{ asset('storage/'.$project->gambar) }}"
 
 class="
 w-full
-h-[320px]
+h-[190px]
 object-cover
-group-hover:scale-110
+group-hover:scale-105
 transition
-duration-700">
+duration-500">
+
 
 
 @else
 
 
-<div class="h-72 bg-[#F8F7F2]
-flex items-center justify-center">
+<div class="
+h-[190px]
+bg-[#F8F7F2]
+flex
+items-center
+justify-center">
 
 
-<p class="text-gray-400">
+<p class="text-sm text-gray-400">
 
 Tidak Ada Dokumentasi
 
@@ -136,15 +149,33 @@ Tidak Ada Dokumentasi
 
 
 
-<div class="absolute inset-0
-bg-gradient-to-t
-from-black/40
-to-transparent
-opacity-0
-group-hover:opacity-100
-transition">
+
+<div class="
+absolute
+top-4
+left-4">
+
+
+<span
+
+class="
+bg-[#C79A3B]
+text-white
+text-[11px]
+font-semibold
+px-3
+py-1.5
+rounded-full">
+
+
+{{ $project->tahun }}
+
+
+</span>
+
 
 </div>
+
 
 
 
@@ -160,29 +191,24 @@ transition">
 
 <!-- CONTENT -->
 
-
-<div class="p-7">
-
+<div class="p-5">
 
 
 
 
-<span
 
-class="inline-flex
-bg-[#C79A3B]
-text-white
-text-xs
-font-semibold
-px-4
-py-1.5
-rounded-full">
+<p class="
+text-[11px]
+uppercase
+tracking-widest
+text-[#C79A3B]
+font-semibold">
 
 
-Pertambangan & Lingkungan
+{{ $project->instansi }}
 
 
-</span>
+</p>
 
 
 
@@ -190,9 +216,16 @@ Pertambangan & Lingkungan
 
 
 
-<h2 class="mt-5 text-xl font-bold text-[#3B2508]">
+<h2 class="
+mt-2
+text-lg
+font-bold
+leading-snug
+text-[#3B2508]">
 
-{{ $project->nama_proyek }}
+
+{{ $project->perusahaan }}
+
 
 </h2>
 
@@ -203,30 +236,57 @@ Pertambangan & Lingkungan
 
 
 
-<div class="mt-5 space-y-2 text-sm text-gray-500">
+<div class="
+mt-4
+space-y-2
+text-sm
+text-gray-600">
 
-<p>
-
-📍
-<span class="text-gray-700 font-medium">
-
-{{ $project->lokasi }}
-
-</span>
-
-</p>
 
 
 <p>
 
-📅
-<span class="text-gray-700 font-medium">
+<span class="
+font-semibold
+text-[#3B2508]">
 
-{{ $project->tahun }}
+Kegiatan:
 
 </span>
 
+<br>
+
+
+{{ Str::limit($project->kegiatan,50) }}
+
+
 </p>
+
+
+
+
+
+
+<p>
+
+<span class="
+font-semibold
+text-[#3B2508]">
+
+Lokasi:
+
+</span>
+
+<br>
+
+
+{{ Str::limit($project->lokasi,45) }}
+
+
+</p>
+
+
+
 
 
 
@@ -239,13 +299,26 @@ Pertambangan & Lingkungan
 
 
 
-<p class="mt-5 text-gray-600 text-sm leading-relaxed">
+
+<div class="
+mt-4
+pt-4
+border-t">
 
 
-{{ Str::limit($project->deskripsi,150) }}
+<p class="
+text-sm
+font-semibold
+text-[#3B2508]">
+
+
+{{ Str::limit($project->nama_proyek,55) }}
 
 
 </p>
+
+
+</div>
 
 
 
@@ -255,18 +328,19 @@ Pertambangan & Lingkungan
 
 <a href="{{ route('proyek.detail',$project->id) }}"
 
-class="inline-flex items-center gap-2 mt-7
-
+class="
+inline-flex
+items-center
+gap-2
+mt-4
+text-sm
 font-semibold
 text-[#3B2508]
-
 hover:text-[#C79A3B]
-hover:translate-x-1
-
 transition">
 
 
-Lihat Detail Proyek
+Lihat Detail
 
 
 <span>
@@ -307,7 +381,12 @@ Lihat Detail Proyek
 
 
 
-<div class="bg-white rounded-3xl border p-12 text-center">
+<div class="
+bg-white
+rounded-3xl
+border
+p-12
+text-center">
 
 
 <div class="text-5xl">
@@ -317,17 +396,28 @@ Lihat Detail Proyek
 </div>
 
 
-<h3 class="mt-5 text-xl font-bold text-[#3B2508]">
+<h3 class="
+mt-5
+text-xl
+font-bold
+text-[#3B2508]">
 
-Belum Ada Proyek
+
+Belum Ada Pengalaman
+
 
 </h3>
 
 
 
-<p class="mt-3 text-gray-500">
+<p class="
+mt-3
+text-gray-500">
 
-Data proyek akan muncul setelah ditambahkan melalui administrator.
+
+Data pengalaman akan muncul setelah
+ditambahkan melalui administrator.
+
 
 </p>
 
@@ -347,12 +437,6 @@ Data proyek akan muncul setelah ditambahkan melalui administrator.
 
 
 
-
-
-
-
-
-
 <!-- CTA -->
 
 
@@ -363,13 +447,16 @@ Data proyek akan muncul setelah ditambahkan melalui administrator.
 data-aos="fade-up">
 
 
-<p class="text-[#C79A3B]
+<p class="
+text-[#C79A3B]
 uppercase
 tracking-widest
 text-sm
 font-semibold">
 
+
 Let's Work Together
+
 
 </p>
 
@@ -377,9 +464,15 @@ Let's Work Together
 
 
 
-<h2 class="mt-4 text-3xl md:text-4xl font-bold">
+<h2 class="
+mt-4
+text-3xl
+md:text-4xl
+font-bold">
 
-Siap Mengembangkan Proyek Bersama Kami?
+
+Bangun Solusi Pertambangan dan Lingkungan Bersama Kami
+
 
 </h2>
 
@@ -387,11 +480,17 @@ Siap Mengembangkan Proyek Bersama Kami?
 
 
 
-<p class="mt-5 text-gray-300 max-w-2xl mx-auto">
+<p class="
+mt-5
+text-gray-300
+max-w-2xl
+mx-auto">
 
-Hubungi CV Sahabat Eksplorasi Banua untuk mendapatkan
-solusi konsultasi pertambangan dan lingkungan sesuai
-kebutuhan proyek Anda.
+
+CV Sahabat Eksplorasi Banua siap mendukung
+kegiatan konsultasi, pengelolaan lingkungan,
+dan pengembangan sumber daya alam.
+
 
 </p>
 
@@ -403,7 +502,9 @@ kebutuhan proyek Anda.
 
 <a href="{{ route('kontak') }}"
 
-class="inline-flex mt-8
+class="
+inline-flex
+mt-8
 
 bg-[#C79A3B]
 
