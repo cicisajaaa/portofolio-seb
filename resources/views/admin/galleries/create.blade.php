@@ -14,30 +14,25 @@
 
 
 <p class="text-xs font-semibold text-[#C79A3B] uppercase tracking-widest">
-
 Management
-
 </p>
 
 
 
 <h1 class="mt-2 text-3xl font-bold text-[#3B2508]">
-
 Tambah Galeri
-
 </h1>
 
 
 
 <p class="mt-2 text-gray-500">
-
 Tambahkan dokumentasi kegiatan perusahaan
 CV Sahabat Eksplorasi Banua.
-
 </p>
 
 
 </section>
+
 
 
 
@@ -74,7 +69,7 @@ enctype="multipart/form-data">
 
 <label class="block text-sm font-semibold text-[#3B2508]">
 
-Pilih Project
+Pilih Proyek
 
 </label>
 
@@ -85,14 +80,22 @@ Pilih Project
 
 name="project_id"
 
-class="w-full mt-2 rounded-xl border-gray-200 focus:border-[#C79A3B] focus:ring-[#C79A3B]">
+class="
+w-full
+mt-2
+rounded-xl
+border-gray-200
+focus:border-[#C79A3B]
+focus:ring-[#C79A3B]
+">
 
 
 <option value="">
 
--- Pilih Project --
+-- Pilih Proyek --
 
 </option>
+
 
 
 
@@ -125,6 +128,7 @@ value="{{ $project->id }}"
 
 
 
+
 @error('project_id')
 
 <p class="text-red-500 text-sm mt-2">
@@ -138,6 +142,7 @@ value="{{ $project->id }}"
 
 
 </div>
+
 
 
 
@@ -168,7 +173,14 @@ name="judul"
 
 value="{{ old('judul') }}"
 
-class="w-full mt-2 rounded-xl border-gray-200 focus:border-[#C79A3B] focus:ring-[#C79A3B]"
+class="
+w-full
+mt-2
+rounded-xl
+border-gray-200
+focus:border-[#C79A3B]
+focus:ring-[#C79A3B]
+"
 
 placeholder="Contoh: Kegiatan Survey Lapangan">
 
@@ -197,6 +209,7 @@ placeholder="Contoh: Kegiatan Survey Lapangan">
 
 
 
+
 <!-- GAMBAR -->
 
 <div class="mb-8">
@@ -217,11 +230,16 @@ type="file"
 
 name="gambar"
 
-accept="image/*"
-
 id="gambar"
 
-class="w-full mt-2 rounded-xl border-gray-200">
+accept="image/*"
+
+class="
+w-full
+mt-2
+rounded-xl
+border-gray-200
+">
 
 
 
@@ -237,26 +255,47 @@ Format JPG, JPEG, PNG maksimal 2MB.
 
 
 
+
+
 <!-- PREVIEW -->
 
-<div class="mt-5 hidden" id="preview-container">
+<div
+
+id="preview-container"
+
+class="hidden mt-6">
 
 
-<p class="text-sm font-semibold text-[#3B2508] mb-3">
+<p class="
+text-sm
+font-semibold
+text-[#3B2508]
+mb-3">
 
 Preview Gambar
 
 </p>
 
 
+
+
 <img
 
 id="preview"
 
-class="w-64 h-48 object-cover rounded-xl border">
+class="
+w-72
+h-52
+object-cover
+rounded-xl
+border
+shadow
+">
 
 
 </div>
+
+
 
 
 
@@ -283,18 +322,35 @@ class="w-64 h-48 object-cover rounded-xl border">
 
 
 
+
 <!-- BUTTON -->
 
+<div class="
+flex
+justify-between
+items-center
+pt-5
+border-t
+">
 
-<div class="flex justify-between items-center pt-5 border-t">
 
 
 
 
+<a
 
-<a href="{{ route('galleries.index') }}"
+href="{{ route('galleries.index') }}"
 
-class="px-6 py-3 rounded-xl border border-gray-200 text-gray-600 hover:bg-gray-100 transition">
+class="
+px-6
+py-3
+rounded-xl
+border
+border-gray-200
+text-gray-600
+hover:bg-gray-100
+transition
+">
 
 
 ← Kembali
@@ -312,11 +368,16 @@ class="px-6 py-3 rounded-xl border border-gray-200 text-gray-600 hover:bg-gray-1
 
 type="submit"
 
-class="px-7 py-3 rounded-xl bg-[#C79A3B]
+class="
+px-7
+py-3
+rounded-xl
+bg-[#C79A3B]
 hover:bg-[#b38732]
 text-white
 font-semibold
-transition">
+transition
+">
 
 
 Simpan Galeri
@@ -353,33 +414,47 @@ Simpan Galeri
 
 
 
+
+
 <script>
 
-const input = document.getElementById('gambar');
 
-const preview = document.getElementById('preview');
+const gambarInput = document.getElementById('gambar');
 
-const container = document.getElementById('preview-container');
+const previewImage = document.getElementById('preview');
 
-
-input.addEventListener('change', function(e){
+const previewContainer = document.getElementById('preview-container');
 
 
-const file = e.target.files[0];
+
+if(gambarInput){
+
+
+gambarInput.addEventListener('change', function(event){
+
+
+const file = event.target.files[0];
+
 
 
 if(file){
 
 
-preview.src = URL.createObjectURL(file);
+previewImage.src = URL.createObjectURL(file);
 
-container.classList.remove('hidden');
+
+previewContainer.classList.remove('hidden');
 
 
 }
 
 
+
 });
+
+
+}
+
 
 
 </script>

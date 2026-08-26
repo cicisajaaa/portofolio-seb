@@ -28,6 +28,7 @@ class GalleryController extends Controller
 
 
 
+
     /**
      * Form tambah galeri
      */
@@ -38,6 +39,7 @@ class GalleryController extends Controller
 
         return view('admin.galleries.create', compact('projects'));
     }
+
 
 
 
@@ -70,17 +72,25 @@ class GalleryController extends Controller
 
 
 
+
+
         if($request->hasFile('gambar')){
+
 
             $data['gambar'] = $request
                 ->file('gambar')
-                ->store('gallery','public');
+                ->store('galeri','public');
+
 
         }
 
 
 
+
+
         Gallery::create($data);
+
+
 
 
 
@@ -116,6 +126,8 @@ class GalleryController extends Controller
 
 
 
+
+
     /**
      * Update galeri
      */
@@ -134,6 +146,8 @@ class GalleryController extends Controller
 
 
 
+
+
         $data = $request->only([
 
             'project_id',
@@ -145,30 +159,46 @@ class GalleryController extends Controller
 
 
 
+
+
+
+
         if($request->hasFile('gambar')){
 
 
-            // hapus gambar lama
-
             if($gallery->gambar){
+
 
                 Storage::disk('public')
                     ->delete($gallery->gambar);
+
 
             }
 
 
 
+
+
             $data['gambar'] = $request
+
                 ->file('gambar')
-                ->store('gallery','public');
+
+                ->store('galeri','public');
+
 
         }
 
 
 
 
+
+
+
         $gallery->update($data);
+
+
+
+
 
 
 
@@ -178,7 +208,12 @@ class GalleryController extends Controller
 
             ->with('success','Galeri berhasil diperbarui');
 
+
     }
+
+
+
+
 
 
 
@@ -193,10 +228,16 @@ class GalleryController extends Controller
 
         if($gallery->gambar){
 
+
             Storage::disk('public')
+
                 ->delete($gallery->gambar);
 
+
         }
+
+
+
 
 
 
@@ -204,10 +245,15 @@ class GalleryController extends Controller
 
 
 
+
+
+
         return back()
 
             ->with('success','Galeri berhasil dihapus');
 
+
     }
+
 
 }

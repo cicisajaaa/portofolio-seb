@@ -3,13 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Project;
+
 
 class Gallery extends Model
 {
 
-    /**
-     * Field yang boleh diisi melalui mass assignment
-     */
     protected $fillable = [
         'project_id',
         'judul',
@@ -18,13 +17,9 @@ class Gallery extends Model
 
 
 
-    /**
-     * Relasi gallery milik project tertentu
-     */
     public function project()
     {
         return $this->belongsTo(Project::class);
     }
-
 
 }
