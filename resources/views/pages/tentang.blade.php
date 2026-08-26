@@ -1227,7 +1227,7 @@ shadow-lg
 flex-shrink-0">
 
 
-<img src="{{ asset('storage/tentang/direktur.jpg') }}">
+<img src="{{ asset('storage/tentang/direktur.jpg') }}"
 
 class="
 w-full
@@ -1391,7 +1391,7 @@ shadow-lg
 flex-shrink-0">
 
 
-<img src="{{ asset('storage/tentang/project-manager.jpg') }}">
+<img src="{{ asset('storage/tentang/project-manager.jpg') }}"
 
 class="
 w-full
