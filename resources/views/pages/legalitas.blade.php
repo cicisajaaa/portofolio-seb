@@ -44,10 +44,9 @@ text-gray-600
 leading-relaxed">
 
 CV Sahabat Eksplorasi Banua merupakan perusahaan
-konsultan yang bergerak dalam bidang jasa aktivitas
-penunjang pertambangan dan penggalian lainnya
-dengan komitmen terhadap pengelolaan sumber daya
-alam yang berwawasan lingkungan.
+konsultan pertambangan dan lingkungan yang menjalankan
+kegiatan usaha sesuai dengan ketentuan administrasi
+dan regulasi yang berlaku.
 
 </p>
 
@@ -55,6 +54,7 @@ alam yang berwawasan lingkungan.
 </div>
 
 </section>
+
 
 
 
@@ -74,6 +74,8 @@ alam yang berwawasan lingkungan.
 
 
 
+<!-- AKTA -->
+
 <div class="
 bg-[#F8F7F2]
 rounded-3xl
@@ -82,8 +84,11 @@ border
 hover:shadow-lg
 transition">
 
-<p class="text-gray-500 text-sm">
+
+<p class="text-sm text-gray-500">
+
 Akta Pendirian
+
 </p>
 
 
@@ -111,11 +116,15 @@ Notaris Andry Irawan Prasatyo, SH, M.Kn
 
 </p>
 
+
 </div>
 
 
 
 
+
+
+<!-- PERUBAHAN -->
 
 <div class="
 bg-[#F8F7F2]
@@ -125,8 +134,11 @@ border
 hover:shadow-lg
 transition">
 
-<p class="text-gray-500 text-sm">
+
+<p class="text-sm text-gray-500">
+
 Akta Perubahan
+
 </p>
 
 
@@ -154,6 +166,10 @@ No. 16
 
 
 
+
+
+<!-- NIB -->
+
 <div class="
 bg-[#F8F7F2]
 rounded-3xl
@@ -163,7 +179,7 @@ hover:shadow-lg
 transition">
 
 
-<p class="text-gray-500 text-sm">
+<p class="text-sm text-gray-500">
 
 Nomor Induk Berusaha
 
@@ -180,15 +196,147 @@ text-[#3B2508]">
 
 </h3>
 
-
 <p class="mt-2 text-gray-600">
 
-NIB Perusahaan
+Nomor Induk Berusaha melalui sistem OSS
 
 </p>
 
 
 </div>
+
+
+
+
+
+
+
+<!-- NPWP -->
+
+<div class="
+bg-[#F8F7F2]
+rounded-3xl
+p-8
+border
+hover:shadow-lg
+transition">
+
+
+<p class="text-sm text-gray-500">
+
+Administrasi Perpajakan
+
+</p>
+
+
+<h3 class="
+mt-3
+text-xl
+font-bold
+text-[#3B2508]">
+
+Administrasi Pajak
+
+</h3>
+
+
+<p class="mt-2 text-gray-600">
+
+Memenuhi kewajiban perpajakan perusahaan
+sesuai ketentuan yang berlaku.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- IUJP -->
+
+<div class="
+bg-[#F8F7F2]
+rounded-3xl
+p-8
+border
+hover:shadow-lg
+transition">
+
+
+<p class="text-sm text-gray-500">
+
+Perizinan Usaha
+
+</p>
+
+
+<h3 class="
+mt-3
+text-xl
+font-bold
+text-[#3B2508]">
+
+IUJP
+
+</h3>
+
+
+<p class="mt-2 text-gray-600">
+
+Izin Usaha Jasa Pertambangan
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<!-- KBLI -->
+
+<div class="
+bg-[#F8F7F2]
+rounded-3xl
+p-8
+border
+hover:shadow-lg
+transition">
+
+
+<p class="text-sm text-gray-500">
+
+Kode Bidang Usaha
+
+</p>
+
+
+<h3 class="
+mt-3
+text-xl
+font-bold
+text-[#3B2508]">
+
+KBLI 09900
+
+</h3>
+
+
+<p class="mt-2 text-gray-600">
+
+Aktivitas Penunjang Pertambangan
+
+</p>
+
+
+</div>
+
 
 
 </div>
@@ -224,7 +372,7 @@ uppercase
 tracking-widest
 text-sm">
 
-Bidang Usaha
+Business Field
 
 </p>
 
@@ -243,6 +391,8 @@ Aktivitas Perusahaan
 
 
 
+
+
 <div class="grid md:grid-cols-3 gap-8">
 
 
@@ -258,7 +408,7 @@ text-xl
 font-bold
 text-[#C79A3B]">
 
-KBLI 09900
+Pertambangan
 
 </h3>
 
@@ -268,47 +418,14 @@ mt-4
 text-gray-300
 leading-relaxed">
 
-Jasa Aktivitas Penunjang Pertambangan
-dan Penggalian Lainnya.
+Pelayanan konsultasi aktivitas penunjang
+pertambangan sesuai kebutuhan pekerjaan.
 
 </p>
 
 
 </div>
 
-
-
-
-
-<div class="
-bg-white/10
-rounded-2xl
-p-8">
-
-
-<h3 class="
-text-xl
-font-bold
-text-[#C79A3B]">
-
-IUJP
-
-</h3>
-
-
-<p class="
-mt-4
-text-gray-300
-leading-relaxed">
-
-Izin Usaha Jasa Pertambangan sebagai
-dasar pelaksanaan kegiatan jasa
-penunjang pertambangan.
-
-</p>
-
-
-</div>
 
 
 
@@ -335,8 +452,7 @@ mt-4
 text-gray-300
 leading-relaxed">
 
-Pelaksanaan kajian lingkungan,
-UKL-UPL, AMDAL, pemantauan lingkungan,
+Kajian lingkungan, pemantauan lingkungan,
 reklamasi dan pascatambang.
 
 </p>
@@ -346,6 +462,41 @@ reklamasi dan pascatambang.
 
 
 
+
+
+
+
+<div class="
+bg-white/10
+rounded-2xl
+p-8">
+
+
+<h3 class="
+text-xl
+font-bold
+text-[#C79A3B]">
+
+Kajian Teknis
+
+</h3>
+
+
+<p class="
+mt-4
+text-gray-300
+leading-relaxed">
+
+Penyusunan dokumen teknis dan pendampingan
+kegiatan pertambangan.
+
+</p>
+
+
+</div>
+
+
+
 </div>
 
 
@@ -359,7 +510,10 @@ reklamasi dan pascatambang.
 
 
 
-<!-- DOKUMEN LEGAL -->
+
+
+
+<!-- COMPLIANCE -->
 
 <section class="py-20 bg-white">
 
@@ -367,19 +521,21 @@ reklamasi dan pascatambang.
 <div class="max-w-7xl mx-auto px-6">
 
 
-<div class="text-center mb-14">
+
+<div class="text-center mb-12">
 
 
 <p class="
 uppercase
 tracking-[0.3em]
 text-sm
-text-[#C79A3B]
-font-semibold">
+font-semibold
+text-[#C79A3B]">
 
-Legal Document
+Legal Compliance
 
 </p>
+
 
 
 <h2 class="
@@ -388,19 +544,21 @@ text-4xl
 font-bold
 text-[#3B2508]">
 
-Dokumen Legal Perusahaan
+Kepatuhan Perusahaan
 
 </h2>
 
 
+
 <p class="
 mt-4
-text-gray-600
 max-w-3xl
-mx-auto">
+mx-auto
+text-gray-600">
 
-Dokumen pendukung legalitas CV Sahabat Eksplorasi Banua
-sebagai perusahaan konsultan pertambangan dan lingkungan.
+CV Sahabat Eksplorasi Banua berkomitmen menjalankan
+kegiatan usaha dengan memenuhi aspek administrasi,
+perizinan, serta ketentuan yang berlaku.
 
 </p>
 
@@ -410,90 +568,34 @@ sebagai perusahaan konsultan pertambangan dan lingkungan.
 
 
 
-<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-
-
-@foreach([
-
-[
-'title'=>'Akta Pendirian',
-'image'=>'legalitas/akta-pendirian.jpg',
-'desc'=>'Akta pendirian perusahaan No.45 tanggal 05 Januari 2019'
-],
-
-[
-'title'=>'Akta Perubahan',
-'image'=>'legalitas/akta-perubahan.jpg',
-'desc'=>'Akta perubahan perusahaan No.16 tanggal 30 Desember 2021'
-],
-
-[
-'title'=>'NIB RBA',
-'image'=>'legalitas/nib.jpg',
-'desc'=>'Nomor Induk Berusaha 9120108492557'
-],
-
-[
-'title'=>'IUJP',
-'image'=>'legalitas/iujp.jpg',
-'desc'=>'Izin Usaha Jasa Pertambangan'
-],
-
-[
-'title'=>'Dokumen Pajak',
-'image'=>'legalitas/pajak.jpg',
-'desc'=>'Dokumen administrasi perpajakan perusahaan'
-]
-
-
-] as $doc)
 
 <div class="
-group
-bg-white
-rounded-3xl
+grid
+md:grid-cols-3
+gap-8">
+
+
+
+<div class="
 border
-overflow-hidden
-shadow-sm
-hover:shadow-xl
-transition">
+rounded-2xl
+p-8
+text-center">
 
 
+<div class="text-4xl">
 
-<div class="
-h-48
-bg-gray-100
-overflow-hidden">
-
-<img
-
-src="{{ asset('storage/'.$doc['image']) }}"
-
-class="
-w-full
-h-full
-object-cover
-group-hover:scale-110
-transition
-duration-500">
-
+✓
 
 </div>
 
 
-
-
-
-<div class="p-5">
-
-
 <h3 class="
-text-xl
+mt-4
 font-bold
 text-[#3B2508]">
 
-{{ $doc['title'] }}
+Legalitas Usaha
 
 </h3>
 
@@ -501,42 +603,98 @@ text-[#3B2508]">
 <p class="
 mt-3
 text-sm
-text-gray-600
-leading-relaxed">
+text-gray-600">
 
-{{ $doc['desc'] }}
+Dokumen pendirian dan perizinan perusahaan.
 
 </p>
 
 
-<a
+</div>
 
-href="{{ asset('storage/'.$doc['image']) }}"
 
-target="_blank"
 
-class="
-inline-flex
-mt-5
+
+
+
+
+<div class="
+border
+rounded-2xl
+p-8
+text-center">
+
+
+<div class="text-4xl">
+
+✓
+
+</div>
+
+
+<h3 class="
+mt-4
+font-bold
+text-[#3B2508]">
+
+Administrasi Pajak
+
+</h3>
+
+
+<p class="
+mt-3
 text-sm
-font-semibold
-text-[#C79A3B]
-hover:text-[#3B2508]">
+text-gray-600">
 
+Pemenuhan administrasi perpajakan perusahaan.
 
-Lihat Dokumen →
-
-</a>
-
-
-</div>
+</p>
 
 
 </div>
 
 
 
-@endforeach
+
+
+
+
+<div class="
+border
+rounded-2xl
+p-8
+text-center">
+
+
+<div class="text-4xl">
+
+✓
+
+</div>
+
+
+<h3 class="
+mt-4
+font-bold
+text-[#3B2508]">
+
+Standar Profesional
+
+</h3>
+
+
+<p class="
+mt-3
+text-sm
+text-gray-600">
+
+Pelaksanaan pekerjaan sesuai standar teknis.
+
+</p>
+
+
+</div>
 
 
 
@@ -547,6 +705,10 @@ Lihat Dokumen →
 
 
 </section>
+
+
+
+
 
 
 
@@ -565,7 +727,7 @@ text-3xl
 font-bold
 text-[#3B2508]">
 
-Mitra Profesional Untuk Pertambangan dan Lingkungan
+Mitra Profesional Pertambangan dan Lingkungan
 
 </h2>
 
@@ -574,11 +736,11 @@ Mitra Profesional Untuk Pertambangan dan Lingkungan
 mt-4
 text-gray-600">
 
-CV Sahabat Eksplorasi Banua siap mendukung
-kegiatan konsultasi pertambangan dan pengelolaan
-lingkungan sesuai regulasi yang berlaku.
+CV Sahabat Eksplorasi Banua siap mendukung kebutuhan
+konsultasi pertambangan dan pengelolaan lingkungan.
 
 </p>
+
 
 
 
@@ -599,6 +761,7 @@ transition">
 Hubungi Kami →
 
 </a>
+
 
 
 </div>
