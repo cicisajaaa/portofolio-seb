@@ -152,6 +152,48 @@ Tentang
 
 
 
+<a href="{{ route('legalitas') }}"
+
+class="
+
+relative
+
+py-2
+
+transition
+
+{{ request()->routeIs('legalitas') 
+
+? 'text-[#C79A3B]' 
+
+: 'hover:text-[#C79A3B]' }}">
+
+Legalitas
+
+@if(request()->routeIs('legalitas'))
+
+<span class="
+
+absolute
+
+bottom-0
+
+left-0
+
+w-full
+
+h-0.5
+
+bg-[#C79A3B]
+
+rounded-full">
+
+</span>
+
+@endif
+
+</a>
+
 
 
 
@@ -231,7 +273,6 @@ Konsultasi
 
 
 </a>
-
 
 
 
@@ -317,7 +358,7 @@ Hubungi via WhatsApp
 
 
 
-<a href="https://wa.me/6285252452303"
+<a href="https://wa.me/6285828125783"
 
 target="_blank"
 

@@ -12,7 +12,7 @@ use App\Http\Controllers\Admin\ContactController as AdminContactController;
 use App\Http\Controllers\ProjectPublicController;
 use App\Http\Controllers\Admin\ProjectImportController;
 use App\Models\Project;
-
+use App\Http\Controllers\LegalitasController;
 
 
 
@@ -174,4 +174,11 @@ Route::get('/kontak', function () {
 Route::post('/kontak', [ContactController::class, 'store'])
 
 ->name('kontak.store');
+
+
+
+Route::get('/legalitas',
+[LegalitasController::class,'index'])
+->name('legalitas');
+
 require __DIR__.'/auth.php';
