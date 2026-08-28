@@ -22,7 +22,7 @@ Company Profile
 
 <h1 class="mt-4 text-4xl md:text-5xl font-bold text-[#3B2508]">
 
-Tentang CV Sahabat Eksplorasi Banua
+ CV Sahabat Eksplorasi Banua
 
 </h1>
 
@@ -30,10 +30,8 @@ Tentang CV Sahabat Eksplorasi Banua
 
 <p class="mt-5 max-w-4xl mx-auto text-gray-600 leading-relaxed">
 
-CV. Sahabat Eksplorasi Banua Consultant merupakan
-Environmental and Mining Consultant yang bergerak dalam
-Jasa Aktivitas Penunjang Pertambangan dan Penggalian
-Lainnya dengan Kode KBLI 09900.
+Membangun Solusi Pertambangan dan Lingkungan yang Berkelanjutan
+
 
 </p>
 
@@ -101,25 +99,15 @@ CV Sahabat Eksplorasi Banua
 
 <p class="mt-6 text-gray-600 leading-relaxed">
 
-CV. Sahabat Eksplorasi Banua Consultant merupakan perusahaan
-yang bergerak dalam Jasa Aktivitas Penunjang Pertambangan
-dan Penggalian Lainnya dengan Kode KBLI 09900.
+CV. Sahabat Eksplorasi Banua merupakan perusahaan jasa konsultansi yang bergerak di bidang pertambangan dan lingkungan, dengan kegiatan usaha Aktivitas Penunjang Pertambangan dan Penggalian Lainnya (KBLI 09900). Kami hadir untuk memberikan layanan profesional yang didukung pendekatan teknis, kepatuhan terhadap regulasi, serta prinsip pengelolaan sumber daya alam yang bertanggung jawab dan berkelanjutan.
 
-Ruang lingkup kegiatan perusahaan meliputi pelaksanaan
-penyelidikan umum, eksplorasi, studi kelayakan (FS),
-pemantauan lingkungan, penyusunan UKL-UPL/AMDAL,
-reklamasi, serta kegiatan pascatambang.
 
 </p>
 
 
 <p class="mt-4 text-gray-600 leading-relaxed">
+Ruang lingkup layanan kami mencakup penyelidikan umum dan eksplorasi, penyusunan Studi Kelayakan (Feasibility Study), pengelolaan dan pemantauan lingkungan, penyusunan dokumen AMDAL dan UKL-UPL, serta perencanaan reklamasi dan pascatambang. Setiap pekerjaan dilaksanakan secara sistematis dengan mengintegrasikan aspek teknis, lingkungan, dan ketentuan peraturan perundang-undangan yang berlaku.
 
-CV. Sahabat Eksplorasi Banua hadir untuk memberikan solusi
-dalam pembangunan, pengembangan, dan pengelolaan sumber
-daya alam secara optimal dengan tetap memperhatikan prinsip
-pembangunan berwawasan lingkungan serta memenuhi
-ketentuan peraturan perundang-undangan yang berlaku.
 
 </p>
 

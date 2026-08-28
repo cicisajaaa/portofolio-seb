@@ -50,7 +50,7 @@ rounded-full">
 
 <p class="text-sm tracking-[0.25em] uppercase">
 
-Mining & Environmental Consultant
+Konsultan Pertambangan dan Lingkungan
 
 </p>
 
@@ -64,13 +64,13 @@ Mining & Environmental Consultant
 <h1 class="mt-7 text-4xl md:text-6xl font-bold leading-tight">
 
 
-Environmental & Mining Consultant
-<br>
+Konsultan 
 
-Dalam Pengelolaan
 <br>
-
 Pertambangan & Lingkungan
+<br>
+Profesional & Terintegrasi
+
 
 
 </h1>
@@ -81,13 +81,12 @@ Pertambangan & Lingkungan
 
 <p class="mt-6 max-w-3xl text-lg text-gray-200 leading-relaxed">
 
-CV Sahabat Eksplorasi Banua Consultant merupakan perusahaan
-yang bergerak dalam Jasa Aktivitas Penunjang Pertambangan
-dan Penggalian Lainnya dengan Kode KBLI 09900.
+CV. Sahabat Eksplorasi Banua menyediakan layanan konsultansi di bidang pertambangan dan lingkungan dengan mengedepankan ketepatan teknis, kepatuhan terhadap regulasi, serta prinsip pengelolaan sumber daya alam yang bertanggung jawab dan berkelanjutan.
 
-Melayani penyelidikan umum, eksplorasi, studi kelayakan,
-pemantauan lingkungan, UKL-UPL/AMDAL, reklamasi,
-dan pascatambang.
+<br>
+<br>
+Layanan kami mencakup penyelidikan umum, eksplorasi, Studi Kelayakan (FS), pengelolaan dan pemantauan lingkungan, penyusunan AMDAL dan UKL-UPL, serta perencanaan reklamasi dan pascatambang.
+
 
 </p>
 
@@ -153,24 +152,6 @@ Konsultasi Sekarang
 
 
 <div class="mt-14 grid grid-cols-3 gap-6 max-w-xl">
-
-
-
-<div>
-<h3 class="text-3xl font-bold text-[#C79A3B]">
-
-09900
-
-</h3>
-
-<p class="text-sm text-gray-300">
-
-Kode KBLI
-
-</p>
-
-
-</div>
 
 
 
@@ -325,13 +306,9 @@ Yang Berkelanjutan
 
 <p class="mt-6 text-gray-600 leading-relaxed">
 
-CV. Sahabat Eksplorasi Banua merupakan perusahaan 
-yang bergerak dalam Jasa Aktivitas Penunjang Pertambangan 
-dan Penggalian Lainnya dengan Kode KBLI 09900.
+CV. Sahabat Eksplorasi Banua merupakan perusahaan jasa konsultansi yang bergerak di bidang pertambangan dan lingkungan, dengan kegiatan usaha Aktivitas Penunjang Pertambangan dan Penggalian Lainnya (KBLI 09900). Kami hadir untuk memberikan layanan profesional yang didukung pendekatan teknis, kepatuhan terhadap regulasi, serta prinsip pengelolaan sumber daya alam yang bertanggung jawab dan berkelanjutan.
 
-Perusahaan berfokus pada kegiatan konsultasi pertambangan,
-pengelolaan lingkungan, serta pengembangan sumber daya alam
-secara optimal dan berwawasan lingkungan.
+
 
 
 </p>
@@ -343,10 +320,8 @@ secara optimal dan berwawasan lingkungan.
 <p class="mt-4 text-gray-600 leading-relaxed">
 
 
-Ruang lingkup pekerjaan meliputi penyelidikan umum,
-eksplorasi, studi kelayakan (FS), pemantauan lingkungan,
-UKL-UPL/AMDAL, reklamasi, dan pascatambang dengan
-mengikuti regulasi yang berlaku.
+Ruang lingkup layanan kami mencakup penyelidikan umum dan eksplorasi, penyusunan Studi Kelayakan (Feasibility Study), pengelolaan dan pemantauan lingkungan, penyusunan dokumen AMDAL dan UKL-UPL, serta perencanaan reklamasi dan pascatambang. Setiap pekerjaan dilaksanakan secara sistematis dengan mengintegrasikan aspek teknis, lingkungan, dan ketentuan peraturan perundang-undangan yang berlaku.
+
 
 </p>
 
@@ -387,9 +362,8 @@ Tenaga Ahli Profesional
 
 <p class="text-sm text-gray-500">
 
-Didukung tenaga ahli pertambangan
+Didukung tenaga ahli yang kompeten dan berpengalaman di bidang pertambangan dan lingkungan.
 
-dan lingkungan.
 
 </p>
 
@@ -431,9 +405,7 @@ Berbasis Regulasi
 
 <p class="text-sm text-gray-500">
 
-Pekerjaan mengikuti standar
-
-dan peraturan yang berlaku.
+Pelaksanaan pekerjaan mengacu pada standar teknis dan peraturan perundang-undangan yang berlaku.
 
 </p>
 
@@ -468,17 +440,14 @@ flex items-center justify-center">
 
 <h4 class="font-bold text-[#3B2508]">
 
-Berwawasan Lingkungan
+Berorientasi Keberlanjutan
 
 </h4>
 
 
 <p class="text-sm text-gray-500">
+Mengintegrasikan aspek lingkungan dan prinsip keberlanjutan dalam setiap perencanaan dan pelaksanaan pekerjaan.
 
-Berwawasan Lingkungan
-
-Mendukung pengelolaan sumber daya alam
-yang berkelanjutan.
 
 </p>
 
@@ -513,16 +482,14 @@ flex items-center justify-center">
 
 <h4 class="font-bold text-[#3B2508]">
 
-Pengalaman Teruji 
-
+Pendekatan Terintegrasi
 </h4>
 
 
 <p class="text-sm text-gray-500">
 
-Memiliki pengalaman pekerjaan
+Mengintegrasikan aspek teknis, lingkungan, dan regulasi untuk menghasilkan solusi yang tepat dan implementatif
 
-pertambangan dan lingkungan.
 </p>
 
 
@@ -693,10 +660,8 @@ text-3xl">
 
 <p class="mt-6 text-gray-600 leading-relaxed">
 
-Pelaksanaan penyelidikan umum dan eksplorasi
-untuk memperoleh data teknis mengenai kondisi
-geologi, potensi sumber daya mineral, serta
-informasi pendukung kegiatan pertambangan.
+Pelaksanaan kegiatan penyelidikan umum dan eksplorasi secara terencana untuk mengidentifikasi kondisi geologi, potensi dan karakteristik sumber daya mineral, serta menyediakan data teknis sebagai dasar perencanaan dan pengembangan kegiatan pertambangan.
+
 
 </p>
 
@@ -769,9 +734,8 @@ text-3xl">
 
 <p class="mt-6 text-gray-600 leading-relaxed">
 
-Penyusunan studi kelayakan (Feasibility Study)
-sebagai dasar analisis teknis, ekonomi, dan
-perencanaan pengembangan kegiatan pertambangan.
+Penyusunan Studi Kelayakan (Feasibility Study) melalui kajian komprehensif terhadap aspek teknis, ekonomi, lingkungan, dan aspek pendukung lainnya sebagai dasar penentuan kelayakan serta perencanaan kegiatan pertambangan.
+
 
 </p>
 
@@ -846,15 +810,8 @@ text-3xl">
 <p class="mt-6 text-gray-600 leading-relaxed">
 
 
+Pelaksanaan pemantauan dan evaluasi lingkungan untuk memastikan pengelolaan dampak kegiatan berjalan sesuai ketentuan, mencakup pemantauan kualitas lingkungan, evaluasi kinerja pengelolaan, serta penyusunan dokumen lingkungan seperti AMDAL dan UKL-UPL.
 
-
-Pelaksanaan pemantauan lingkungan,
-
-penyusunan dokumen UKL-UPL/AMDAL,
-
-kajian teknis lingkungan, serta evaluasi
-
-dampak kegiatan terhadap lingkungan.
 
 
 </p>
@@ -926,10 +883,7 @@ text-3xl">
 
 <p class="mt-6 text-gray-600 leading-relaxed">
 
-Perencanaan reklamasi dan pascatambang
-untuk mendukung pemulihan lahan bekas kegiatan
-pertambangan serta pengelolaan lingkungan
-yang berkelanjutan.
+Perencanaan reklamasi dan pascatambang yang terintegrasi untuk memulihkan fungsi lingkungan dan lahan terdampak, melalui penataan lahan, revegetasi, pengendalian dampak, serta perencanaan pemanfaatan lahan secara berkelanjutan.
 
 </p>
 
