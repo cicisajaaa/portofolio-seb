@@ -234,16 +234,14 @@ mt-3
 text-xl
 font-bold
 text-[#3B2508]">
-
-Administrasi Pajak
+NPWP
 
 </h3>
 
 
 <p class="mt-2 text-gray-600">
 
-Memenuhi kewajiban perpajakan perusahaan
-sesuai ketentuan yang berlaku.
+0912  6954 3473 2000
 
 </p>
 
@@ -350,27 +348,26 @@ Aktivitas Penunjang Pertambangan
 
 
 
-
-
-
-
-
 <!-- BIDANG USAHA -->
 
 <section class="py-20 bg-[#3B2508] text-white">
 
 
-<div class="max-w-7xl mx-auto px-6">
+<div class="max-w-6xl mx-auto px-6">
 
 
-<div class="text-center mb-12">
+
+<!-- HEADER -->
+
+<div class="text-center max-w-3xl mx-auto mb-12">
 
 
 <p class="
 text-[#C79A3B]
 uppercase
-tracking-widest
-text-sm">
+tracking-[0.35em]
+text-xs
+font-semibold">
 
 Business Field
 
@@ -378,13 +375,27 @@ Business Field
 
 
 <h2 class="
-mt-3
-text-3xl
+mt-4
+text-3xl md:text-4xl
 font-bold">
 
 Aktivitas Perusahaan
 
 </h2>
+
+
+
+<p class="
+mt-5
+text-sm
+text-[#E8DCC8]
+leading-relaxed">
+
+CV Sahabat Eksplorasi Banua bergerak dalam layanan konsultansi
+pertambangan dan lingkungan untuk mendukung kebutuhan teknis
+serta pemenuhan ketentuan yang berlaku.
+
+</p>
 
 
 </div>
@@ -393,14 +404,33 @@ Aktivitas Perusahaan
 
 
 
-<div class="grid md:grid-cols-3 gap-8">
 
+
+<!-- CARD -->
 
 
 <div class="
-bg-white/10
+grid md:grid-cols-2
+gap-6
+max-w-5xl
+mx-auto
+">
+
+
+
+
+
+<!-- PERTAMBANGAN -->
+
+
+<div class="
+bg-[#5A4023]
 rounded-2xl
-p-8">
+p-6
+min-h-[170px]
+shadow-md
+shadow-black/20
+">
 
 
 <h3 class="
@@ -413,15 +443,31 @@ Pertambangan
 </h3>
 
 
+
+<div class="
+mt-3
+h-[2px]
+w-12
+bg-[#C79A3B]">
+
+</div>
+
+
+
+
 <p class="
-mt-4
-text-gray-300
+mt-6
+text-sm
+text-[#F5EEDF]
 leading-relaxed">
 
-Pelayanan konsultasi aktivitas penunjang
-pertambangan sesuai kebutuhan pekerjaan.
+Pelayanan konsultasi aktivitas penunjang pertambangan
+sesuai kebutuhan pekerjaan melalui pendekatan teknis,
+data pendukung, serta penerapan ketentuan pertambangan
+yang berlaku.
 
 </p>
+
 
 
 </div>
@@ -431,10 +477,20 @@ pertambangan sesuai kebutuhan pekerjaan.
 
 
 
+
+
+
+<!-- LINGKUNGAN -->
+
+
 <div class="
-bg-white/10
+bg-[#5A4023]
 rounded-2xl
-p-8">
+p-6
+min-h-[170px]
+shadow-md
+shadow-black/20
+">
 
 
 <h3 class="
@@ -447,13 +503,27 @@ Lingkungan
 </h3>
 
 
+
+<div class="
+mt-3
+h-[2px]
+w-12
+bg-[#C79A3B]">
+
+</div>
+
+
+
+
 <p class="
-mt-4
-text-gray-300
+mt-6
+text-sm
+text-[#F5EEDF]
 leading-relaxed">
 
 Kajian lingkungan, pemantauan lingkungan,
-reklamasi dan pascatambang.
+reklamasi, dan pascatambang untuk mendukung
+pengelolaan kegiatan sesuai ketentuan yang berlaku.
 
 </p>
 
@@ -461,39 +531,6 @@ reklamasi dan pascatambang.
 </div>
 
 
-
-
-
-
-
-<div class="
-bg-white/10
-rounded-2xl
-p-8">
-
-
-<h3 class="
-text-xl
-font-bold
-text-[#C79A3B]">
-
-Kajian Teknis
-
-</h3>
-
-
-<p class="
-mt-4
-text-gray-300
-leading-relaxed">
-
-Penyusunan dokumen teknis dan pendampingan
-kegiatan pertambangan.
-
-</p>
-
-
-</div>
 
 
 
@@ -504,8 +541,6 @@ kegiatan pertambangan.
 
 
 </section>
-
-
 
 
 

@@ -591,9 +591,7 @@ sumber daya alam.
 
 </section>
 
-
-
- <!-- STRUKTUR ORGANISASI -->
+<!-- STRUKTUR ORGANISASI -->
 
 <section class="py-24 bg-[#F8F7F2]">
 
@@ -606,9 +604,9 @@ sumber daya alam.
 
 
 <p class="
-text-sm
 uppercase
-tracking-[0.3em]
+tracking-[0.35em]
+text-xs
 font-semibold
 text-[#C79A3B]">
 
@@ -636,32 +634,38 @@ text-gray-600">
 
 Struktur organisasi CV Sahabat Eksplorasi Banua
 disusun untuk mendukung kegiatan konsultasi
-pertambangan, lingkungan, dan pengelolaan proyek
-secara profesional dan terintegrasi.
+pertambangan dan lingkungan melalui pembagian
+fungsi kerja yang profesional dan terintegrasi.
 
 </p>
 
 
 </div>
 
-<br>
 
 
-<br>
+
+
 <!-- DIREKTUR -->
+
 
 <div class="flex justify-center">
 
 
 <div class="
 relative
+group
 bg-[#3B2508]
 text-white
-rounded-xl
-w-72
-p-7
+rounded-3xl
+w-80
+px-10
+py-8
 text-center
-shadow-xl">
+shadow-xl
+hover:-translate-y-2
+transition
+duration-500">
 
 
 <div class="
@@ -670,18 +674,138 @@ top-0
 left-1/2
 -translate-x-1/2
 -translate-y-1/2
-w-10
-h-10
+w-14
+h-14
 rounded-full
 bg-[#C79A3B]
 flex
 items-center
 justify-center
-font-bold">
+font-bold
+shadow-lg">
 
 01
 
 </div>
+
+
+
+<p class="
+mt-3
+uppercase
+tracking-[0.25em]
+text-xs
+text-[#C79A3B]">
+
+Direktur
+
+</p>
+
+
+<h3 class="
+mt-4
+text-2xl
+font-bold">
+
+Fathur Rachman, ST.
+
+</h3>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- CONNECTOR -->
+
+<div class="
+relative
+h-24
+flex
+justify-center">
+
+
+<div class="
+w-px
+bg-[#C79A3B]">
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- MANAGEMENT -->
+
+
+<div class="
+relative
+max-w-5xl
+mx-auto">
+
+
+<div class="
+absolute
+top-0
+left-1/4
+right-1/4
+h-px
+bg-[#C79A3B]">
+
+</div>
+
+
+<div class="
+grid
+md:grid-cols-2
+gap-10">
+
+
+
+
+
+<div class="
+relative
+pt-8">
+
+
+<div class="
+absolute
+top-0
+left-1/2
+-translate-x-1/2
+h-8
+w-px
+bg-[#C79A3B]">
+
+</div>
+
+
+
+<div class="
+bg-white
+rounded-3xl
+border
+border-[#C79A3B]/30
+p-7
+text-center
+shadow-sm
+hover:shadow-xl
+hover:-translate-y-2
+transition">
 
 
 <p class="
@@ -690,169 +814,13 @@ uppercase
 tracking-widest
 text-[#C79A3B]">
 
-Pimpinan
+Management
 
 </p>
 
 
 <h3 class="
 mt-3
-text-2xl
-font-bold">
-
-Direktur
-
-</h3>
-
-
-<p class="
-mt-2
-text-sm
-text-gray-300">
-
-Penanggung jawab perusahaan
-
-</p>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-<!-- GARIS UTAMA -->
-
-<div class="
-h-16
-border-l-2
-border-[#C79A3B]
-mx-auto
-w-fit">
-
-</div>
-
-
-
-
-
-
-<!-- LEVEL 2 -->
-
-<div class="
-relative
-flex
-justify-center">
-
-
-<div class="
-absolute
-top-0
-left-1/4
-right-1/4
-border-t-2
-border-[#C79A3B]">
-
-</div>
-
-
-
-<div class="
-grid
-md:grid-cols-2
-gap-12
-w-full
-max-w-4xl
-pt-8">
-
-
-<!-- KOMANDITER -->
-
-
-<div class="
-relative">
-
-
-<div class="
-absolute
-top-0
-left-1/2
-h-8
-border-l-2
-border-[#C79A3B]">
-</div>
-
-
-<div class="
-mt-8
-bg-white
-rounded-xl
-border
-p-7
-text-center
-shadow-sm">
-
-
-<h3 class="
-font-bold
-text-xl
-text-[#3B2508]">
-
-Persero Komanditer
-
-</h3>
-
-
-<p class="
-mt-2
-text-sm
-text-gray-500">
-
-Pengawasan dan pengendalian perusahaan
-
-</p>
-
-
-</div>
-
-</div>
-
-
-
-
-
-<!-- PROJECT -->
-
-
-<div class="
-relative">
-
-
-<div class="
-absolute
-top-0
-left-1/2
-h-8
-border-l-2
-border-[#C79A3B]">
-</div>
-
-
-<div class="
-mt-8
-bg-white
-rounded-xl
-border-2
-border-[#C79A3B]
-p-7
-text-center
-shadow-md">
-
-
-<h3 class="
 font-bold
 text-xl
 text-[#3B2508]">
@@ -867,18 +835,14 @@ mt-2
 text-sm
 text-gray-500">
 
-Pengelolaan dan koordinasi proyek
+Muhammad Asrin Wibowo,
+S.Si., M.Ling.
 
 </p>
 
 
 </div>
 
-</div>
-
-
-</div>
-
 
 </div>
 
@@ -886,43 +850,39 @@ Pengelolaan dan koordinasi proyek
 
 
 
-
-
-<!-- GARIS KE BAWAH -->
 
 <div class="
-h-16
-border-l-2
-border-[#C79A3B]
-mx-auto
-w-fit">
+relative
+pt-8">
+
+
+<div class="
+absolute
+top-0
+left-1/2
+-translate-x-1/2
+h-8
+w-px
+bg-[#C79A3B]">
 
 </div>
 
-
-
-
-
-
-<!-- SUPPORT -->
-
-<div class="
-grid
-md:grid-cols-2
-gap-8
-max-w-4xl
-mx-auto">
 
 
 <div class="
 bg-white
-rounded-xl
+rounded-3xl
 border
+border-[#C79A3B]/30
 p-7
-text-center">
+text-center
+shadow-sm
+hover:shadow-xl
+hover:-translate-y-2
+transition">
 
 
-<span class="
+<p class="
 text-xs
 uppercase
 tracking-widest
@@ -930,7 +890,7 @@ text-[#C79A3B]">
 
 Finance
 
-</span>
+</p>
 
 
 <h3 class="
@@ -939,7 +899,7 @@ font-bold
 text-xl
 text-[#3B2508]">
 
-Bendahara
+Keuangan
 
 </h3>
 
@@ -949,7 +909,8 @@ mt-2
 text-sm
 text-gray-500">
 
-Pengelolaan administrasi keuangan
+Esa Gita Shandy Pradana,
+S.Tr.Ak.
 
 </p>
 
@@ -957,51 +918,37 @@ Pengelolaan administrasi keuangan
 </div>
 
 
+</div>
 
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- CONNECTOR DIVISI -->
 
 
 <div class="
-bg-white
-rounded-xl
-border
-p-7
-text-center">
-
-
-<span class="
-text-xs
-uppercase
-tracking-widest
-text-[#C79A3B]">
-
-Administration
-
-</span>
-
-
-<h3 class="
-mt-3
-font-bold
-text-xl
-text-[#3B2508]">
-
-Sekretaris
-
-</h3>
-
-
-<p class="
-mt-2
-text-sm
-text-gray-500">
-
-Administrasi dan dokumentasi perusahaan
-
-</p>
-
+h-20
+w-px
+bg-[#C79A3B]
+mx-auto">
 
 </div>
 
+
+<div class="
+max-w-5xl
+mx-auto
+h-px
+bg-[#C79A3B]">
 
 </div>
 
@@ -1009,101 +956,208 @@ Administrasi dan dokumentasi perusahaan
 
 
 
-<br>
-
-<!-- DIVISI TEKNIS -->
-
-
-<div class="mt-20">
-
-
-<div class="text-center mb-10">
-
-
-<p class="
-uppercase
-tracking-widest
-text-sm
-text-[#C79A3B]">
-
-Technical Division
-
-</p>
-
-
-<h3 class="
-mt-3
-text-3xl
-font-bold
-text-[#3B2508]">
-
-Divisi Teknis
-
-</h3>
-
-
-</div>
 
 
 
+
+<!-- DIVISI -->
 
 
 <div class="
 grid
-md:grid-cols-4
-gap-6">
+lg:grid-cols-3
+gap-7
+mt-10">
 
 
-@foreach([
-'AMDAL & UKL-UPL',
-'Manajemen Lingkungan',
-'Perencanaan, Pemetaan & Supervisi',
-'Energi dan Pertambangan'
-] as $division)
+
+
+
+<!-- CARD TEMPLATE -->
 
 
 <div class="
 bg-white
-rounded-xl
+rounded-3xl
+overflow-hidden
 border
-p-7
-text-center
-hover:shadow-lg
-hover:border-[#C79A3B]
-transition">
+border-gray-100
+shadow-sm
+hover:shadow-xl
+hover:-translate-y-2
+transition
+duration-500">
 
 
 <div class="
-mx-auto
-w-12
-h-12
-rounded-full
 bg-[#3B2508]
-text-white
+px-6
+py-5
+text-white">
+
+
+<div class="
+flex
+justify-between
+items-center">
+
+
+<h3 class="
+font-bold
+text-lg">
+
+Divisi Enviro
+
+</h3>
+
+
+<span class="
+w-9
+h-9
+rounded-full
+bg-[#C79A3B]
 flex
 items-center
 justify-center
 font-bold">
 
-{{ $loop->iteration }}
+01
+
+</span>
+
 
 </div>
 
 
-<h4 class="
-mt-5
-font-bold
-text-[#3B2508]">
+</div>
 
-{{ $division }}
+
+
+<div class="p-6 text-sm text-gray-600">
+
+
+<h4 class="font-bold text-[#3B2508]">
+
+Dokumen Lingkungan
 
 </h4>
 
 
+<p class="mt-2">
+
+• Nabella Safitri, ST.<br>
+• Raudatun Ni’mah, ST.<br>
+• Meidyna Aurelia, ST.<br>
+• Maulida, S.Si., M.Ling.<br>
+• Nursyifa Yasmin Rizqia, ST.
+
+</p>
+
+
+
+<h4 class="mt-5 font-bold text-[#3B2508]">
+
+Pertek Air Limbah
+
+</h4>
+
+
+<p class="mt-2">
+
+• Ainayya Rahma, S.Si.<br>
+• Syifa Yulia Hidayati, ST.<br>
+• Yunica, ST.
+
+</p>
+
+
+
+<h4 class="mt-5 font-bold text-[#3B2508]">
+
+Pertek Emisi
+
+</h4>
+
+
+<p class="mt-2">
+
+• Nabella Safitri, ST.<br>
+• Raudatun Ni’mah, ST.
+
+</p>
+
+
+
+<h4 class="mt-5 font-bold text-[#3B2508]">
+
+Rintek LB3
+
+</h4>
+
+
+<p class="mt-2">
+
+• Yunica, ST.
+
+</p>
+
+
 </div>
 
 
-@endforeach
+</div>
+
+
+
+
+
+
+
+
+
+<div class="
+bg-white
+rounded-3xl
+overflow-hidden
+border
+border-gray-100
+shadow-sm
+hover:shadow-xl
+hover:-translate-y-2
+transition
+duration-500">
+
+
+<div class="
+bg-[#3B2508]
+px-6
+py-5
+text-white">
+
+
+<div class="flex justify-between">
+
+
+<h3 class="font-bold text-lg">
+
+Divisi Mining
+
+</h3>
+
+
+<span class="
+w-9
+h-9
+rounded-full
+bg-[#C79A3B]
+flex
+items-center
+justify-center
+font-bold">
+
+02
+
+</span>
 
 
 </div>
@@ -1111,6 +1165,132 @@ text-[#3B2508]">
 
 </div>
 
+
+
+<div class="p-6 text-sm text-gray-600">
+
+
+<h4 class="font-bold text-[#3B2508]">
+
+Ketua
+
+</h4>
+
+
+<p class="mt-2">
+
+Hetra Herna Dinata
+
+</p>
+
+
+
+<h4 class="mt-5 font-bold text-[#3B2508]">
+
+Anggota
+
+</h4>
+
+
+<p class="mt-2">
+
+• Tira Nirwana Mamman, ST. M.Ling.<br>
+• Ainayya Rahma, S.Si.<br>
+• Esa Gita Shandy Pradana, S.Tr.Ak.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="
+bg-white
+rounded-3xl
+overflow-hidden
+border
+border-gray-100
+shadow-sm
+hover:shadow-xl
+hover:-translate-y-2
+transition
+duration-500">
+
+
+<div class="
+bg-[#3B2508]
+px-6
+py-5
+text-white">
+
+
+<div class="flex justify-between">
+
+
+<h3 class="font-bold text-lg">
+
+Divisi Lapangan
+
+</h3>
+
+
+<span class="
+w-9
+h-9
+rounded-full
+bg-[#C79A3B]
+flex
+items-center
+justify-center
+font-bold">
+
+03
+
+</span>
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="p-6 text-sm text-gray-600">
+
+
+<p>
+• Abdul Rahim
+</p>
+
+
+<p class="mt-3">
+• Achmad Madari
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+</div>
 
 
 </div>
