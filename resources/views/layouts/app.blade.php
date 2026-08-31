@@ -56,8 +56,10 @@ shadow-sm
 
 <div class="
 w-full
-px-6
+px-5
 md:px-10
+lg:px-14
+xl:px-16
 py-3
 flex
 items-center
@@ -67,12 +69,18 @@ justify-between
 
 <!-- LOGO -->
 
-<div class="flex items-center gap-4 flex-shrink-0">
+<div class="
+flex
+items-center
+gap-3
+md:gap-4
+flex-shrink-0
+">
 
 
 <div class="
-w-12
-h-12
+w-11
+h-11
 md:w-14
 md:h-14
 rounded-full
@@ -83,11 +91,13 @@ bg-white
 p-1
 ">
 
-
 <img
 src="{{ asset('assets/images/logo-seb.png') }}"
-class="w-full h-full object-contain">
-
+class="
+w-full
+h-full
+object-contain
+">
 
 </div>
 
@@ -99,7 +109,7 @@ class="w-full h-full object-contain">
 <h1 class="
 font-bold
 text-[#3B2508]
-text-sm
+text-xs
 md:text-base
 leading-tight
 whitespace-nowrap
@@ -111,7 +121,8 @@ CV Sahabat Eksplorasi Banua
 
 
 <p class="
-text-xs
+text-[10px]
+md:text-xs
 text-gray-500
 ">
 
@@ -131,17 +142,20 @@ Company Profile
 
 
 
-<!-- MENU DESKTOP -->
+<!-- DESKTOP MENU -->
 
 <div class="
 hidden
 md:flex
 items-center
 ml-auto
-gap-8
-lg:gap-10
+gap-6
+lg:gap-8
+xl:gap-10
 text-gray-600
 font-medium
+text-sm
+lg:text-base
 ">
 
 
@@ -166,8 +180,8 @@ left-0
 w-full
 h-0.5
 bg-[#C79A3B]
-rounded-full
-"></span>
+rounded-full">
+</span>
 @endif
 
 </a>
@@ -196,8 +210,8 @@ left-0
 w-full
 h-0.5
 bg-[#C79A3B]
-rounded-full
-"></span>
+rounded-full">
+</span>
 @endif
 
 </a>
@@ -226,8 +240,8 @@ left-0
 w-full
 h-0.5
 bg-[#C79A3B]
-rounded-full
-"></span>
+rounded-full">
+</span>
 @endif
 
 </a>
@@ -256,8 +270,8 @@ left-0
 w-full
 h-0.5
 bg-[#C79A3B]
-rounded-full
-"></span>
+rounded-full">
+</span>
 @endif
 
 </a>
@@ -286,8 +300,8 @@ left-0
 w-full
 h-0.5
 bg-[#C79A3B]
-rounded-full
-"></span>
+rounded-full">
+</span>
 @endif
 
 </a>
@@ -316,8 +330,8 @@ left-0
 w-full
 h-0.5
 bg-[#C79A3B]
-rounded-full
-"></span>
+rounded-full">
+</span>
 @endif
 
 </a>
@@ -330,10 +344,108 @@ rounded-full
 
 
 
+
+
+<!-- MOBILE BUTTON -->
+
+<button
+onclick="toggleMenu()"
+class="
+md:hidden
+mr-2
+text-[#3B2508]
+text-2xl
+">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+<!-- MOBILE MENU -->
+
+<div
+id="mobileMenu"
+class="
+hidden
+md:hidden
+bg-white
+border-t
+border-gray-100
+shadow-lg
+">
+
+
+<div class="
+flex
+flex-col
+px-6
+py-5
+gap-4
+text-gray-700
+font-medium
+">
+
+
+<a href="{{ route('home') }}">
+Beranda
+</a>
+
+
+<a href="{{ route('tentang') }}">
+Tentang
+</a>
+
+
+<a href="{{ route('legalitas') }}">
+Legalitas
+</a>
+
+
+<a href="{{ route('layanan') }}">
+Layanan
+</a>
+
+
+<a href="{{ route('proyek') }}">
+Portofolio
+</a>
+
+
+<a href="{{ route('kontak') }}">
+Konsultasi
+</a>
+<br>
+
+
+</div>
+
+
 </div>
 
 
 </nav>
+
+
+
+<script>
+
+function toggleMenu(){
+
+const menu = document.getElementById('mobileMenu');
+
+menu.classList.toggle('hidden');
+
+}
+
+</script>
 <!-- CONTENT -->
 <main class="pt-20">
 
