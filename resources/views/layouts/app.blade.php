@@ -234,7 +234,7 @@ class="relative py-2 transition
 : 'hover:text-[#C79A3B]' }}">
 
 
-Proyek
+Portofolio
 
 
 @if(request()->routeIs('proyek'))

@@ -30,9 +30,10 @@ Layanan Kami
 
 <p class="mt-5 max-w-3xl mx-auto text-gray-600 leading-relaxed">
 
-CV Sahabat Eksplorasi Banua menyediakan layanan jasa penunjang
-pertambangan dan lingkungan melalui kajian teknis, eksplorasi,
-survey lapangan, serta pengelolaan lingkungan berbasis standar industri.
+CV Sahabat Eksplorasi Banua menyediakan layanan konsultansi 
+terintegrasi di bidang pertambangan dan lingkungan untuk mendukung 
+perencanaan, pemenuhan persyaratan teknis, pengelolaan lingkungan, 
+serta kepatuhan terhadap ketentuan yang berlaku.
 
 </p>
 
@@ -41,54 +42,45 @@ survey lapangan, serta pengelolaan lingkungan berbasis standar industri.
 
 
 </section>
-
-
-
 
 
 
 
 <!-- SERVICE LIST -->
 
-
 <section class="py-20 bg-white">
-
 
 <div class="max-w-7xl mx-auto px-6">
 
 
-<div class="grid md:grid-cols-2 gap-8">
+<div class="grid lg:grid-cols-2 gap-8">
 
 
 
-
-
-
-<!-- ITEM -->
-
+<!-- ================= PERTAMBANGAN ================= -->
 
 <div 
-class="group bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-xl transition"
+class="group relative overflow-hidden bg-gradient-to-br from-white to-[#F8F7F2] border border-gray-100 rounded-3xl p-8 hover:shadow-2xl transition duration-500"
 data-aos="fade-up">
 
 
-<div class="flex justify-between items-start">
+<div class="absolute left-0 top-10 h-20 w-1 bg-[#C79A3B] rounded-r-full"></div>
+
+
+
+<div class="relative">
 
 
 <div>
 
 
-<p class="text-[#C79A3B] font-bold text-sm">
-
-01
-
-</p>
+<span class="text-xs tracking-[0.35em] font-bold text-[#C79A3B]">
+01 SERVICE
+</span>
 
 
-<h2 class="mt-4 text-2xl font-bold text-[#3B2508]">
-
+<h2 class="mt-3 text-2xl font-bold text-[#3B2508]">
 Pertambangan
-
 </h2>
 
 
@@ -96,29 +88,127 @@ Pertambangan
 
 
 
-<div class="w-12 h-12 rounded-xl bg-[#C79A3B]/20 flex items-center justify-center">
 
 
-⛏️
+<p class="mt-5 text-gray-600 leading-relaxed text-sm">
 
-
-</div>
-
-
-</div>
-
-
-
-
-<p class="mt-5 text-gray-600 leading-relaxed">
-
-Menyediakan layanan perencanaan tambang, kajian teknis,
-studi kelayakan, serta pendampingan kegiatan pertambangan
-sesuai kebutuhan proyek.
+Menyediakan layanan konsultansi teknis pertambangan untuk mendukung setiap tahapan kegiatan usaha pertambangan melalui pendekatan berbasis data, penerapan kaidah pertambangan yang baik, serta pemenuhan ketentuan teknis dan regulasi yang berlaku.
 
 </p>
 
 
+
+
+<div class="mt-7 pt-6 border-t border-gray-200">
+
+
+<div class="space-y-4">
+
+
+
+<div class="flex gap-4">
+
+<span class="text-xs font-bold text-[#C79A3B] mt-1">
+01
+</span>
+
+<div>
+
+<h3 class="text-sm font-semibold text-[#3B2508]">
+Eksplorasi
+</h3>
+
+<p class="text-xs text-gray-500 mt-1 leading-relaxed">
+Penyelidikan umum, pemetaan, dan evaluasi potensi sumber daya.
+</p>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="flex gap-4">
+
+<span class="text-xs font-bold text-[#C79A3B] mt-1">
+02
+</span>
+
+<div>
+
+<h3 class="text-sm font-semibold text-[#3B2508]">
+Studi Kelayakan
+</h3>
+
+<p class="text-xs text-gray-500 mt-1 leading-relaxed">
+Kajian teknis dan ekonomi kegiatan pertambangan.
+</p>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="flex gap-4">
+
+<span class="text-xs font-bold text-[#C79A3B] mt-1">
+03
+</span>
+
+<div>
+
+<h3 class="text-sm font-semibold text-[#3B2508]">
+Reklamasi & Pascatambang
+</h3>
+
+<p class="text-xs text-gray-500 mt-1 leading-relaxed">
+Perencanaan pemulihan lahan dan pengelolaan pascatambang.
+</p>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="flex gap-4">
+
+<span class="text-xs font-bold text-[#C79A3B] mt-1">
+04
+</span>
+
+<div>
+
+<h3 class="text-sm font-semibold text-[#3B2508]">
+Dokumen Teknis
+</h3>
+
+<p class="text-xs text-gray-500 mt-1 leading-relaxed">
+Penyusunan kajian sesuai tahapan kegiatan.
+</p>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
 </div>
 
 
@@ -129,92 +219,32 @@ sesuai kebutuhan proyek.
 
 
 
+<!-- ================= LINGKUNGAN ================= -->
+
+
 <div 
-class="group bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-xl transition"
+class="group relative overflow-hidden bg-gradient-to-br from-white to-[#F8F7F2] border border-gray-100 rounded-3xl p-8 hover:shadow-2xl transition duration-500"
 data-aos="fade-up"
 data-aos-delay="100">
 
 
-<div class="flex justify-between items-start">
+<div class="absolute left-0 top-10 h-20 w-1 bg-[#C79A3B] rounded-r-full"></div>
+
+
+
+<div class="relative">
 
 
 <div>
 
 
-<p class="text-[#C79A3B] font-bold text-sm">
-
-02
-
-</p>
+<span class="text-xs tracking-[0.35em] font-bold text-[#C79A3B]">
+02 SERVICE
+</span>
 
 
-<h2 class="mt-4 text-2xl font-bold text-[#3B2508]">
-
-Eksplorasi
-
-</h2>
-
-
-</div>
-
-
-
-<div class="w-12 h-12 rounded-xl bg-[#C79A3B]/20 flex items-center justify-center">
-
-
-🗺️
-
-
-</div>
-
-
-</div>
-
-
-
-
-<p class="mt-5 text-gray-600 leading-relaxed">
-
-Melaksanakan kegiatan eksplorasi, survei lapangan,
-pemetaan wilayah, serta pengumpulan data teknis
-untuk mendukung pengambilan keputusan.
-
-</p>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<div 
-class="group bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-xl transition"
-data-aos="fade-up"
-data-aos-delay="200">
-
-
-<div class="flex justify-between">
-
-
-<div>
-
-
-<p class="text-[#C79A3B] font-bold text-sm">
-
-03
-
-</p>
-
-
-<h2 class="mt-4 text-2xl font-bold text-[#3B2508]">
-
+<h2 class="mt-3 text-2xl font-bold text-[#3B2508]">
 Lingkungan
-
 </h2>
 
 
@@ -222,76 +252,118 @@ Lingkungan
 
 
 
-<div class="w-12 h-12 rounded-xl bg-[#C79A3B]/20 flex items-center justify-center">
 
 
-🌱
+<p class="mt-5 text-gray-600 leading-relaxed text-sm">
 
-
-</div>
-
-
-</div>
-
-
-
-
-<p class="mt-5 text-gray-600 leading-relaxed">
-
-Mendukung penyusunan kajian lingkungan,
-pemantauan dampak kegiatan, reklamasi,
-dan pengelolaan lingkungan berkelanjutan.
+Menyediakan layanan konsultansi lingkungan untuk mendukung pemenuhan persetujuan lingkungan, pengelolaan dan pemantauan dampak, serta kepatuhan terhadap ketentuan lingkungan sesuai karakteristik dan skala kegiatan usaha.
 
 </p>
 
 
-</div>
 
 
 
+<div class="mt-7 pt-6 border-t border-gray-200">
+
+
+<div class="space-y-4">
 
 
 
+<div class="flex gap-4">
 
-
-
-<div 
-class="group bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-xl transition"
-data-aos="fade-up"
-data-aos-delay="300">
-
-
-<div class="flex justify-between">
-
+<span class="text-xs font-bold text-[#C79A3B] mt-1">
+01
+</span>
 
 <div>
 
+<h3 class="text-sm font-semibold text-[#3B2508]">
+AMDAL & UKL-UPL
+</h3>
 
-<p class="text-[#C79A3B] font-bold text-sm">
+<p class="text-xs text-gray-500 mt-1 leading-relaxed">
+Penyusunan dokumen lingkungan sesuai jenis dan skala kegiatan usaha.
+</p>
 
+</div>
+
+</div>
+
+
+
+
+
+<div class="flex gap-4">
+
+<span class="text-xs font-bold text-[#C79A3B] mt-1">
+02
+</span>
+
+<div>
+
+<h3 class="text-sm font-semibold text-[#3B2508]">
+Persetujuan Teknis
+</h3>
+
+<p class="text-xs text-gray-500 mt-1 leading-relaxed">
+Kajian teknis pengelolaan dan pemenuhan ketentuan lingkungan.
+</p>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="flex gap-4">
+
+<span class="text-xs font-bold text-[#C79A3B] mt-1">
+03
+</span>
+
+<div>
+
+<h3 class="text-sm font-semibold text-[#3B2508]">
+Pemantauan Lingkungan
+</h3>
+
+<p class="text-xs text-gray-500 mt-1 leading-relaxed">
+Pemantauan kualitas lingkungan dan evaluasi dampak.
+</p>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="flex gap-4">
+
+<span class="text-xs font-bold text-[#C79A3B] mt-1">
 04
+</span>
 
+<div>
+
+<h3 class="text-sm font-semibold text-[#3B2508]">
+Dokumen Lingkungan
+</h3>
+
+<p class="text-xs text-gray-500 mt-1 leading-relaxed">
+Penyusunan dokumen sesuai kebutuhan kegiatan usaha.
 </p>
 
-
-<h2 class="mt-4 text-2xl font-bold text-[#3B2508]">
-
-Kajian Teknis
-
-</h2>
-
+</div>
 
 </div>
 
 
-
-<div class="w-12 h-12 rounded-xl bg-[#C79A3B]/20 flex">
-
-<div class="m-auto">
-
-📊
-
-</div>
 
 </div>
 
@@ -299,99 +371,111 @@ Kajian Teknis
 </div>
 
 
-
-
-<p class="mt-5 text-gray-600 leading-relaxed">
-
-Melakukan analisis teknis, pengolahan data,
-penyusunan laporan, serta rekomendasi
-berdasarkan kebutuhan pekerjaan.
-
-</p>
+</div>
 
 
 </div>
 
-
-
-
-
-
-
-</div>
 
 
 </div>
 
 
 </section>
-
-
-
-
-
-
 
 
 
 <!-- ALUR KERJA -->
 
-
 <section class="py-20 bg-[#F8F7F2]">
 
 
-<div class="max-w-7xl mx-auto px-6">
+<div class="max-w-6xl mx-auto px-6">
 
 
-<div class="text-center mb-12">
+
+<!-- HEADER -->
+
+<div class="text-center max-w-3xl mx-auto mb-12">
 
 
-<p class="text-sm uppercase tracking-widest text-[#C79A3B] font-semibold">
-
+<p class="text-xs uppercase tracking-[0.35em] text-[#C79A3B] font-semibold">
 Workflow
-
 </p>
+
 
 
 <h2 class="mt-3 text-3xl font-bold text-[#3B2508]">
-
-Tahapan Pelaksanaan Pekerjaan
-
+Proses Kerja yang Sistematis & Terarah
 </h2>
 
 
+
+<p class="mt-5 text-sm text-gray-600 leading-relaxed">
+
+Setiap pekerjaan dilaksanakan melalui tahapan yang terstruktur, mulai dari identifikasi kebutuhan hingga penyelesaian dokumen dan pendampingan, dengan mempertimbangkan aspek teknis, kondisi kegiatan, serta ketentuan yang berlaku.
+
+</p>
+
+
 </div>
 
 
 
 
 
-<div class="grid md:grid-cols-4 gap-6">
+
+
+<!-- WORKFLOW LIST -->
+
+
+<div class="space-y-6">
 
 
 
-<div class="bg-white rounded-2xl p-6 text-center">
 
 
-<h3 class="text-[#C79A3B] text-2xl font-bold">
+<!-- ROW 01 - 03 -->
 
+
+<div class="grid md:grid-cols-3 gap-6">
+
+
+
+
+
+<!-- ITEM 01 -->
+
+
+<div 
+class="bg-white rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition duration-300"
+data-aos="fade-up">
+
+
+<div class="flex items-start gap-5">
+
+
+<span class="text-lg font-bold text-[#C79A3B]">
 01
+</span>
 
+
+<div>
+
+<h3 class="text-base font-bold text-[#3B2508]">
+Konsultasi
 </h3>
 
 
-<h4 class="mt-3 font-bold text-[#3B2508]">
-
-Konsultasi Awal
-
-</h4>
-
-
-<p class="mt-2 text-sm text-gray-600">
-
-Memahami kebutuhan proyek dan ruang lingkup pekerjaan.
-
+<p class="mt-2 text-sm text-gray-600 leading-relaxed">
+Identifikasi kebutuhan dan ruang lingkup pekerjaan.
 </p>
+
+
+</div>
+
+
+</div>
 
 
 </div>
@@ -401,28 +485,41 @@ Memahami kebutuhan proyek dan ruang lingkup pekerjaan.
 
 
 
-<div class="bg-white rounded-2xl p-6 text-center">
 
 
-<h3 class="text-[#C79A3B] text-2xl font-bold">
+<!-- ITEM 02 -->
 
+
+<div 
+class="bg-white rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition duration-300"
+data-aos="fade-up"
+data-aos-delay="100">
+
+
+<div class="flex items-start gap-5">
+
+
+<span class="text-lg font-bold text-[#C79A3B]">
 02
+</span>
 
-</h3>
 
+<div>
 
-<h4 class="mt-3 font-bold text-[#3B2508]">
-
+<h3 class="text-base font-bold text-[#3B2508]">
 Pengumpulan Data
+</h3>
 
-</h4>
 
-
-<p class="mt-2 text-sm text-gray-600">
-
-Melakukan survey lapangan dan pengumpulan data teknis.
-
+<p class="mt-2 text-sm text-gray-600 leading-relaxed">
+Pengumpulan dan verifikasi data pendukung.
 </p>
+
+
+</div>
+
+
+</div>
 
 
 </div>
@@ -433,28 +530,44 @@ Melakukan survey lapangan dan pengumpulan data teknis.
 
 
 
-<div class="bg-white rounded-2xl p-6 text-center">
+
+<!-- ITEM 03 -->
 
 
-<h3 class="text-[#C79A3B] text-2xl font-bold">
+<div 
+class="bg-white rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition duration-300"
+data-aos="fade-up"
+data-aos-delay="200">
 
+
+<div class="flex items-start gap-5">
+
+
+<span class="text-lg font-bold text-[#C79A3B]">
 03
+</span>
 
+
+<div>
+
+<h3 class="text-base font-bold text-[#3B2508]">
+Penyusunan
 </h3>
 
 
-<h4 class="mt-3 font-bold text-[#3B2508]">
-
-Analisis & Kajian
-
-</h4>
-
-
-<p class="mt-2 text-sm text-gray-600">
-
-Mengolah data dan menyusun kajian sesuai standar teknis.
-
+<p class="mt-2 text-sm text-gray-600 leading-relaxed">
+Analisis dan penyusunan dokumen secara teknis.
 </p>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
 
 
 </div>
@@ -465,46 +578,120 @@ Mengolah data dan menyusun kajian sesuai standar teknis.
 
 
 
-<div class="bg-white rounded-2xl p-6 text-center">
 
 
-<h3 class="text-[#C79A3B] text-2xl font-bold">
+<!-- ROW 04 - 05 CENTER -->
 
+
+<div class="flex justify-center gap-6 flex-col md:flex-row">
+
+
+
+
+
+
+<!-- ITEM 04 -->
+
+
+<div 
+class="w-full md:w-[31.5%]
+bg-white rounded-2xl p-6 
+border border-gray-100 
+hover:shadow-lg transition duration-300"
+data-aos="fade-up"
+data-aos-delay="300">
+
+
+<div class="flex items-start gap-5">
+
+
+<span class="text-lg font-bold text-[#C79A3B]">
 04
+</span>
 
+
+<div>
+
+<h3 class="text-base font-bold text-[#3B2508]">
+Finalisasi
 </h3>
 
 
-<h4 class="mt-3 font-bold text-[#3B2508]">
-
-Laporan & Rekomendasi
-
-</h4>
-
-
-<p class="mt-2 text-sm text-gray-600">
-
-Memberikan hasil analisis dan rekomendasi pekerjaan.
-
+<p class="mt-2 text-sm text-gray-600 leading-relaxed">
+Evaluasi dan penyempurnaan dokumen.
 </p>
 
 
 </div>
 
 
+</div>
+
 
 </div>
+
+
+
+
+
+
+
+
+<!-- ITEM 05 -->
+
+
+<div 
+class="w-full md:w-[31.5%]
+bg-white rounded-2xl p-6 
+border border-gray-100 
+hover:shadow-lg transition duration-300"
+data-aos="fade-up"
+data-aos-delay="400">
+
+
+<div class="flex items-start gap-5">
+
+
+<span class="text-lg font-bold text-[#C79A3B]">
+05
+</span>
+
+
+<div>
+
+<h3 class="text-base font-bold text-[#3B2508]">
+Pendampingan
+</h3>
+
+
+<p class="mt-2 text-sm text-gray-600 leading-relaxed">
+Pendampingan proses pembahasan dan tindak lanjut.
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</div>
+
 
 
 </div>
 
 
 </section>
-
-
-
-
-
 
 
 
@@ -527,16 +714,14 @@ Consultation
 
 <h2 class="mt-4 text-3xl md:text-4xl font-bold">
 
-Siap Mengembangkan Proyek Bersama Kami?
+Butuh Konsultasi Pertambangan atau Lingkungan?
 
 </h2>
 
 
 <p class="mt-4 text-gray-300">
 
-Hubungi CV Sahabat Eksplorasi Banua untuk mendapatkan
-solusi konsultasi pertambangan dan lingkungan sesuai
-kebutuhan proyek Anda.
+Konsultasikan kebutuhan teknis dan dokumen perusahaan Anda bersama tim kami untuk memperoleh layanan yang sesuai dengan karakteristik kegiatan dan ketentuan yang berlaku.
 
 </p>
 
