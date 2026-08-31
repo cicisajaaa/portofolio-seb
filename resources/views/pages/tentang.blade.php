@@ -592,8 +592,7 @@ sumber daya alam.
 </section>
 
 <!-- STRUKTUR ORGANISASI -->
-
-<section class="py-24 bg-[#F8F7F2]">
+<section class="pt-32 pb-24 bg-[#F8F7F2]">
 
 <div class="max-w-7xl mx-auto px-6">
 
@@ -934,25 +933,41 @@ S.Tr.Ak.
 
 <!-- CONNECTOR DIVISI -->
 
+<!-- CONNECTOR DIVISI -->
 
 <div class="
-h-20
-w-px
-bg-[#C79A3B]
-mx-auto">
-
-</div>
-
-
-<div class="
-max-w-5xl
+relative
+max-w-6xl
 mx-auto
-h-px
-bg-[#C79A3B]">
+h-20">
 
+
+<!-- garis vertikal tengah -->
+
+<div class="
+absolute
+top-0
+left-1/2
+-translate-x-1/2
+h-10
+w-[2px]
+bg-[#C79A3B]">
 </div>
 
 
+<!-- garis horizontal -->
+
+<div class="
+absolute
+top-10
+left-[16.5%]
+right-[16.5%]
+h-[2px]
+bg-[#C79A3B]">
+</div>
+
+
+</div>
 
 
 
