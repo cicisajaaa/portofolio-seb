@@ -47,7 +47,6 @@ serta kepatuhan terhadap ketentuan yang berlaku.
 
 
 <!-- SERVICE LIST -->
-
 <section class="py-20 bg-white">
 
 <div class="max-w-7xl mx-auto px-6">
@@ -386,310 +385,157 @@ Penyusunan dokumen sesuai kebutuhan kegiatan usaha.
 
 
 <!-- ALUR KERJA -->
-
 <section class="py-20 bg-[#F8F7F2]">
 
-
-<div class="max-w-6xl mx-auto px-6">
-
-
+<div class="max-w-7xl mx-auto px-6">
 
 <!-- HEADER -->
 
-<div class="text-center max-w-3xl mx-auto mb-12">
-
+<div class="text-center max-w-3xl mx-auto mb-14">
 
 <p class="text-xs uppercase tracking-[0.35em] text-[#C79A3B] font-semibold">
 Workflow
 </p>
 
-
-
-<h2 class="mt-3 text-3xl font-bold text-[#3B2508]">
+<h2 class="mt-4 text-3xl font-bold text-[#3B2508]">
 Proses Kerja yang Sistematis & Terarah
 </h2>
 
-
-
 <p class="mt-5 text-sm text-gray-600 leading-relaxed">
-
 Setiap pekerjaan dilaksanakan melalui tahapan yang terstruktur, mulai dari identifikasi kebutuhan hingga penyelesaian dokumen dan pendampingan, dengan mempertimbangkan aspek teknis, kondisi kegiatan, serta ketentuan yang berlaku.
-
 </p>
-
 
 </div>
 
+<!-- FLOW -->
 
+<div class="bg-white rounded-3xl border border-gray-100 px-8 py-10">
 
+<div class="flex items-center justify-between gap-4 overflow-x-auto">
 
+<!-- ITEM -->
 
+<div class="min-w-[180px] text-center">
 
+<div class="mx-auto w-12 h-12 rounded-full bg-[#F8F7F2] border border-[#C79A3B] flex items-center justify-center">
 
-<!-- WORKFLOW LIST -->
-
-
-<div class="space-y-6">
-
-
-
-
-
-<!-- ROW 01 - 03 -->
-
-
-<div class="grid md:grid-cols-3 gap-6">
-
-
-
-
-
-<!-- ITEM 01 -->
-
-
-<div 
-class="bg-white rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition duration-300"
-data-aos="fade-up">
-
-
-<div class="flex items-start gap-5">
-
-
-<span class="text-lg font-bold text-[#C79A3B]">
+<span class="text-sm font-bold text-[#C79A3B]">
 01
 </span>
 
+</div>
 
-<div>
-
-<h3 class="text-base font-bold text-[#3B2508]">
+<h3 class="mt-4 text-sm font-bold text-[#3B2508]">
 Konsultasi
 </h3>
 
-
-<p class="mt-2 text-sm text-gray-600 leading-relaxed">
+<p class="mt-2 text-xs text-gray-500">
 Identifikasi kebutuhan dan ruang lingkup pekerjaan.
 </p>
 
-
 </div>
 
+<span class="text-[#C79A3B] text-xl">
+→
+</span>
 
-</div>
+<div class="min-w-[180px] text-center">
 
+<div class="mx-auto w-12 h-12 rounded-full bg-[#F8F7F2] border border-[#C79A3B] flex items-center justify-center">
 
-</div>
-
-
-
-
-
-
-
-
-<!-- ITEM 02 -->
-
-
-<div 
-class="bg-white rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition duration-300"
-data-aos="fade-up"
-data-aos-delay="100">
-
-
-<div class="flex items-start gap-5">
-
-
-<span class="text-lg font-bold text-[#C79A3B]">
+<span class="text-sm font-bold text-[#C79A3B]">
 02
 </span>
 
+</div>
 
-<div>
-
-<h3 class="text-base font-bold text-[#3B2508]">
+<h3 class="mt-4 text-sm font-bold text-[#3B2508]">
 Pengumpulan Data
 </h3>
 
-
-<p class="mt-2 text-sm text-gray-600 leading-relaxed">
+<p class="mt-2 text-xs text-gray-500">
 Pengumpulan dan verifikasi data pendukung.
 </p>
 
-
 </div>
 
+<span class="text-[#C79A3B] text-xl">
+→
+</span>
 
-</div>
+<div class="min-w-[180px] text-center">
 
+<div class="mx-auto w-12 h-12 rounded-full bg-[#C79A3B] flex items-center justify-center">
 
-</div>
-
-
-
-
-
-
-
-
-<!-- ITEM 03 -->
-
-
-<div 
-class="bg-white rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition duration-300"
-data-aos="fade-up"
-data-aos-delay="200">
-
-
-<div class="flex items-start gap-5">
-
-
-<span class="text-lg font-bold text-[#C79A3B]">
+<span class="text-sm font-bold text-white">
 03
 </span>
 
+</div>
 
-<div>
-
-<h3 class="text-base font-bold text-[#3B2508]">
+<h3 class="mt-4 text-sm font-bold text-[#3B2508]">
 Penyusunan
 </h3>
 
-
-<p class="mt-2 text-sm text-gray-600 leading-relaxed">
+<p class="mt-2 text-xs text-gray-500">
 Analisis dan penyusunan dokumen secara teknis.
 </p>
 
-
 </div>
 
+<span class="text-[#C79A3B] text-xl">
+→
+</span>
 
-</div>
+<div class="min-w-[180px] text-center">
 
+<div class="mx-auto w-12 h-12 rounded-full bg-[#F8F7F2] border border-[#C79A3B] flex items-center justify-center">
 
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<!-- ROW 04 - 05 CENTER -->
-
-
-<div class="flex justify-center gap-6 flex-col md:flex-row">
-
-
-
-
-
-
-<!-- ITEM 04 -->
-
-
-<div 
-class="w-full md:w-[31.5%]
-bg-white rounded-2xl p-6 
-border border-gray-100 
-hover:shadow-lg transition duration-300"
-data-aos="fade-up"
-data-aos-delay="300">
-
-
-<div class="flex items-start gap-5">
-
-
-<span class="text-lg font-bold text-[#C79A3B]">
+<span class="text-sm font-bold text-[#C79A3B]">
 04
 </span>
 
+</div>
 
-<div>
-
-<h3 class="text-base font-bold text-[#3B2508]">
+<h3 class="mt-4 text-sm font-bold text-[#3B2508]">
 Finalisasi
 </h3>
 
-
-<p class="mt-2 text-sm text-gray-600 leading-relaxed">
+<p class="mt-2 text-xs text-gray-500">
 Evaluasi dan penyempurnaan dokumen.
 </p>
 
-
 </div>
 
+<span class="text-[#C79A3B] text-xl">
+→
+</span>
 
-</div>
+<div class="min-w-[180px] text-center">
 
+<div class="mx-auto w-12 h-12 rounded-full bg-[#F8F7F2] border border-[#C79A3B] flex items-center justify-center">
 
-</div>
-
-
-
-
-
-
-
-
-<!-- ITEM 05 -->
-
-
-<div 
-class="w-full md:w-[31.5%]
-bg-white rounded-2xl p-6 
-border border-gray-100 
-hover:shadow-lg transition duration-300"
-data-aos="fade-up"
-data-aos-delay="400">
-
-
-<div class="flex items-start gap-5">
-
-
-<span class="text-lg font-bold text-[#C79A3B]">
+<span class="text-sm font-bold text-[#C79A3B]">
 05
 </span>
 
+</div>
 
-<div>
-
-<h3 class="text-base font-bold text-[#3B2508]">
+<h3 class="mt-4 text-sm font-bold text-[#3B2508]">
 Pendampingan
 </h3>
 
-
-<p class="mt-2 text-sm text-gray-600 leading-relaxed">
+<p class="mt-2 text-xs text-gray-500">
 Pendampingan proses pembahasan dan tindak lanjut.
 </p>
 
+</div>
 
 </div>
 
-
 </div>
 
-
 </div>
-
-
-
-
-
-</div>
-
-
-</div>
-
-
-
-</div>
-
 
 </section>
 
@@ -697,8 +543,6 @@ Pendampingan proses pembahasan dan tindak lanjut.
 
 
 <!-- CTA -->
-
-
 <section class="py-20 bg-[#3B2508] text-white">
 
 
@@ -725,24 +569,20 @@ Konsultasikan kebutuhan teknis dan dokumen perusahaan Anda bersama tim kami untu
 
 </p>
 
-
-
-
 <a href="{{ route('kontak') }}"
 
-class="inline-flex mt-8
+class="inline-flex mt-6
 bg-[#C79A3B]
 hover:bg-[#b38732]
-px-8 py-3.5
-rounded-xl
+px-6 py-2.5
+rounded-lg
+text-sm
 font-semibold
 transition">
-
 
 Hubungi Kami →
 
 </a>
-
 
 
 </div>
