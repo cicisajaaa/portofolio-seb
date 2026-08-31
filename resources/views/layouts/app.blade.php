@@ -38,8 +38,7 @@ CV Sahabat Eksplorasi Banua | Konsultan Pertambangan & Lingkungan
 
 <div class="min-h-screen">
 
-
-<!-- NAVBAR PUBLIC -->
+  <!-- NAVBAR PUBLIC -->
 
 <nav class="
 fixed
@@ -47,43 +46,82 @@ top-0
 left-0
 w-full
 z-50
-
 bg-white/90
 backdrop-blur-lg
-
 border-b
 border-gray-100
-
 shadow-sm
 ">
 
 
-<div class="max-w-full px-10 py-3 flex justify-between items-center">
-
+<div class="
+w-full
+px-6
+md:px-10
+py-3
+flex
+items-center
+justify-between
+">
 
 
 <!-- LOGO -->
-<div class="flex items-center gap-4">
 
-    <div class="w-14 h-14 rounded-full overflow-hidden border border-[#C79A3B]/30 bg-white p-1">
+<div class="flex items-center gap-4 flex-shrink-0">
 
-    <img
-    src="{{ asset('assets/images/logo-seb.png') }}"
-    class="w-full h-full object-contain">
 
-    </div>
+<div class="
+w-12
+h-12
+md:w-14
+md:h-14
+rounded-full
+overflow-hidden
+border
+border-[#C79A3B]/30
+bg-white
+p-1
+">
 
-    <div>
 
-        <h1 class="font-bold text-[#3B2508] text-sm md:text-base leading-tight">
-            CV Sahabat Eksplorasi Banua
-        </h1>
+<img
+src="{{ asset('assets/images/logo-seb.png') }}"
+class="w-full h-full object-contain">
 
-        <p class="text-xs text-gray-500">
-            Company Profile
-        </p>
 
-    </div>
+</div>
+
+
+
+
+<div>
+
+<h1 class="
+font-bold
+text-[#3B2508]
+text-sm
+md:text-base
+leading-tight
+whitespace-nowrap
+">
+
+CV Sahabat Eksplorasi Banua
+
+</h1>
+
+
+<p class="
+text-xs
+text-gray-500
+">
+
+Company Profile
+
+</p>
+
+
+</div>
+
 
 </div>
 
@@ -92,32 +130,45 @@ shadow-sm
 
 
 
-<!-- MENU -->
 
-<div class="hidden md:flex items-center gap-10 text-gray-600 font-medium">
+<!-- MENU DESKTOP -->
 
-
+<div class="
+hidden
+md:flex
+items-center
+ml-auto
+gap-8
+lg:gap-10
+text-gray-600
+font-medium
+">
 
 
 
 <a href="{{ route('home') }}"
-
-class="relative py-2 transition
-
-{{ request()->routeIs('home') 
-? 'text-[#C79A3B]' 
-: 'hover:text-[#C79A3B]' }}">
-
+class="
+relative
+py-2
+transition
+{{ request()->routeIs('home')
+? 'text-[#C79A3B]'
+: 'hover:text-[#C79A3B]' }}
+">
 
 Beranda
 
-
 @if(request()->routeIs('home'))
-
-<span class="absolute bottom-0 left-0 w-full h-0.5 bg-[#C79A3B] rounded-full"></span>
-
+<span class="
+absolute
+bottom-0
+left-0
+w-full
+h-0.5
+bg-[#C79A3B]
+rounded-full
+"></span>
 @endif
-
 
 </a>
 
@@ -125,26 +176,29 @@ Beranda
 
 
 
-
-
 <a href="{{ route('tentang') }}"
-
-class="relative py-2 transition
-
-{{ request()->routeIs('tentang') 
-? 'text-[#C79A3B]' 
-: 'hover:text-[#C79A3B]' }}">
-
+class="
+relative
+py-2
+transition
+{{ request()->routeIs('tentang')
+? 'text-[#C79A3B]'
+: 'hover:text-[#C79A3B]' }}
+">
 
 Tentang
 
-
 @if(request()->routeIs('tentang'))
-
-<span class="absolute bottom-0 left-0 w-full h-0.5 bg-[#C79A3B] rounded-full"></span>
-
+<span class="
+absolute
+bottom-0
+left-0
+w-full
+h-0.5
+bg-[#C79A3B]
+rounded-full
+"></span>
 @endif
-
 
 </a>
 
@@ -153,132 +207,126 @@ Tentang
 
 
 <a href="{{ route('legalitas') }}"
-
 class="
-
 relative
-
 py-2
-
 transition
-
-{{ request()->routeIs('legalitas') 
-
-? 'text-[#C79A3B]' 
-
-: 'hover:text-[#C79A3B]' }}">
+{{ request()->routeIs('legalitas')
+? 'text-[#C79A3B]'
+: 'hover:text-[#C79A3B]' }}
+">
 
 Legalitas
 
 @if(request()->routeIs('legalitas'))
-
 <span class="
-
 absolute
-
 bottom-0
-
 left-0
-
 w-full
-
 h-0.5
-
 bg-[#C79A3B]
-
-rounded-full">
-
-</span>
-
+rounded-full
+"></span>
 @endif
 
 </a>
+
 
 
 
 
 <a href="{{ route('layanan') }}"
-
-class="relative py-2 transition
-
-{{ request()->routeIs('layanan') 
-? 'text-[#C79A3B]' 
-: 'hover:text-[#C79A3B]' }}">
-
+class="
+relative
+py-2
+transition
+{{ request()->routeIs('layanan')
+? 'text-[#C79A3B]'
+: 'hover:text-[#C79A3B]' }}
+">
 
 Layanan
 
-
 @if(request()->routeIs('layanan'))
-
-<span class="absolute bottom-0 left-0 w-full h-0.5 bg-[#C79A3B] rounded-full"></span>
-
+<span class="
+absolute
+bottom-0
+left-0
+w-full
+h-0.5
+bg-[#C79A3B]
+rounded-full
+"></span>
 @endif
 
-
 </a>
-
-
-
 
 
 
 
 
 <a href="{{ route('proyek') }}"
-
-class="relative py-2 transition
-
-{{ request()->routeIs('proyek') 
-? 'text-[#C79A3B]' 
-: 'hover:text-[#C79A3B]' }}">
-
+class="
+relative
+py-2
+transition
+{{ request()->routeIs('proyek')
+? 'text-[#C79A3B]'
+: 'hover:text-[#C79A3B]' }}
+">
 
 Portofolio
 
-
 @if(request()->routeIs('proyek'))
-
-<span class="absolute bottom-0 left-0 w-full h-0.5 bg-[#C79A3B] rounded-full"></span>
-
+<span class="
+absolute
+bottom-0
+left-0
+w-full
+h-0.5
+bg-[#C79A3B]
+rounded-full
+"></span>
 @endif
 
-
 </a>
-
-
-
 
 
 
 
 
 <a href="{{ route('kontak') }}"
-
-class="relative py-2 transition
-
-{{ request()->routeIs('kontak') 
-? 'text-[#C79A3B]' 
-: 'hover:text-[#C79A3B]' }}">
-
+class="
+relative
+py-2
+transition
+{{ request()->routeIs('kontak')
+? 'text-[#C79A3B]'
+: 'hover:text-[#C79A3B]' }}
+">
 
 Konsultasi
 
-
 @if(request()->routeIs('kontak'))
-
-<span class="absolute bottom-0 left-0 w-full h-0.5 bg-[#C79A3B] rounded-full"></span>
-
+<span class="
+absolute
+bottom-0
+left-0
+w-full
+h-0.5
+bg-[#C79A3B]
+rounded-full
+"></span>
 @endif
-
 
 </a>
 
 
 
-
-
 </div>
+
+
 
 
 
@@ -286,9 +334,6 @@ Konsultasi
 
 
 </nav>
-
-
-
 <!-- CONTENT -->
 <main class="pt-20">
 
