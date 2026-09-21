@@ -9,534 +9,211 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="antialiased">
+<body class="antialiased font-sans text-gray-900 bg-gray-900">
 
-<div class="min-h-screen relative overflow-hidden">
+<div class="min-h-screen relative overflow-hidden flex items-center justify-center">
 
-    {{-- BACKGROUND --}}
-    <div class="absolute inset-0">
-
+    {{-- BACKGROUND WITH ENHANCED OVERLAY --}}
+    <div class="absolute inset-0 z-0">
         <img
             src="{{ asset('assets/images/tambang.jpg') }}"
             alt="Background Tambang"
-            class="w-full h-full object-cover"
+            class="w-full h-full object-cover scale-105 transform duration-1000"
         >
-
-        <div class="absolute inset-0 bg-gradient-to-r
-                    from-[#3B2508]/95
-                    via-[#3B2508]/80
-                    to-black/50">
-        </div>
-
+        {{-- Deep multi-layer gradient for professional compro look --}}
+        <div class="absolute inset-0 bg-gradient-to-tr from-[#1a1004]/95 via-[#3B2508]/85 to-black/60"></div>
+        <div class="absolute inset-0 bg-black/30 backdrop-blur-[2px]"></div>
     </div>
 
+    {{-- MAIN CONTAINER --}}
+    <div class="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12 py-12">
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
 
-    {{-- CONTENT --}}
-    <div class="relative z-10 min-h-screen flex items-center">
-
-        <div class="w-full max-w-7xl mx-auto px-6 lg:px-12">
-
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-
-
-                {{-- LEFT SIDE --}}
-                <div
-                    class="hidden lg:block text-white"
-                    data-aos="fade-right"
-                >
-
-                    <div class="inline-flex items-center gap-3
-                                bg-white/10
-                                backdrop-blur-sm
-                                border border-white/20
-                                px-5 py-2
-                                rounded-full">
-
-                        <span class="w-2 h-2 rounded-full bg-[#C79A3B]"></span>
-
-                        <span class="text-sm tracking-[0.25em] uppercase">
-                            Sahabat Eksplorasi Banua
-                        </span>
-
-                    </div>
-
-
-                    <h1 class="mt-7 text-5xl xl:text-6xl font-bold leading-tight">
-
-                        Sistem Informasi
-
-                        <span class="text-[#C79A3B]">
-                            SEB
-                        </span>
-
-                    </h1>
-
-
-                    <p class="mt-6 max-w-xl text-lg text-gray-200 leading-relaxed">
-
-                        Kelola aktivitas, proyek, keuangan,
-                        serta administrasi CV Sahabat Eksplorasi Banua
-                        melalui sistem informasi yang terintegrasi.
-
-                    </p>
-
-
-                    {{-- LINE --}}
-                    <div class="mt-8 flex items-center gap-4">
-
-                        <div class="h-1 w-16 bg-[#C79A3B] rounded-full"></div>
-
-                        <span class="text-sm text-gray-300">
-                            Mining & Environmental Consultant
-                        </span>
-
-                    </div>
-
+            {{-- LEFT SIDE: COMPANY BRANDING (7 Columns) --}}
+            <div class="hidden lg:block lg:col-span-7 text-white space-y-6" data-aos="fade-right">
+                <div class="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/15 px-4 py-2 rounded-full shadow-lg">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[#C79A3B] animate-pulse"></span>
+                    <span class="text-xs font-semibold tracking-[0.25em] uppercase text-gray-200">
+                        CV Sahabat Eksplorasi Banua
+                    </span>
                 </div>
 
+                <h1 class="text-5xl xl:text-6xl font-extrabold tracking-tight leading-none">
+                    Sistem Informasi <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#C79A3B] to-amber-200">
+                        Terintegrasi SEB
+                    </span>
+                </h1>
 
+                <p class="max-w-xl text-lg text-gray-300 leading-relaxed font-light">
+                    Solusi terpusat untuk mengelola aktivitas operasional, proyek, keuangan, serta administrasi perusahaan secara profesional dan transparan.
+                </p>
 
-                {{-- LOGIN CARD --}}
-                <div
-                    class="w-full max-w-md lg:ml-auto"
-                    data-aos="fade-left"
-                >
+                <div class="pt-4 flex items-center gap-6">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-xl bg-white/10 border border-white/15 flex items-center justify-center text-[#C79A3B]">
+                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-white text-sm">Mining & Environmental</h4>
+                            <p class="text-xs text-gray-400">Professional Consultant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                    {{-- MOBILE BRAND --}}
-                    <div class="lg:hidden text-center mb-6">
+            {{-- RIGHT SIDE: LOGIN CARD (5 Columns) --}}
+            <div class="w-full max-w-md lg:col-span-5 lg:ml-auto" data-aos="fade-left">
+                
+                {{-- MOBILE BRAND HEADER --}}
+                <div class="lg:hidden text-center mb-6">
+                    <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-1.5 rounded-full text-xs font-medium text-white tracking-widest uppercase">
+                        <span class="w-2 h-2 rounded-full bg-[#C79A3B]"></span>
+                        Sahabat Eksplorasi Banua
+                    </span>
+                </div>
 
-                        <div class="inline-flex items-center gap-3
-                                    bg-white/10
-                                    backdrop-blur-sm
-                                    border border-white/20
-                                    px-5 py-2
-                                    rounded-full">
+                {{-- GLASSMORPHISM FORM CARD --}}
+                <div class="bg-white/95 backdrop-blur-2xl rounded-3xl shadow-2xl border border-white/40 p-8 sm:p-10">
+                    
+                    <div class="mb-8">
+                        <span class="inline-block text-[11px] font-bold uppercase tracking-[0.25em] text-[#C79A3B] bg-amber-50 px-3 py-1 rounded-md mb-3 border border-amber-100">
+                            Secure Portal
+                        </span>
+                        <h2 class="text-2xl sm:text-3xl font-bold text-[#3B2508] tracking-tight">
+                            Selamat Datang
+                        </h2>
+                        <p class="text-sm text-gray-500 mt-1">
+                            Silakan masuk menggunakan akun resmi SEB.
+                        </p>
+                    </div>
 
-                            <span class="w-2 h-2 rounded-full bg-[#C79A3B]"></span>
+                    <x-auth-session-status class="mb-5" :status="session('status')" />
 
-                            <span class="text-sm text-white tracking-[0.2em] uppercase">
-                                Sahabat Eksplorasi Banua
-                            </span>
+                    <form method="POST" action="{{ route('login') }}" class="space-y-5">
+                        @csrf
 
+                        {{-- EMAIL FIELD --}}
+                        <div>
+                            <x-input-label for="email" :value="__('Email Perusahaan')" class="text-[#3B2508] font-semibold text-xs uppercase tracking-wider mb-1.5" />
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400">
+                                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                    </svg>
+                                </div>
+                                <input
+                                    id="email"
+                                    type="email"
+                                    name="email"
+                                    value="{{ old('email') }}"
+                                    required
+                                    autofocus
+                                    autocomplete="username"
+                                    placeholder="nama@sebconsulting.co.id"
+                                    class="w-full pl-11 pr-4 py-3 rounded-xl border border-gray-200 bg-gray-50/80 focus:bg-white focus:border-[#C79A3B] focus:ring-4 focus:ring-[#C79A3B]/10 text-sm text-gray-800 transition-all shadow-sm"
+                                >
+                            </div>
+                            <x-input-error :messages="$errors->get('email')" class="mt-1.5" />
                         </div>
 
-                    </div>
-
-
-                    {{-- CARD --}}
-                    <div class="bg-white/95
-                                backdrop-blur-xl
-                                rounded-3xl
-                                shadow-2xl
-                                p-8 md:p-10">
-
-
-                        {{-- HEADER --}}
-                        <div class="mb-7">
-
-                            <p class="text-xs uppercase
-                                      tracking-[0.3em]
-                                      text-[#C79A3B]
-                                      font-semibold">
-
-                                Login
-
-                            </p>
-
-
-                            <h2 class="mt-3
-                                       text-3xl
-                                       font-bold
-                                       text-[#3B2508]">
-
-                                Selamat Datang
-
-                            </h2>
-
-
-                            <p class="mt-2 text-sm text-gray-500">
-
-                                Masuk untuk mengakses sistem SEB.
-
-                            </p>
-
+                        {{-- PASSWORD FIELD --}}
+                        <div>
+                            <div class="flex items-center justify-between mb-1.5">
+                                <x-input-label for="password" :value="__('Password')" class="text-[#3B2508] font-semibold text-xs uppercase tracking-wider" />
+                            </div>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400">
+                                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                                    </svg>
+                                </div>
+                                <input
+                                    id="password"
+                                    type="password"
+                                    name="password"
+                                    required
+                                    autocomplete="current-password"
+                                    placeholder="••••••••••••"
+                                    class="w-full pl-11 pr-12 py-3 rounded-xl border border-gray-200 bg-gray-50/80 focus:bg-white focus:border-[#C79A3B] focus:ring-4 focus:ring-[#C79A3B]/10 text-sm text-gray-800 transition-all shadow-sm"
+                                >
+                                <button
+                                    type="button"
+                                    onclick="togglePassword()"
+                                    class="absolute inset-y-0 right-0 pr-4 flex items-center text-gray-400 hover:text-[#C79A3B] transition-colors"
+                                >
+                                    <svg id="eyeOpen" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                    </svg>
+                                    <svg id="eyeClosed" class="w-5 h-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <x-input-error :messages="$errors->get('password')" class="mt-1.5" />
                         </div>
 
-
-
-                        {{-- SESSION STATUS --}}
-                        <x-auth-session-status
-                            class="mb-5"
-                            :status="session('status')"
-                        />
-
-
-
-                        {{-- FORM --}}
-                        <form method="POST" action="{{ route('login') }}">
-
-                            @csrf
-
-
-                            {{-- EMAIL --}}
-                            <div>
-
-                                <x-input-label
-                                    for="email"
-                                    :value="__('Email')"
-                                    class="text-[#3B2508] font-semibold"
-                                />
-
-
-                                <div class="relative mt-2">
-
-                                    <div class="absolute inset-y-0 left-0
-                                                pl-4
-                                                flex items-center
-                                                pointer-events-none">
-
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            class="w-5 h-5 text-gray-400"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            stroke="currentColor"
-                                        >
-                                            <path
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                stroke-width="1.8"
-                                                d="M21.75 6.75v10.5A2.25 2.25 0 0119.5 19.5h-15a2.25 2.25 0 01-2.25-2.25V6.75A2.25 2.25 0 014.5 4.5h15a2.25 2.25 0 012.25 2.25z"
-                                            />
-
-                                            <path
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                stroke-width="1.8"
-                                                d="M3 6l8.03 5.62a1.7 1.7 0 001.94 0L21 6"
-                                            />
-                                        </svg>
-
-                                    </div>
-
-
-                                    <input
-                                        id="email"
-                                        type="email"
-                                        name="email"
-                                        value="{{ old('email') }}"
-                                        required
-                                        autofocus
-                                        autocomplete="username"
-                                        placeholder="Masukkan email"
-
-                                        class="w-full
-                                               pl-12
-                                               pr-4
-                                               py-3.5
-                                               rounded-xl
-                                               border-gray-200
-                                               bg-gray-50
-                                               focus:bg-white
-                                               focus:border-[#C79A3B]
-                                               focus:ring-[#C79A3B]/20
-                                               text-gray-700
-                                               transition"
-                                    >
-
-                                </div>
-
-
-                                <x-input-error
-                                    :messages="$errors->get('email')"
-                                    class="mt-2"
-                                />
-
-                            </div>
-
-
-
-                            {{-- PASSWORD --}}
-                            <div class="mt-5">
-
-                                <x-input-label
-                                    for="password"
-                                    :value="__('Password')"
-                                    class="text-[#3B2508] font-semibold"
-                                />
-
-
-                                <div class="relative mt-2">
-
-                                    <div class="absolute inset-y-0 left-0
-                                                pl-4
-                                                flex items-center
-                                                pointer-events-none">
-
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            class="w-5 h-5 text-gray-400"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            stroke="currentColor"
-                                        >
-                                            <path
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                stroke-width="1.8"
-                                                d="M16.5 10.5V6.75a4.5 4.5 0 00-9 0v3.75"
-                                            />
-
-                                            <rect
-                                                width="15"
-                                                height="11"
-                                                x="4.5"
-                                                y="10.5"
-                                                rx="2.25"
-                                            />
-                                        </svg>
-
-                                    </div>
-
-
-                                    <input
-                                        id="password"
-                                        type="password"
-                                        name="password"
-                                        required
-                                        autocomplete="current-password"
-                                        placeholder="Masukkan password"
-
-                                        class="w-full
-                                               pl-12
-                                               pr-12
-                                               py-3.5
-                                               rounded-xl
-                                               border-gray-200
-                                               bg-gray-50
-                                               focus:bg-white
-                                               focus:border-[#C79A3B]
-                                               focus:ring-[#C79A3B]/20
-                                               text-gray-700
-                                               transition"
-                                    >
-
-
-                                    {{-- EYE --}}
-                                    <button
-                                        type="button"
-                                        onclick="togglePassword()"
-                                        class="absolute inset-y-0 right-0
-                                               pr-4
-                                               flex items-center
-                                               text-gray-400
-                                               hover:text-[#C79A3B]"
-                                    >
-
-                                        <svg
-                                            id="eyeOpen"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            class="w-5 h-5"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            stroke="currentColor"
-                                        >
-                                            <path
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                stroke-width="1.8"
-                                                d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
-                                            />
-
-                                            <circle
-                                                cx="12"
-                                                cy="12"
-                                                r="3"
-                                            />
-                                        </svg>
-
-
-                                        <svg
-                                            id="eyeClosed"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            class="w-5 h-5 hidden"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            stroke="currentColor"
-                                        >
-                                            <path
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                stroke-width="1.8"
-                                                d="M3 3l18 18M10.58 10.58a2 2 0 102.83 2.83"
-                                            />
-
-                                            <path
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                stroke-width="1.8"
-                                                d="M9.88 5.09A10.45 10.45 0 0112 4.5c4.64 0 8.58 3.01 9.96 7.18a1 1 0 010 .64 10.7 10.7 0 01-3.04 4.31M6.23 6.23A10.7 10.7 0 002.04 11.68a1 1 0 000 .64C3.42 16.49 7.36 19.5 12 19.5c1.64 0 3.19-.37 4.58-1.04"
-                                            />
-                                        </svg>
-
-                                    </button>
-
-                                </div>
-
-
-                                <x-input-error
-                                    :messages="$errors->get('password')"
-                                    class="mt-2"
-                                />
-
-                            </div>
-
-
-
-                            {{-- REMEMBER --}}
-                            <div class="mt-5 flex items-center justify-between">
-
-                                <label
-                                    for="remember_me"
-                                    class="inline-flex items-center cursor-pointer"
-                                >
-
-                                    <input
-                                        id="remember_me"
-                                        type="checkbox"
-                                        name="remember"
-
-                                        class="rounded
-                                               border-gray-300
-                                               text-[#C79A3B]
-                                               focus:ring-[#C79A3B]"
-                                    >
-
-                                    <span class="ms-2 text-sm text-gray-600">
-                                        {{ __('Remember me') }}
-                                    </span>
-
-                                </label>
-
-
-                                @if (Route::has('password.request'))
-
-                                    <a
-                                        href="{{ route('password.request') }}"
-                                        class="text-sm
-                                               font-semibold
-                                               text-[#C79A3B]
-                                               hover:text-[#3B2508]
-                                               transition"
-                                    >
-                                        Lupa Password?
-                                    </a>
-
-                                @endif
-
-                            </div>
-
-
-
-                            {{-- BUTTON --}}
-                            <button
-                                type="submit"
-
-                                class="mt-6
-                                       w-full
-                                       flex items-center
-                                       justify-center
-                                       gap-2
-                                       bg-[#3B2508]
-                                       hover:bg-[#241505]
-                                       text-white
-                                       py-3.5
-                                       rounded-xl
-                                       font-semibold
-                                       shadow-lg
-                                       hover:shadow-xl
-                                       transition"
-                            >
-
-                                Masuk
-
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    class="w-5 h-5"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="1.8"
-                                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                                    />
-                                </svg>
-
-                            </button>
-
-                        </form>
-
-                    </div>
-
-
-                    {{-- FOOTER --}}
-                    <div class="text-center mt-5">
-
-                        <p class="text-xs text-white/70">
-                            © {{ date('Y') }} CV Sahabat Eksplorasi Banua
-                        </p>
-
-                        <p class="text-xs text-white/50 mt-1">
-                            Sistem Informasi Manajemen
-                        </p>
-
-                    </div>
-
+                        {{-- REMEMBER & FORGOT --}}
+                        <div class="flex items-center justify-between text-sm pt-1">
+                            <label for="remember_me" class="inline-flex items-center cursor-pointer select-none">
+                                <input id="remember_me" type="checkbox" name="remember" class="rounded border-gray-300 text-[#C79A3B] focus:ring-[#C79A3B]/20 w-4 h-4">
+                                <span class="ms-2 text-gray-600 text-xs font-medium">{{ __('Ingat Saya') }}</span>
+                            </label>
+
+                            @if (Route::has('password.request'))
+                                <a href="{{ route('password.request') }}" class="text-xs font-semibold text-[#C79A3B] hover:text-[#3B2508] transition-colors">
+                                    Lupa Password?
+                                </a>
+                            @endif
+                        </div>
+
+                        {{-- SUBMIT BUTTON --}}
+                        <button
+                            type="submit"
+                            class="w-full mt-2 flex items-center justify-center gap-2 bg-[#3B2508] hover:bg-[#241505] text-white py-3.5 px-6 rounded-xl font-medium text-sm shadow-lg shadow-[#3B2508]/20 hover:shadow-xl transition-all duration-200 transform active:scale-[0.99]"
+                        >
+                            <span>Masuk ke Sistem</span>
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                {{-- FOOTER INFO --}}
+                <div class="text-center mt-6 space-y-1">
+                    <p class="text-xs text-white/80 font-medium">
+                        &copy; {{ date('Y') }} CV Sahabat Eksplorasi Banua. All rights reserved.
+                    </p>
+                    <p class="text-[11px] text-white/50 tracking-wider uppercase">
+                        Enterprise Resource Planning & Management System
+                    </p>
                 </div>
 
             </div>
 
         </div>
-
     </div>
-
 </div>
 
-
-{{-- PASSWORD TOGGLE --}}
+{{-- PASSWORD TOGGLE SCRIPT --}}
 <script>
-
-function togglePassword()
-{
+function togglePassword() {
     const password = document.getElementById('password');
-
     const eyeOpen = document.getElementById('eyeOpen');
-
     const eyeClosed = document.getElementById('eyeClosed');
 
-
     if (password.type === 'password') {
-
         password.type = 'text';
-
         eyeOpen.classList.add('hidden');
-
         eyeClosed.classList.remove('hidden');
-
     } else {
-
         password.type = 'password';
-
         eyeOpen.classList.remove('hidden');
-
         eyeClosed.classList.add('hidden');
-
     }
 }
-
 </script>
 
 </body>
