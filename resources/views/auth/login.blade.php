@@ -197,7 +197,7 @@
             position: relative;
             transition: all 0.3s ease;
         }
-        .input-box svg {
+        .input-box > svg.left-icon {
             position: absolute;
             left: 14px;
             top: 50%;
@@ -206,6 +206,7 @@
             height: 20px;
             color: #9ca3af;
             transition: color 0.3s ease;
+            pointer-events: none;
         }
         .input-box input {
             width: 100%;
@@ -217,10 +218,13 @@
             color: #1f2937;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
+        /* Specific padding for password input to prevent text collision with the eye icon */
+        .input-box input.password-input {
+            padding-right: 48px;
+        }
         .input-box input::placeholder {
             color: #adb5bd;
         }
-        /* Interactive Input States */
         .input-box input:hover {
             border-color: #cbd5e1;
             background-color: #fff;
@@ -231,25 +235,33 @@
             border-color: #C79A3B;
             box-shadow: 0 0 0 4px rgba(199, 154, 59, 0.15);
         }
-        .input-box input:focus ~ svg,
-        .input-box input:focus + svg {
+        .input-box input:focus ~ svg.left-icon {
             color: #C79A3B;
         }
+        
+        /* Perfectly Centered Password Toggle Button */
         .toggle-password {
             position: absolute;
-            right: 14px;
+            right: 4px;
             top: 50%;
             transform: translateY(-50%);
             background: none;
             border: none;
             cursor: pointer;
             color: #9ca3af;
-            padding: 4px;
-            transition: color 0.2s;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: color 0.2s, background-color 0.2s;
         }
         .toggle-password:hover {
             color: #C79A3B;
+            background-color: rgba(199, 154, 59, 0.08);
         }
+
         .form-footer-flex {
             display: flex;
             align-items: center;
@@ -381,7 +393,7 @@
                     <div class="form-group">
                         <label class="form-label" for="email">Email Perusahaan</label>
                         <div class="input-box">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg class="left-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                             </svg>
                             <input
@@ -402,7 +414,7 @@
                     <div class="form-group">
                         <label class="form-label" for="password">Password</label>
                         <div class="input-box">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg class="left-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
                             </svg>
                             <input
@@ -412,6 +424,7 @@
                                 required
                                 autocomplete="current-password"
                                 placeholder="••••••••••••"
+                                class="password-input"
                             >
                             <button type="button" onclick="togglePassword()" class="toggle-password">
                                 <svg id="eyeOpen" xmlns="http://www.w3.org/2000/svg" style="width:20px;height:20px;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
