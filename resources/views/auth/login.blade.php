@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login - CV Sahabat Eksplorasi Banua</title>
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://ui-avatars.com/api/?name=SEB&background=3B2508&color=C79A3B&bold=true">
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
@@ -234,7 +237,7 @@
             color: #C79A3B;
         }
         
-        /* Tombol Toggle Mata di dalam Input */
+        /* Tombol Toggle Mata di dalam Input dengan posisi presisi */
         .toggle-password {
             position: absolute;
             right: 12px;
@@ -417,7 +420,6 @@
                                 required
                                 autocomplete="current-password"
                                 placeholder="••••••••••••"
-                                class="password-input"
                             >
                             <button type="button" onclick="togglePassword()" class="toggle-password">
                                 <svg id="eyeOpen" xmlns="http://www.w3.org/2000/svg" style="width:20px;height:20px;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
