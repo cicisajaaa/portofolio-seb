@@ -126,7 +126,6 @@
             font-weight: 400;
         }
         
-        /* Interactive Login Card */
         .login-card-container {
             animation: fadeInRighty 1s ease-out forwards;
         }
@@ -195,32 +194,28 @@
         }
         .input-box {
             position: relative;
-            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
         }
         .input-box > svg.left-icon {
             position: absolute;
             left: 14px;
-            top: 50%;
-            transform: translateY(-50%);
             width: 20px;
             height: 20px;
             color: #9ca3af;
             transition: color 0.3s ease;
             pointer-events: none;
+            z-index: 2;
         }
         .input-box input {
             width: 100%;
-            padding: 13px 16px 13px 46px;
+            padding: 13px 48px 13px 46px;
             background-color: #f8fafc;
             border: 1.5px solid #e2e8f0;
             border-radius: 14px;
             font-size: 0.95rem;
             color: #1f2937;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        /* Specific padding for password input to prevent text collision with the eye icon */
-        .input-box input.password-input {
-            padding-right: 48px;
         }
         .input-box input::placeholder {
             color: #adb5bd;
@@ -239,23 +234,22 @@
             color: #C79A3B;
         }
         
-        /* Perfectly Centered Password Toggle Button */
+        /* Tombol Toggle Mata di dalam Input */
         .toggle-password {
             position: absolute;
-            right: 4px;
-            top: 50%;
-            transform: translateY(-50%);
+            right: 12px;
             background: none;
             border: none;
             cursor: pointer;
             color: #9ca3af;
-            width: 40px;
-            height: 40px;
+            width: 32px;
+            height: 32px;
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 50%;
+            border-radius: 8px;
             transition: color 0.2s, background-color 0.2s;
+            z-index: 3;
         }
         .toggle-password:hover {
             color: #C79A3B;
@@ -289,7 +283,6 @@
             text-decoration: underline;
         }
         
-        /* Interactive Submit Button */
         .btn-submit {
             width: 100%;
             background-color: #3B2508;
