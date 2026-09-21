@@ -3,201 +3,467 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Login - CV Sahabat Eksplorasi Banua</title>
-
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        body {
+            background-color: #1a1004;
+            color: #1f2937;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .login-wrapper {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+        }
+        .bg-overlay {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+        .bg-overlay img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(1.03);
+            transition: transform 10s ease;
+        }
+        .bg-overlay img:hover {
+            transform: scale(1.07);
+        }
+        .bg-overlay .gradient {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(26, 16, 4, 0.96) 0%, rgba(59, 37, 8, 0.88) 50%, rgba(15, 10, 2, 0.90) 100%);
+        }
+        .container-grid {
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        @media(min-width: 1024px) {
+            .container-grid {
+                grid-template-columns: 1.2fr 1fr;
+            }
+        }
+        .brand-side {
+            color: white;
+            display: none;
+            animation: fadeInLefty 1s ease-out forwards;
+        }
+        @media(min-width: 1024px) {
+            .brand-side {
+                display: block;
+            }
+        }
+        @keyframes fadeInLefty {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 8px 18px;
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+            font-size: 12px;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        .badge-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #C79A3B;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #C79A3B;
+            animation: pulseGlow 2s infinite;
+        }
+        @keyframes pulseGlow {
+            0% { transform: scale(0.95); opacity: 0.8; }
+            50% { transform: scale(1.25); opacity: 1; }
+            100% { transform: scale(0.95); opacity: 0.8; }
+        }
+        .brand-side h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1.2rem;
+            letter-spacing: -0.02em;
+        }
+        .brand-side h1 span {
+            color: #C79A3B;
+            text-shadow: 0 2px 15px rgba(199, 154, 59, 0.3);
+        }
+        .brand-side p {
+            font-size: 1.1rem;
+            color: #d1d5db;
+            line-height: 1.7;
+            max-width: 500px;
+            font-weight: 400;
+        }
+        
+        /* Interactive Login Card */
+        .login-card-container {
+            animation: fadeInRighty 1s ease-out forwards;
+        }
+        @keyframes fadeInRighty {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .login-card {
+            background: #ffffff;
+            border-radius: 28px;
+            box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.4);
+            padding: 2.75rem;
+            width: 100%;
+            max-width: 440px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .login-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #3B2508, #C79A3B, #3B2508);
+        }
+        .card-header {
+            margin-bottom: 2rem;
+        }
+        .card-header .tag {
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+            color: #C79A3B;
+            background: #fef8f0;
+            padding: 5px 12px;
+            border-radius: 6px;
+            display: inline-block;
+            margin-bottom: 8px;
+            border: 1px solid #fdecd2;
+        }
+        .card-header h2 {
+            font-size: 1.85rem;
+            font-weight: 700;
+            color: #3B2508;
+            letter-spacing: -0.01em;
+        }
+        .card-header p {
+            font-size: 0.875rem;
+            color: #6b7280;
+            margin-top: 4px;
+        }
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+        .form-label {
+            display: block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #3B2508;
+            margin-bottom: 0.5rem;
+        }
+        .input-box {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .input-box svg {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            color: #9ca3af;
+            transition: color 0.3s ease;
+        }
+        .input-box input {
+            width: 100%;
+            padding: 13px 16px 13px 46px;
+            background-color: #f8fafc;
+            border: 1.5px solid #e2e8f0;
+            border-radius: 14px;
+            font-size: 0.95rem;
+            color: #1f2937;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .input-box input::placeholder {
+            color: #adb5bd;
+        }
+        /* Interactive Input States */
+        .input-box input:hover {
+            border-color: #cbd5e1;
+            background-color: #fff;
+        }
+        .input-box input:focus {
+            outline: none;
+            background-color: #fff;
+            border-color: #C79A3B;
+            box-shadow: 0 0 0 4px rgba(199, 154, 59, 0.15);
+        }
+        .input-box input:focus ~ svg,
+        .input-box input:focus + svg {
+            color: #C79A3B;
+        }
+        .toggle-password {
+            position: absolute;
+            right: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #9ca3af;
+            padding: 4px;
+            transition: color 0.2s;
+        }
+        .toggle-password:hover {
+            color: #C79A3B;
+        }
+        .form-footer-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            margin-top: 1.2rem;
+            margin-bottom: 1.75rem;
+        }
+        .remember-label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            color: #4b5563;
+            font-weight: 500;
+        }
+        .forgot-link {
+            color: #C79A3B;
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .forgot-link:hover {
+            color: #3B2508;
+            text-decoration: underline;
+        }
+        
+        /* Interactive Submit Button */
+        .btn-submit {
+            width: 100%;
+            background-color: #3B2508;
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 14px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            box-shadow: 0 10px 25px -5px rgba(59, 37, 8, 0.4);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-submit::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(255, 255, 255, 0.1);
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        .btn-submit:hover {
+            background-color: #241505;
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px -5px rgba(59, 37, 8, 0.5);
+        }
+        .btn-submit:active {
+            transform: translateY(0);
+        }
+        .btn-submit:hover::after {
+            opacity: 1;
+        }
+        .btn-submit svg {
+            transition: transform 0.3s ease;
+        }
+        .btn-submit:hover svg {
+            transform: translateX(4px);
+        }
+        
+        .footer-text {
+            text-align: center;
+            margin-top: 1.75rem;
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 0.75rem;
+        }
+        .footer-text p + p {
+            margin-top: 4px;
+            color: rgba(255, 255, 255, 0.5);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            font-size: 0.65rem;
+        }
+    </style>
 </head>
 
-<body class="antialiased font-sans text-gray-900 bg-gray-900">
+<body>
 
-<div class="min-h-screen relative overflow-hidden flex items-center justify-center">
+<div class="login-wrapper">
 
-    {{-- BACKGROUND WITH ENHANCED OVERLAY --}}
-    <div class="absolute inset-0 z-0">
-        <img
-            src="{{ asset('assets/images/tambang.jpg') }}"
-            alt="Background Tambang"
-            class="w-full h-full object-cover scale-105 transform duration-1000"
-        >
-        {{-- Deep multi-layer gradient for professional compro look --}}
-        <div class="absolute inset-0 bg-gradient-to-tr from-[#1a1004]/95 via-[#3B2508]/85 to-black/60"></div>
-        <div class="absolute inset-0 bg-black/30 backdrop-blur-[2px]"></div>
+    {{-- BACKGROUND --}}
+    <div class="bg-overlay">
+        <img src="{{ asset('assets/images/tambang.jpg') }}" alt="Background Tambang">
+        <div class="gradient"></div>
     </div>
 
-    {{-- MAIN CONTAINER --}}
-    <div class="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12 py-12">
-        <div class="grid lg:grid-cols-12 gap-12 items-center">
+    {{-- CONTENT --}}
+    <div class="container-grid">
 
-            {{-- LEFT SIDE: COMPANY BRANDING (7 Columns) --}}
-            <div class="hidden lg:block lg:col-span-7 text-white space-y-6" data-aos="fade-right">
-                <div class="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/15 px-4 py-2 rounded-full shadow-lg">
-                    <span class="w-2.5 h-2.5 rounded-full bg-[#C79A3B] animate-pulse"></span>
-                    <span class="text-xs font-semibold tracking-[0.25em] uppercase text-gray-200">
-                        CV Sahabat Eksplorasi Banua
-                    </span>
+        {{-- LEFT SIDE (COMPRO BRANDING) --}}
+        <div class="brand-side">
+            <div class="badge">
+                <span class="badge-dot"></span>
+                <span>Sahabat Eksplorasi Banua</span>
+            </div>
+            <h1>Sistem Informasi <br><span>SEB Terintegrasi</span></h1>
+            <p>Kelola aktivitas operasional, manajemen proyek, keuangan, serta administrasi perusahaan secara profesional dan terpusat dalam satu platform.</p>
+        </div>
+
+        {{-- LOGIN CARD --}}
+        <div class="login-card-container">
+            <div class="login-card">
+                
+                <div class="card-header">
+                    <span class="tag">Secure Portal</span>
+                    <h2>Selamat Datang</h2>
+                    <p>Silakan masuk untuk mengakses sistem SEB.</p>
                 </div>
 
-                <h1 class="text-5xl xl:text-6xl font-extrabold tracking-tight leading-none">
-                    Sistem Informasi <br>
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#C79A3B] to-amber-200">
-                        Terintegrasi SEB
-                    </span>
-                </h1>
+                <x-auth-session-status class="mb-5" :status="session('status')" />
 
-                <p class="max-w-xl text-lg text-gray-300 leading-relaxed font-light">
-                    Solusi terpusat untuk mengelola aktivitas operasional, proyek, keuangan, serta administrasi perusahaan secara profesional dan transparan.
-                </p>
+                <form method="POST" action="{{ route('login') }}">
+                    @csrf
 
-                <div class="pt-4 flex items-center gap-6">
-                    <div class="flex items-center gap-3">
-                        <div class="w-12 h-12 rounded-xl bg-white/10 border border-white/15 flex items-center justify-center text-[#C79A3B]">
-                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                    {{-- EMAIL --}}
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email Perusahaan</label>
+                        <div class="input-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <input
+                                id="email"
+                                type="email"
+                                name="email"
+                                value="{{ old('email') }}"
+                                required
+                                autofocus
+                                autocomplete="username"
+                                placeholder="nama@sebconsulting.co.id"
+                            >
                         </div>
-                        <div>
-                            <h4 class="font-semibold text-white text-sm">Mining & Environmental</h4>
-                            <p class="text-xs text-gray-400">Professional Consultant</p>
-                        </div>
+                        <x-input-error :messages="$errors->get('email')" class="mt-2" />
                     </div>
-                </div>
+
+                    {{-- PASSWORD --}}
+                    <div class="form-group">
+                        <label class="form-label" for="password">Password</label>
+                        <div class="input-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                            </svg>
+                            <input
+                                id="password"
+                                type="password"
+                                name="password"
+                                required
+                                autocomplete="current-password"
+                                placeholder="••••••••••••"
+                            >
+                            <button type="button" onclick="togglePassword()" class="toggle-password">
+                                <svg id="eyeOpen" xmlns="http://www.w3.org/2000/svg" style="width:20px;height:20px;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
+                                <svg id="eyeClosed" xmlns="http://www.w3.org/2000/svg" style="width:20px;height:20px;" class="hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 3l18 18M9.88 9.88a3 3 0 104.24 4.24" />
+                                </svg>
+                            </button>
+                        </div>
+                        <x-input-error :messages="$errors->get('password')" class="mt-2" />
+                    </div>
+
+                    {{-- REMEMBER & FORGOT --}}
+                    <div class="form-footer-flex">
+                        <label class="remember-label">
+                            <input id="remember_me" type="checkbox" name="remember" style="width: 16px; height: 16px; accent-color: #C79A3B; cursor: pointer;">
+                            <span style="font-size: 13px;">Ingat Saya</span>
+                        </label>
+
+                        @if (Route::has('password.request'))
+                            <a href="{{ route('password.request') }}" class="forgot-link" style="font-size: 13px;">
+                                Lupa Password?
+                            </a>
+                        @endif
+                    </div>
+
+                    {{-- SUBMIT --}}
+                    <button type="submit" class="btn-submit">
+                        <span>Masuk ke Sistem</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" style="width:18px;height:18px;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                        </svg>
+                    </button>
+
+                </form>
+
             </div>
 
-            {{-- RIGHT SIDE: LOGIN CARD (5 Columns) --}}
-            <div class="w-full max-w-md lg:col-span-5 lg:ml-auto" data-aos="fade-left">
-                
-                {{-- MOBILE BRAND HEADER --}}
-                <div class="lg:hidden text-center mb-6">
-                    <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-1.5 rounded-full text-xs font-medium text-white tracking-widest uppercase">
-                        <span class="w-2 h-2 rounded-full bg-[#C79A3B]"></span>
-                        Sahabat Eksplorasi Banua
-                    </span>
-                </div>
-
-                {{-- GLASSMORPHISM FORM CARD --}}
-                <div class="bg-white/95 backdrop-blur-2xl rounded-3xl shadow-2xl border border-white/40 p-8 sm:p-10">
-                    
-                    <div class="mb-8">
-                        <span class="inline-block text-[11px] font-bold uppercase tracking-[0.25em] text-[#C79A3B] bg-amber-50 px-3 py-1 rounded-md mb-3 border border-amber-100">
-                            Secure Portal
-                        </span>
-                        <h2 class="text-2xl sm:text-3xl font-bold text-[#3B2508] tracking-tight">
-                            Selamat Datang
-                        </h2>
-                        <p class="text-sm text-gray-500 mt-1">
-                            Silakan masuk menggunakan akun resmi SEB.
-                        </p>
-                    </div>
-
-                    <x-auth-session-status class="mb-5" :status="session('status')" />
-
-                    <form method="POST" action="{{ route('login') }}" class="space-y-5">
-                        @csrf
-
-                        {{-- EMAIL FIELD --}}
-                        <div>
-                            <x-input-label for="email" :value="__('Email Perusahaan')" class="text-[#3B2508] font-semibold text-xs uppercase tracking-wider mb-1.5" />
-                            <div class="relative">
-                                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400">
-                                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                                    </svg>
-                                </div>
-                                <input
-                                    id="email"
-                                    type="email"
-                                    name="email"
-                                    value="{{ old('email') }}"
-                                    required
-                                    autofocus
-                                    autocomplete="username"
-                                    placeholder="nama@sebconsulting.co.id"
-                                    class="w-full pl-11 pr-4 py-3 rounded-xl border border-gray-200 bg-gray-50/80 focus:bg-white focus:border-[#C79A3B] focus:ring-4 focus:ring-[#C79A3B]/10 text-sm text-gray-800 transition-all shadow-sm"
-                                >
-                            </div>
-                            <x-input-error :messages="$errors->get('email')" class="mt-1.5" />
-                        </div>
-
-                        {{-- PASSWORD FIELD --}}
-                        <div>
-                            <div class="flex items-center justify-between mb-1.5">
-                                <x-input-label for="password" :value="__('Password')" class="text-[#3B2508] font-semibold text-xs uppercase tracking-wider" />
-                            </div>
-                            <div class="relative">
-                                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400">
-                                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
-                                    </svg>
-                                </div>
-                                <input
-                                    id="password"
-                                    type="password"
-                                    name="password"
-                                    required
-                                    autocomplete="current-password"
-                                    placeholder="••••••••••••"
-                                    class="w-full pl-11 pr-12 py-3 rounded-xl border border-gray-200 bg-gray-50/80 focus:bg-white focus:border-[#C79A3B] focus:ring-4 focus:ring-[#C79A3B]/10 text-sm text-gray-800 transition-all shadow-sm"
-                                >
-                                <button
-                                    type="button"
-                                    onclick="togglePassword()"
-                                    class="absolute inset-y-0 right-0 pr-4 flex items-center text-gray-400 hover:text-[#C79A3B] transition-colors"
-                                >
-                                    <svg id="eyeOpen" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                                    </svg>
-                                    <svg id="eyeClosed" class="w-5 h-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
-                                    </svg>
-                                </button>
-                            </div>
-                            <x-input-error :messages="$errors->get('password')" class="mt-1.5" />
-                        </div>
-
-                        {{-- REMEMBER & FORGOT --}}
-                        <div class="flex items-center justify-between text-sm pt-1">
-                            <label for="remember_me" class="inline-flex items-center cursor-pointer select-none">
-                                <input id="remember_me" type="checkbox" name="remember" class="rounded border-gray-300 text-[#C79A3B] focus:ring-[#C79A3B]/20 w-4 h-4">
-                                <span class="ms-2 text-gray-600 text-xs font-medium">{{ __('Ingat Saya') }}</span>
-                            </label>
-
-                            @if (Route::has('password.request'))
-                                <a href="{{ route('password.request') }}" class="text-xs font-semibold text-[#C79A3B] hover:text-[#3B2508] transition-colors">
-                                    Lupa Password?
-                                </a>
-                            @endif
-                        </div>
-
-                        {{-- SUBMIT BUTTON --}}
-                        <button
-                            type="submit"
-                            class="w-full mt-2 flex items-center justify-center gap-2 bg-[#3B2508] hover:bg-[#241505] text-white py-3.5 px-6 rounded-xl font-medium text-sm shadow-lg shadow-[#3B2508]/20 hover:shadow-xl transition-all duration-200 transform active:scale-[0.99]"
-                        >
-                            <span>Masuk ke Sistem</span>
-                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-                            </svg>
-                        </button>
-                    </form>
-                </div>
-
-                {{-- FOOTER INFO --}}
-                <div class="text-center mt-6 space-y-1">
-                    <p class="text-xs text-white/80 font-medium">
-                        &copy; {{ date('Y') }} CV Sahabat Eksplorasi Banua. All rights reserved.
-                    </p>
-                    <p class="text-[11px] text-white/50 tracking-wider uppercase">
-                        Enterprise Resource Planning & Management System
-                    </p>
-                </div>
-
+            {{-- FOOTER --}}
+            <div class="footer-text">
+                <p>&copy; {{ date('Y') }} CV Sahabat Eksplorasi Banua. All rights reserved.</p>
+                <p>Enterprise Resource Planning & Management System</p>
             </div>
 
         </div>
+
     </div>
+
 </div>
 
-{{-- PASSWORD TOGGLE SCRIPT --}}
 <script>
 function togglePassword() {
     const password = document.getElementById('password');
@@ -206,12 +472,12 @@ function togglePassword() {
 
     if (password.type === 'password') {
         password.type = 'text';
-        eyeOpen.classList.add('hidden');
-        eyeClosed.classList.remove('hidden');
+        eyeOpen.style.display = 'none';
+        eyeClosed.style.display = 'block';
     } else {
         password.type = 'password';
-        eyeOpen.classList.remove('hidden');
-        eyeClosed.classList.add('hidden');
+        eyeOpen.style.display = 'block';
+        eyeClosed.style.display = 'none';
     }
 }
 </script>
