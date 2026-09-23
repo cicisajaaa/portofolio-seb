@@ -3,7 +3,6 @@
 @section('content')
 <div class="max-w-7xl mx-auto pb-12 space-y-8">
     
-    {{-- CUSTOM CSS KHUSUS KARTU & INTERAKTIF --}}
     <style>
         .company-card {
             background: #ffffff;
@@ -18,13 +17,13 @@
         }
     </style>
 
-    {{-- HERO HEADER (DISAMAKAN PERSIS DENGAN PESAN KONSULTASI) --}}
+    {{-- HERO HEADER --}}
     <div class="relative bg-gradient-to-r from-[#3B2508] via-[#4d320b] to-[#3B2508] rounded-2xl p-6 sm:p-7 shadow-md border-l-4 border-[#C79A3B] overflow-hidden">
         <div class="flex flex-col md:flex-row justify-between md:items-center gap-5">
             <div class="flex items-center gap-4">
                 <div class="w-12 h-12 rounded-xl bg-white/10 backdrop-blur-md border border-white/15 flex items-center justify-center shrink-0 shadow-inner text-[#C79A3B]">
                     <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
                     </svg>
                 </div>
                 <div class="text-left text-white">
@@ -35,17 +34,17 @@
                         </span>
                     </div>
                     <h1 class="text-xl sm:text-2xl font-bold tracking-tight">
-                        Kelola Galeri
+                        Kelola Layanan
                     </h1>
                     <p class="text-gray-300 text-xs sm:text-sm mt-0.5">
-                        Mengatur dokumentasi kegiatan dan pengalaman CV Sahabat Eksplorasi Banua.
+                        Mengatur daftar jasa dan layanan konsultasi CV Sahabat Eksplorasi Banua.
                     </p>
                 </div>
             </div>
 
-            <a href="{{ route('galleries.create') }}"
-               class="inline-flex items-center justify-center gap-2 bg-[#C79A3B] hover:bg-[#b38732] text-white px-5 py-3 rounded-xl font-semibold text-sm transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 shrink-0">
-                <span>+ Tambah Galeri</span>
+            <a href="{{ route('services.create') }}"
+               class="inline-flex items-center justify-center gap-2 bg-[#C79A3B] hover:bg-[#b38732] text-white px-5 py-3 rounded-xl font-semibold text-sm transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 shrink-0">
+                <span>+ Tambah Layanan</span>
             </a>
         </div>
     </div>
@@ -60,75 +59,47 @@
         </div>
     @endif
 
-    {{-- LIST GALERI --}}
+    {{-- LIST LAYANAN --}}
     <section>
         <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
 
-            @forelse($galleries as $gallery)
+            @forelse($services as $service)
 
                 <div class="company-card overflow-hidden relative group flex flex-col justify-between">
-                    {{-- Aksen Garis Emas di Samping Kartu saat Hover --}}
                     <div class="absolute top-0 left-0 w-1.5 h-full bg-[#C79A3B] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 z-10"></div>
 
                     <div>
-                        {{-- IMAGE CONTAINER --}}
-                        <div class="relative overflow-hidden bg-gray-100">
-                            @if($gallery->gambar)
-                                <img src="{{ asset('storage/'.$gallery->gambar) }}"
-                                     loading="lazy"
-                                     class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
-                            @else
-                                <div class="w-full h-56 bg-gray-50 flex items-center justify-center text-gray-400 text-sm font-medium">
-                                    Tidak Ada Gambar
-                                </div>
-                            @endif
-
-                            <div class="absolute top-4 left-4 z-10">
-                                <span class="bg-[#3B2508]/85 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full border border-white/15 shadow-sm">
-                                    Dokumentasi
-                                </span>
+                        @if($service->gambar)
+                            <div class="relative overflow-hidden bg-gray-100">
+                                <img src="{{ asset('storage/'.$service->gambar) }}"
+                                     class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
                             </div>
-                        </div>
+                        @else
+                            <div class="w-full h-32 bg-amber-50/50 flex items-center justify-center text-3xl border-b border-gray-100">
+                                🛡️
+                            </div>
+                        @endif
 
-                        {{-- CONTENT BODY --}}
                         <div class="p-6">
-                            <h2 class="text-lg font-bold text-[#3B2508] tracking-tight line-clamp-1">
-                                {{ $gallery->judul }}
+                            <h2 class="text-lg font-bold text-[#3B2508] tracking-tight">
+                                {{ $service->nama_layanan }}
                             </h2>
-
-                            @if($gallery->project)
-                                <div class="mt-4 bg-amber-50/60 rounded-2xl p-4 border border-amber-100/60">
-                                    <p class="text-[10px] font-bold uppercase tracking-wider text-amber-800/60">
-                                        Project Terkait
-                                    </p>
-                                    <p class="mt-0.5 font-bold text-[#3B2508] text-sm line-clamp-1">
-                                        {{ $gallery->project->nama_proyek }}
-                                    </p>
-                                    <p class="text-xs font-semibold text-[#C79A3B] mt-0.5 line-clamp-1">
-                                        {{ $gallery->project->perusahaan }}
-                                    </p>
-                                </div>
-                            @else
-                                <div class="mt-4 bg-gray-50 rounded-2xl p-4 border border-gray-100">
-                                    <p class="text-xs text-gray-400 italic">
-                                        Belum terhubung dengan project
-                                    </p>
-                                </div>
-                            @endif
+                            <p class="mt-2 text-xs text-gray-600 leading-relaxed line-clamp-3">
+                                {{ $service->deskripsi_singkat }}
+                            </p>
                         </div>
                     </div>
 
-                    {{-- ACTION BUTTONS --}}
                     <div class="px-6 pb-6 pt-2 flex justify-between items-center border-t border-gray-100/80 mt-2">
-                        <a href="{{ route('galleries.edit',$gallery->id) }}"
+                        <a href="{{ route('services.edit', $service->id) }}"
                            class="inline-flex items-center gap-1.5 bg-amber-50 hover:bg-amber-100 text-[#3B2508] px-4 py-2 rounded-xl font-semibold text-xs transition-all">
                             <span>✏️ Edit</span>
                         </a>
 
-                        <form action="{{ route('galleries.destroy',$gallery->id) }}" method="POST">
+                        <form action="{{ route('services.destroy', $service->id) }}" method="POST">
                             @csrf
                             @method('DELETE')
-                            <button onclick="return confirm('Hapus dokumentasi galeri ini?')"
+                            <button onclick="return confirm('Hapus layanan ini?')"
                                     class="inline-flex items-center gap-1.5 bg-red-50 hover:bg-red-100 text-red-600 px-4 py-2 rounded-xl font-semibold text-xs transition-all">
                                 <span>🗑️ Hapus</span>
                             </button>
@@ -137,22 +108,22 @@
 
                 </div>
 
-@empty
+            @empty
 
                 <div class="col-span-full">
-                    <div class="bg-white rounded-3xl border border-gray-100 p-12 text-center shadow-sm">
+                    <div class="company-card p-12 text-center">
                         <div class="w-16 h-16 bg-amber-50 text-[#C79A3B] rounded-2xl flex items-center justify-center mx-auto text-2xl mb-4 border border-amber-100">
-                            📷
+                            🛡️
                         </div>
                         <h3 class="text-xl font-bold text-[#3B2508]">
-                            Belum Ada Dokumentasi
+                            Belum Ada Layanan
                         </h3>
                         <p class="mt-1.5 text-sm text-gray-500 max-w-sm mx-auto">
-                            Silakan tambahkan dokumentasi kegiatan perusahaan agar tampil di website publik.
+                            Tambahkan jenis jasa atau layanan perusahaan agar tampil di website publik.
                         </p>
-                        <a href="{{ route('galleries.create') }}"
+                        <a href="{{ route('services.create') }}"
                            class="inline-flex items-center justify-center gap-2 mt-6 bg-[#C79A3B] hover:bg-[#b38732] text-white px-6 py-3 rounded-xl font-semibold text-sm transition-all shadow-md">
-                            <span>+ Tambah Galeri</span>
+                            <span>+ Tambah Layanan</span>
                         </a>
                     </div>
                 </div>

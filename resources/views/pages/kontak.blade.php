@@ -135,13 +135,7 @@ Alamat
 
 <p class="mt-2 font-medium text-[#3B2508]">
 
-Jl. Pandawa No.107 RT.03 RW.05
-<br>
-Kel. Guntung Paikat Kec. Banjarbaru Selatan
-<br>
-Kota Banjarbaru – Kalimantan Selatan
-<br>
-70713
+{!! nl2br(e($setting['alamat'] ?? '')) !!}
 
 </p>
 
@@ -174,11 +168,13 @@ font-medium
 text-[#3B2508]
 leading-relaxed">
 
-+62 511 5926485
-<br>
-+62 852 4851 2861
-<br>
-+62 813 2121 7662
+{{ $setting['telepon_1'] ?? '' }}
+@if(!empty($setting['telepon_2']))
+<br>{{ $setting['telepon_2'] }}
+@endif
+@if(!empty($setting['telepon_3']))
+<br>{{ $setting['telepon_3'] }}
+@endif
 
 </p>
 
@@ -209,7 +205,7 @@ Email
 
 <p class="mt-2 font-medium text-[#3B2508]">
     
-sahabateksplorasibanua@gmail.com
+{{ $setting['email'] ?? '' }}
 
 </p>
 
@@ -238,9 +234,7 @@ Jam Operasional
 
 <p class="mt-2 font-medium text-[#3B2508]">
 
-Senin - Jumat
-<br>
-09.00 - 17.00 WITA
+{!! nl2br(e($setting['jam_operasional'] ?? '')) !!}
 
 </p>
 

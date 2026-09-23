@@ -52,6 +52,62 @@ serta kepatuhan terhadap ketentuan yang berlaku.
 <div class="max-w-7xl mx-auto px-6">
 
 
+{{-- KELOLA LAYANAN DINAMIS DARI ADMIN (MUNCUL JIKA ADA DATA) --}}
+@isset($services)
+    @if($services->count() > 0)
+        <div class="text-center mb-12">
+            <span class="text-xs uppercase tracking-[0.35em] text-[#C79A3B] font-semibold">
+                Daftar Layanan Terbaru
+            </span>
+            <h2 class="mt-2 text-3xl font-bold text-[#3B2508]">
+                Layanan & Jasa Tambahan
+            </h2>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-8 mb-20">
+            @foreach($services as $service)
+                <div class="group relative overflow-hidden bg-gradient-to-br from-white to-[#F8F7F2] border border-gray-100 rounded-3xl p-8 hover:shadow-2xl transition duration-500 flex flex-col justify-between" data-aos="fade-up">
+                    <div class="absolute left-0 top-10 h-20 w-1 bg-[#C79A3B] rounded-r-full"></div>
+
+                    <div class="relative">
+                        @if($service->gambar)
+                            <div class="mb-6 overflow-hidden rounded-2xl h-48 bg-gray-100 border border-gray-100">
+                                <img src="{{ asset('storage/'.$service->gambar) }}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            </div>
+                        @endif
+
+                        <div>
+                            <span class="text-xs tracking-[0.35em] font-bold text-[#C79A3B]">
+                                FEATURED SERVICE
+                            </span>
+                            <h2 class="mt-3 text-2xl font-bold text-[#3B2508]">
+                                {{ $service->nama_layanan }}
+                            </h2>
+                        </div>
+
+                        <p class="mt-5 text-gray-600 leading-relaxed text-sm">
+                            {{ $service->deskripsi_singkat }}
+                        </p>
+
+                        @if($service->deskripsi_lengkap)
+                            <div class="mt-5 pt-5 border-t border-gray-200 text-xs text-gray-600 leading-relaxed">
+                                {{ $service->deskripsi_lengkap }}
+                            </div>
+                        @endif
+                    </div>
+
+                    <div class="mt-7 pt-6 border-t border-gray-200 flex items-center justify-between">
+                        <a href="{{ route('kontak') }}" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#C79A3B] hover:text-[#3B2508] transition">
+                            Konsultasikan Layanan Ini →
+                        </a>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    @endif
+@endisset
+
+
 <div class="grid lg:grid-cols-2 gap-8">
 
 

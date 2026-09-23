@@ -278,8 +278,15 @@ Galeri
 
 
 
-
-
+<a href="{{ route('services.index') }}"
+   class="relative flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200
+   {{ request()->routeIs('services.*') ? 'bg-white/20 text-white shadow-lg' : 'text-gray-300 hover:bg-white/10 hover:text-white' }}">
+    @if(request()->routeIs('services.*'))
+    <span class="absolute left-0 w-1 h-8 bg-[#C79A3B] rounded-r-full"></span>
+    @endif
+    <span class="text-xl">🛡️</span>
+    <span class="text-sm font-medium">Kelola Layanan</span>
+</a>
 
 
 
@@ -325,10 +332,25 @@ Pesan Konsultasi
 </a>
 
 
+<a href="{{ route('profile.edit') }}"
+class="relative flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200
+{{ request()->routeIs('profile.*') ? 'bg-white/20 text-white shadow-lg' : 'text-gray-300 hover:bg-white/10 hover:text-white' }}">
+@if(request()->routeIs('profile.*'))
+<span class="absolute left-0 w-1 h-8 bg-[#C79A3B] rounded-r-full"></span>
+@endif
+<span class="text-xl">⚙️</span>
+<span class="text-sm font-medium">Kelola Akun</span>
+</a>
 
 
-
-
+<a href="{{ route('settings.index') }}"
+   class="relative flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 {{ request()->routeIs('settings.*') ? 'bg-white/20 text-white shadow-lg' : 'text-gray-300 hover:bg-white/10 hover:text-white' }}">
+    @if(request()->routeIs('settings.*'))
+    <span class="absolute left-0 w-1 h-8 bg-[#C79A3B] rounded-r-full"></span>
+    @endif
+    <span class="text-xl">⚙️</span>
+    <span class="text-sm font-medium">Pengaturan Website</span>
+</a>
 </nav>
 
 

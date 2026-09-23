@@ -20,9 +20,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+{{-- SEO: Judul Dinamis dari Database Settings --}}
 <title>
-CV Sahabat Eksplorasi Banua | Konsultan Pertambangan & Lingkungan
+{{ \App\Models\Setting::where('key', 'meta_title')->value('value') ?? 'CV Sahabat Eksplorasi Banua | Konsultan Pertambangan & Lingkungan' }}
 </title>
+
+{{-- SEO: Deskripsi Dinamis dari Database Settings --}}
+<meta name="description" content="{{ \App\Models\Setting::where('key', 'meta_description')->value('value') ?? 'Company Profile CV Sahabat Eksplorasi Banua' }}">
 
 
 @vite([
@@ -703,7 +707,7 @@ All Rights Reserved.
 
 
 
-<!-- WHATSAPP -->
+<!-- WHATSAPP DINAMIS DARI SETTING ADMIN -->
 
 <div class="
 fixed
@@ -713,7 +717,7 @@ z-50
 ">
 
 
-<a href="https://wa.me/6285828125783"
+<a href="https://wa.me/{{ \App\Models\Setting::where('key', 'whatsapp')->value('value') ?? '6285248512861' }}"
 
 target="_blank"
 
