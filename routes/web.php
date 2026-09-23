@@ -7,6 +7,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProjectPublicController;
 use App\Http\Controllers\LegalitasController;
+use App\Http\Controllers\HomeController;
 
 // Models
 use App\Models\Project;
@@ -82,10 +83,7 @@ Route::middleware('auth')->group(function () {
 | PUBLIC WEBSITE
 |--------------------------------------------------------------------------
 */
-Route::get('/', function () {
-    $projects = Project::latest()->get();
-    return view('pages.home', compact('projects'));
-})->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/tentang', function () {
     return view('pages.tentang');
